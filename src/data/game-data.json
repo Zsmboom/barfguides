@@ -1,0 +1,34 @@
+{
+  "rings": [
+    { "id": "base", "name": "Base Ring", "multiplier": 7, "description": "Starting ring, 7x profit multiplier" },
+    { "id": "middle", "name": "Middle Ring", "multiplier": 13, "description": "Unlockable mid-game ring, 13x profit multiplier" },
+    { "id": "outer", "name": "Outer Ring", "multiplier": 19, "description": "Endgame ring, 19x profit multiplier" }
+  ],
+  "mutations": [
+    { "id": "none", "name": "None", "multiplier": 1, "trigger": "Default state", "effect": "No extra multiplier" },
+    { "id": "wet", "name": "Wet", "multiplier": 1.5, "trigger": "Watering / rain", "effect": "1.5x harvest value" },
+    { "id": "frozen", "name": "Frozen", "multiplier": 1.75, "trigger": "Freeze events", "effect": "1.75x harvest value" },
+    { "id": "autumn", "name": "Autumn", "multiplier": 2, "trigger": "Autumn Spray or seasonal events", "effect": "2x harvest value" },
+    { "id": "void", "name": "Void", "multiplier": 2.25, "trigger": "Void events or sprays", "effect": "2.25x harvest value" },
+    { "id": "radioactive", "name": "Radioactive", "multiplier": 3, "trigger": "Special environments", "effect": "3x harvest value" },
+    { "id": "alien", "name": "Alien", "multiplier": 3.25, "trigger": "Alien invasion events", "effect": "3.25x harvest value" },
+    { "id": "farm", "name": "Farm", "multiplier": 4, "trigger": "Farm-themed events", "effect": "4x harvest value" },
+    { "id": "rainbow", "name": "Rainbow", "multiplier": 5, "trigger": "High-tier random mutation", "effect": "5x harvest value" },
+    { "id": "honeycomb", "name": "Honeycomb", "multiplier": 6.5, "trigger": "Hive events or high-tier triggers", "effect": "6.5x harvest value" },
+    { "id": "admin", "name": "Admin", "multiplier": 7, "trigger": "Update 4 special events", "effect": "7x high-end event mutation", "isUpdate4": true },
+    { "id": "fire", "name": "Fire", "multiplier": 4.5, "trigger": "Update 4 fire events", "effect": "4.5x high-value crop burst", "isUpdate4": true },
+    { "id": "bubblegum", "name": "Bubblegum", "multiplier": 5.5, "trigger": "Update 4 bubblegum events", "effect": "5.5x mid-high mutation", "isUpdate4": true },
+    { "id": "starfall", "name": "Starfall", "multiplier": 8, "trigger": "Update 4 starfall events", "effect": "8x top-tier pursuit mutation", "isUpdate4": true }
+  ],
+  "pets": [
+    { "id": "harvest-drone", "name": "Harvest Drone", "tier": "S", "bonus": "Auto-harvest + high frequency", "role": "Endgame automation", "recommendation": "Priority for leaderboard push. Reduces manual harvest loss." },
+    { "id": "rain-cloud", "name": "Rain Cloud", "tier": "S", "bonus": "Auto-watering + Wet trigger", "role": "Mutation support", "recommendation": "Valuable at all stages. Increases earnings stability." },
+    { "id": "seed-planter", "name": "Seed Planter", "tier": "A", "bonus": "Auto-planting", "role": "Expansion efficiency", "recommendation": "Mid-game value increases as plots expand." },
+    { "id": "sprinkler-bot", "name": "Sprinkler Bot", "tier": "A", "bonus": "Improved watering coverage", "role": "Income stability", "recommendation": "Pairs well with high-value seeds and Wet/Frozen routes." },
+    { "id": "fertilizer-cat", "name": "Fertilizer Cat", "tier": "B", "bonus": "Faster growth rate", "role": "Early-mid transition", "recommendation": "Use when resources are limited. Replace later." },
+    { "id": "market-dog", "name": "Market Dog", "tier": "B", "bonus": "Optimized sale timing", "role": "Manual profit", "recommendation": "Good for pre-automation players." },
+    { "id": "basic-helper", "name": "Basic Helper", "tier": "C", "bonus": "Minor operation assist", "role": "Newbie phase", "recommendation": "Only use when no better pet is available." },
+    { "id": "slow-snail", "name": "Slow Snail", "tier": "D", "bonus": "Low-frequency assist", "role": "Collectible", "recommendation": "Low priority. Don't invest resources." },
+    { "id": "capybara", "name": "Capybara", "tier": "A", "bonus": "Boosts seed luck for rare seed rolls", "role": "Seed luck enhancement", "recommendation": "Valuable mid-game pet for players hunting Transcended seeds. Pairs with seed rolling strategies." }
+  ]
+}

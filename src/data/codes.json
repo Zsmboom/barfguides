@@ -1,0 +1,13 @@
+{
+  "codes": [
+    { "code": "250KUSERS", "reward": "3 Minute Time Skip", "status": "active", "dateAdded": "2026-06-01", "note": "Great for skipping early wait times" },
+    { "code": "PLANTRUSH", "reward": "1x Plant Rush Boss Box", "status": "active", "dateAdded": "2026-06-03", "note": "Update 4 — claim this first" },
+    { "code": "UPDATE2", "reward": "x1 Tropical Seed Pack", "status": "active", "dateAdded": "2026-05-25", "note": "Great for mid-game seed variety" },
+    { "code": "THANKYOU", "reward": "x1 Autumn Spray", "status": "active", "dateAdded": "2026-05-20", "note": "For Autumn mutation route" },
+    { "code": "BARF:3", "reward": "x1 Acid Spray", "status": "active", "dateAdded": "2026-05-15", "note": "Spray reward for mutations" },
+    { "code": "2KLIKES", "reward": "x1 Tropical Seed Pack", "status": "active", "dateAdded": "2026-05-10", "note": "Must-claim for new accounts" },
+    { "code": "UPDATE1", "reward": "x3 Strong Fertilizer", "status": "active", "dateAdded": "2026-05-05", "note": "Speeds up early growth" },
+    { "code": "100KVISITS", "reward": "5 Minute Time Skip", "status": "active", "dateAdded": "2026-04-28", "note": "Saves early-game waiting" }
+  ],
+  "expiredCodes": []
+}

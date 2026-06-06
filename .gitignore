@@ -1,0 +1,7 @@
+node_modules/
+.next/
+*.tsbuildinfo
+.env
+.env.local
+wrangler.toml
+prompt-improve.md
