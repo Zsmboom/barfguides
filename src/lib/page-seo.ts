@@ -12,7 +12,7 @@ export const pageSeo = {
     path: "/profit-calculator",
     title: "Build A Ring Farm Profit Calculator - Seed Earnings & ROI",
     description:
-      "Calculate exact profit per minute for any Build A Ring Farm seed setup. Includes ring multiplier, mutation bonus, saw level, pet bonus, and sprinkler. Compare seeds side by side.",
+      "Calculate exact profit per minute for any Build A Ring Farm seed setup. Includes ring multiplier, mutation, saw level, pet bonus, and sprinkler.",
     keywords: [
       "build a ring farm profit calculator",
       "build a ring farm calculator",
@@ -30,21 +30,21 @@ export const pageSeo = {
     path: "/tier-list",
     title: "Build A Ring Farm Tier List - Best Seeds Ranked (S-Tier to D-Tier)",
     description:
-      "Complete seed tier list for Build A Ring Farm. All 35 seeds ranked S to D by profit per minute, growth time, and endgame viability. Includes pets and mutations tier lists.",
+      "All 35 seeds ranked S to D by profit, growth time, and endgame viability. Includes pets and mutations tier lists for Build A Ring Farm.",
     keywords: ["build a ring farm tier list", "build a ring farm seeds tier list", "best seeds build a ring farm"],
   },
   update4: {
     path: "/update-4-patch-notes",
     title: "Build A Ring Farm Update 4 Patch Notes - What's New (June 2026)",
     description:
-      "Complete Build A Ring Farm Update 4 patch notes. New features: Compost Machine, Plant Contracts, Farm Skins, Friend O Tron, new seeds, new mutations. Full breakdown.",
+      "Full Build A Ring Farm Update 4 patch notes. Compost Machine, Plant Contracts, Farm Skins, Friend O Tron, new seeds and mutations explained.",
     keywords: ["build a ring farm update 4", "build a ring farm update 4 patch notes", "build a ring farm patch notes"],
   },
   beginner: {
     path: "/beginner-guide",
-    title: "Build A Ring Farm Beginner Guide - How to Play & Make Money Fast (June 2026)",
+    title: "Build A Ring Farm Beginner Guide - How to Play & Make Money",
     description:
-      "New to Build A Ring Farm? Start here. Complete beginner guide covering how to play, best early seeds, ring system explained, first upgrades, and fastest money methods.",
+      "New to Build A Ring Farm? Complete beginner guide covering how to play, best early seeds, ring system, first upgrades, and fastest money methods.",
     keywords: ["build a ring farm beginner guide", "how to play build a ring farm", "build a ring farm guide"],
   },
   pets: {
@@ -65,12 +65,12 @@ export const pageSeo = {
     path: "/transcendent-seeds-guide",
     title: "How to Get Transcendent Seeds in Build A Ring Farm - Best Method",
     description:
-      "Complete guide to getting Transcendent seeds in Build A Ring Farm. Seed luck mechanics, best pets for rare seeds, farming strategies, and all Transcendent seed prices.",
+      "Complete guide to getting Transcendent seeds in Build A Ring Farm. Seed luck mechanics, best pets for rare seeds, and farming strategies.",
     keywords: ["build a ring farm transcendent seeds", "how to get transcendent seeds build a ring farm"],
   },
   money: {
     path: "/money-guide",
-    title: "Build A Ring Farm Best Money Method - How to Make Cash Fast (June 2026)",
+    title: "Build A Ring Farm Best Money Method - Make Cash Fast (2026)",
     description:
       "Updated for Update 4! Best money-making methods in Build A Ring Farm. Compost Machine strategy, ring optimization, pet combos, and seed profit rankings.",
     keywords: ["build a ring farm money guide", "build a ring farm make money fast", "build a ring farm best money method"],
@@ -93,27 +93,27 @@ export const pageSeo = {
     path: "/seeds-database",
     title: "Build A Ring Farm Seeds Database - All 35 Seeds, Prices & Profit",
     description:
-      "Search every Build A Ring Farm seed by rarity, price, sell value, growth time, tier, and estimated profit per minute.",
+      "Browse all 35 Build A Ring Farm seeds by rarity, price, sell value, growth time, tier, and estimated profit per minute. Updated for Update 4.",
     keywords: ["build a ring farm seeds", "build a ring farm seed database", "build a ring farm all seeds"],
   },
   about: {
     path: "/about",
     title: "About BARF Guides - Build A Ring Farm Fan Tools",
-    description: "Learn about BARF Guides, an independent English fan resource for Build A Ring Farm tools and strategy guides.",
+    description: "BARF Guides is an independent fan resource for Build A Ring Farm tools, profit calculator, tier lists, codes, and strategy guides on Roblox.",
     keywords: ["barf guides", "build a ring farm fan site"],
   },
   privacy: {
     path: "/privacy-policy",
     title: "Privacy Policy - BARF Guides",
-    description: "Privacy policy for BARF Guides, the Build A Ring Farm fan tools and guides website.",
+    description: "Privacy policy for BARF Guides, the independent Build A Ring Farm fan tools and guides website hosted on Cloudflare Pages.",
     keywords: ["barf guides privacy policy"],
   },
 
   events: {
     path: "/events-guide",
-    title: "Build A Ring Farm Events Guide - Alien Invasions, Plant Rush Bosses & Update 4 Starfall",
+    title: "Build A Ring Farm Events Guide - Invasions, Bosses & Starfall",
     description:
-      "Complete Build A Ring Farm events guide. Alien invasions, Plant Rush boss waves, void storms, hive outbreaks, and the new Starfall cosmic event from Update 4. Best seeds and pets for event farming.",
+      "Complete Build A Ring Farm events guide. Alien invasions, Plant Rush bosses, void storms, and Starfall cosmic event. Best seeds and pets for events.",
     keywords: [
       "build a ring farm events",
       "build a ring farm alien invasion",
@@ -125,7 +125,7 @@ export const pageSeo = {
     path: "/faq",
     title: "Build A Ring Farm FAQ - Codes, Seeds, Rings, Pets, Events & More",
     description:
-      "Most common Build A Ring Farm questions in one place. Game basics, codes, profit tips, ring strategy, mutations, pets, Update 4 features, and Transcendent seeds.",
+      "Most common Build A Ring Farm questions. Game basics, codes, profit tips, ring strategy, mutations, pets, Update 4, and Transcendent seeds.",
     keywords: [
       "build a ring farm faq",
       "build a ring farm questions",

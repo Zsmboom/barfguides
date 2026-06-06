@@ -22,7 +22,7 @@ export default function TranscendentSeedsGuidePage() {
     <main className="mx-auto max-w-7xl px-4 py-10">
       <JsonLd data={[breadcrumbSchema("/transcendent-seeds-guide", "Transcendent Seeds Guide"), faqSchema(faq)]} />
       
-      <Section eyebrow="GUIDE" title="How to Get Transcendent Seeds in Build A Ring Farm">
+      <Section eyebrow="GUIDE" level={1} title="How to Get Transcendent Seeds in Build A Ring Farm">
         <p className="text-slate-400">Transcendent seeds are the highest-tier seeds in Build A Ring Farm. This guide covers how to obtain them, seed luck mechanics, and the best strategies for farming them.</p>
       </Section>
 

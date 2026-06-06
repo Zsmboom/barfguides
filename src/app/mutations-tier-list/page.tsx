@@ -20,7 +20,7 @@ export default function MutationsTierListPage() {
     <main className="mx-auto max-w-7xl px-4 py-10">
       <JsonLd data={[breadcrumbSchema("/mutations-tier-list", "Mutations Tier List"), faqSchema(faq)]} />
       
-      <Section eyebrow="TIER LIST" title="Build A Ring Farm Mutations Tier List">
+      <Section eyebrow="MUTATIONS" level={1} title="Build A Ring Farm Mutations Tier List">
         <p className="text-slate-400">All 14 mutations ranked by multiplier value. Update 4 added Fire, Bubblegum, Admin, and Starfall — the highest multipliers in the game.</p>
       </Section>
 

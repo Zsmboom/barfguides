@@ -81,6 +81,17 @@ export default function BeginnerGuidePage() {
           faqSchema(faq),
         ]}
       />
+      {/* Hero banner */}
+      <div className="mx-auto max-w-7xl px-4 pt-6">
+        <div className="overflow-hidden rounded-xl border border-white/10">
+          <img
+            src="/images/game-screenshot.jpg"
+            alt="Build A Ring Farm beginner gameplay — rings and crops"
+            className="h-48 w-full object-cover md:h-64"
+            loading="eager"
+          />
+        </div>
+      </div>
       <section className="mx-auto max-w-7xl px-4 py-12">
         <p className="text-sm font-bold uppercase tracking-[0.2em] text-emerald-300">Start here</p>
         <h1 className="mt-3 text-4xl font-black text-white md:text-5xl">

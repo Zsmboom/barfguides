@@ -13,9 +13,7 @@ export function Header() {
     <header className="sticky top-0 z-50 border-b border-white/10 bg-slate-950/88 backdrop-blur">
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-3">
         <Link href="/" className="flex items-center gap-2 text-base font-black tracking-tight text-white">
-          <span className="grid size-8 place-items-center rounded-md border border-emerald-400/40 bg-emerald-400/15 text-xs text-emerald-200">
-            BR
-          </span>
+          <img src="/images/game-icon.png" alt="" className="size-8 rounded-md" />
           <span>BARF Guides</span>
         </Link>
         <nav className="flex max-w-[68vw] items-center gap-1 overflow-x-auto text-sm">

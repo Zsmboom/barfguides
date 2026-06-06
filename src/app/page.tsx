@@ -60,7 +60,7 @@ export default function HomePage() {
         ]}
       />
       {/* Hero section */}
-      <section className="mx-auto grid max-w-7xl gap-8 px-4 py-14 lg:grid-cols-[1.08fr_0.92fr] lg:items-center">
+      <section className="mx-auto grid max-w-7xl gap-8 px-4 py-14 lg:grid-cols-[1fr_1fr] lg:items-center">
         <div>
           <p className="text-sm font-bold uppercase tracking-[0.2em] text-emerald-300">
             Build A Ring Farm tools
@@ -87,39 +87,58 @@ export default function HomePage() {
             </Link>
           </div>
         </div>
-        <div className="rounded-lg border border-white/10 bg-slate-900/72 p-5">
-          <h2 className="text-xl font-black text-white">Latest Codes</h2>
-          <div className="mt-4 grid gap-3">
-            {latestCodes.map((code: Code) => (
-              <div
-                key={code.code}
-                className="flex items-center justify-between gap-3 rounded-md bg-slate-950/70 p-3"
-              >
-                <div>
-                  <div className="font-black text-amber-300">{code.code}</div>
-                  <div className="text-sm text-slate-400">{code.reward}</div>
-                </div>
-                <CopyButton value={code.code} />
+        <div className="overflow-hidden rounded-xl border border-white/10 bg-slate-900/80">
+          <img
+            src="/images/game-screenshot.jpg"
+            alt="Build A Ring Farm gameplay screenshot — rings, crops, and farm progression in Roblox"
+            className="w-full object-cover"
+            loading="eager"
+          />
+          <div className="flex items-center justify-between gap-2 p-3">
+            <div className="flex items-center gap-2">
+              <img src="/images/game-icon.png" alt="Build A Ring Farm icon" className="size-8 rounded" />
+              <div>
+                <div className="text-sm font-bold text-white">Build A Ring Farm</div>
+                <div className="text-xs text-slate-400">Gamecreates</div>
               </div>
-            ))}
+            </div>
+            <a
+              href="https://www.roblox.com/games/107646426076756/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-md bg-emerald-500 px-3 py-1.5 text-xs font-bold text-slate-950 hover:bg-emerald-400"
+            >
+              Play on Roblox
+            </a>
           </div>
-          <Link
-            href="/codes"
-            className="mt-4 block text-sm font-bold text-emerald-300 hover:text-emerald-200"
-          >
-            See all 8 active codes -&gt;
-          </Link>
         </div>
       </section>
 
-      {/* Game overview */}
-      <Section eyebrow="About the game" title="What Is Build A Ring Farm?">
-        <div className="rounded-lg border border-white/10 bg-slate-900/50 p-6">
+      {/* Game overview with screenshot */}
+      <section className="mx-auto max-w-7xl px-4 py-10">
+        <p className="mb-2 text-sm font-bold uppercase tracking-[0.18em] text-emerald-300">About the game</p>
+        <div className="mt-6 grid gap-6 md:grid-cols-[1fr_1fr]">
+          <div className="rounded-lg border border-white/10 bg-slate-900/50 p-6">
+            <h2 className="text-xl font-bold text-white">What Is Build A Ring Farm?</h2>
+            <p className="mt-3 leading-7 text-slate-300">
+              Build A Ring Farm is a Roblox farming simulator published by Gamecreates under game ID 107646426076756. You plant and harvest crops inside progressively larger rings, with the Base Ring giving a 7x multiplier, Middle Ring 13x, and Outer Ring 19x. Your farm earns cash even while you are offline, so every upgrade keeps paying out between play sessions. The current dataset tracks 35 seeds across 10 rarity tiers, 14 mutations that boost harvest value by up to 8x, 8 pets for automation, and a global leaderboard system.
+            </p>
+          </div>
+          <div className="overflow-hidden rounded-lg border border-white/10 bg-slate-900/50">
+            <img
+              src="/images/game-screenshot.jpg"
+              alt="Build A Ring Farm rings and farm layout"
+              className="w-full object-cover"
+              loading="lazy"
+            />
+          </div>
+        </div>
+        <div className="mt-4 rounded-lg border border-emerald-400/20 bg-emerald-950/15 p-4">
           <p className="leading-7 text-slate-300">
-            Build A Ring Farm is a Roblox farming simulator published by Gamecreates under game ID 107646426076756. You plant and harvest crops inside progressively larger rings, with the Base Ring giving a 7x multiplier, Middle Ring 13x, and Outer Ring 19x. Your farm earns cash even while you are offline, so every upgrade keeps paying out between play sessions. The current dataset tracks 35 seeds across 10 rarity tiers, 14 mutations that boost harvest value by up to 8x, 8 pets for automation, and a global leaderboard system. Update 4 added the Compost Machine, Plant Contracts, Farm Skins, Friend O Tron, 24 new plants, and four new mutations (Fire, Bubblegum, Admin, and Starfall). The game is regularly covered by major Roblox creators including Foltyn, MeEnyu, and CoralBlox2.
+            Update 4 added the Compost Machine, Plant Contracts, Farm Skins, Friend O Tron, 24 new plants, and four new mutations (Fire, Bubblegum, Admin, and Starfall). The game is regularly covered by major Roblox creators including Foltyn, MeEnyu, and CoralBlox2.
           </p>
         </div>
-      </Section>
+      </section>
 
       {/* Stats */}
       <Section title="Quick Stats">

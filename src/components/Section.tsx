@@ -4,15 +4,18 @@ export function Section({
   eyebrow,
   title,
   children,
+  level,
 }: {
   eyebrow?: string;
   title: string;
   children: ReactNode;
+  level?: 1 | 2;
 }) {
+  const Heading = level === 1 ? "h1" : "h2";
   return (
     <section className="mx-auto max-w-7xl px-4 py-10">
       {eyebrow ? <p className="mb-2 text-sm font-bold uppercase tracking-[0.18em] text-emerald-300">{eyebrow}</p> : null}
-      <h2 className="text-2xl font-black text-white md:text-3xl">{title}</h2>
+      <Heading className="text-2xl font-black text-white md:text-3xl">{title}</Heading>
       <div className="mt-6">{children}</div>
     </section>
   );

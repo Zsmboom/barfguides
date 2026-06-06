@@ -16,7 +16,7 @@ export default function PetsTierListPage() {
   return (
     <main className="mx-auto max-w-7xl px-4 py-10">
       <JsonLd data={[breadcrumbSchema("/pets-tier-list", "Pets Tier List")]} />
-      <Section eyebrow="TIER LIST" title="Build A Ring Farm Pets Tier List">
+      <Section eyebrow="TIER LIST" level={1} title="Build A Ring Farm Pets Tier List">
         <p className="text-slate-400">
           Every pet in Build A Ring Farm ranked from S-Tier (must-have) to D-Tier (skip). Choose the right pet for your playstyle and progression stage.
         </p>

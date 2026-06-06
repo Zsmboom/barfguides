@@ -9,9 +9,20 @@ export const metadata: Metadata = buildPageMetadata(pageSeo.about);
 
 export default function AboutPage() {
   return (
-    <main className="mx-auto max-w-7xl px-4 py-10">
+    <>
       <JsonLd data={[breadcrumbSchema("/about", "About"), videoGameSchema()]} />
-      <Section eyebrow="ABOUT" title="About BARF Guides">
+      <div className="mx-auto max-w-7xl px-4 pt-10">
+        <div className="overflow-hidden rounded-xl border border-white/10">
+          <img
+            src="/images/game-screenshot.jpg"
+            alt="Build A Ring Farm on Roblox"
+            className="h-40 w-full object-cover md:h-56"
+            loading="eager"
+          />
+        </div>
+      </div>
+      <main className="mx-auto max-w-7xl px-4 py-10">
+        <Section eyebrow="ABOUT" level={1} title="About BARF Guides">
         <div className="max-w-3xl space-y-6 text-slate-300">
           <p>BARF Guides is an independent fan-made resource for Build A Ring Farm on Roblox. We provide tools, calculators, and strategy guides to help players maximize their farm efficiency.</p>
           <p>Our profit calculator is the only tool on the web that calculates profit per minute and ROI for Build A Ring Farm seed setups.</p>
@@ -20,6 +31,7 @@ export default function AboutPage() {
           <p>Developer: Gamecreates</p>
         </div>
       </Section>
-    </main>
+      </main>
+    </>
   );
 }
