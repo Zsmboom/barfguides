@@ -12,9 +12,38 @@ export function Footer() {
         <div>
           <div className="text-lg font-black text-white">BARF Guides</div>
           <p className="mt-3 max-w-2xl text-sm leading-6 text-slate-400">
-            Independent English fan tools for Build A Ring Farm. Not affiliated with Roblox Corporation or Gamecreates.
+            Independent fan tools for Build A Ring Farm. Not affiliated with Roblox Corporation or Gamecreates.
             Use the calculators and rankings as planning aids and verify live game changes in-game.
           </p>
+          <div className="mt-4 text-sm text-slate-500">
+            <div className="font-semibold text-slate-400 mb-1">Official sources &amp; community thanks</div>
+            <ul className="space-y-1">
+              <li>
+                🎮{" "}
+                <a
+                  href="https://www.roblox.com/games/107646426076756/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-emerald-300 hover:text-emerald-200"
+                >
+                  Roblox Game Page
+                </a>
+              </li>
+              <li>
+                📺 Community data from{" "}
+                <a href="https://www.youtube.com/@Foltyn" target="_blank" rel="noopener noreferrer" className="text-emerald-300 hover:text-emerald-200">Foltyn</a>
+                {" · "}
+                <a href="https://www.youtube.com/@MeEnyu" target="_blank" rel="noopener noreferrer" className="text-emerald-300 hover:text-emerald-200">MeEnyu</a>
+                {" · "}
+                <a href="https://www.youtube.com/@CoralBlox2" target="_blank" rel="noopener noreferrer" className="text-emerald-300 hover:text-emerald-200">CoralBlox2</a>
+                {" · "}
+                <a href="https://beebom.com/?s=build+a+ring+farm" target="_blank" rel="noopener noreferrer" className="text-emerald-300 hover:text-emerald-200">Beebom</a>
+              </li>
+              <li className="text-xs text-slate-600">
+                Seed/pet/mutation data are community-estimated and may not reflect exact in-game values. Updated June 2026.
+              </li>
+            </ul>
+          </div>
         </div>
         <div className="grid grid-cols-2 gap-2 text-sm">
           {major.map((page) => (

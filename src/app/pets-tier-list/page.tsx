@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { JsonLd } from "@/components/JsonLd";
 import { PetTable } from "@/components/Tables";
 import { InfoCard, Section } from "@/components/Section";
+import { DataDisclaimer } from "@/components/DataDisclaimer";
 import { byTier, pets } from "@/lib/data";
 import { pageSeo } from "@/lib/page-seo";
 import { breadcrumbSchema, buildPageMetadata } from "@/lib/seo";
@@ -46,6 +47,7 @@ export default function PetsTierListPage() {
           </InfoCard>
         </div>
       </Section>
+      <DataDisclaimer dataType="pet rankings and bonuses" />
     </main>
   );
 }

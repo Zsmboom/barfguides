@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { DataDisclaimer } from "@/components/DataDisclaimer";
 import { JsonLd } from "@/components/JsonLd";
 import { Section } from "@/components/Section";
 import { SeedsTable } from "@/components/Tables";
@@ -19,6 +20,7 @@ export default function SeedsDatabasePage() {
       <Section title="All Seeds (Ranked by Outer Ring Profit)">
         <SeedsTable seeds={sortedSeedsByProfit()} />
       </Section>
+      <DataDisclaimer dataType="seed prices and stats" />
     </main>
   );
 }

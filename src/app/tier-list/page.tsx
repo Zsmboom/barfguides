@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { JsonLd } from "@/components/JsonLd";
 import { InfoCard, Section } from "@/components/Section";
 import { MutationTable, PetTable, SeedsTable } from "@/components/Tables";
+import { DataDisclaimer } from "@/components/DataDisclaimer";
 import { byTier, mutations, pets, seeds } from "@/lib/data";
 import { pageSeo } from "@/lib/page-seo";
 import { breadcrumbSchema, faqSchema, buildPageMetadata } from "@/lib/seo";
@@ -78,6 +79,7 @@ export default function TierListPage() {
           <InfoCard title="Endgame">S-Tier seeds scale best with Outer Ring, high-value mutations, pets, and sprinkler investment.</InfoCard>
         </div>
       </Section>
+      <DataDisclaimer dataType="seed rankings" />
     </>
   );
 }

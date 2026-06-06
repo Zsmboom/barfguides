@@ -4,6 +4,7 @@ import { JsonLd } from "@/components/JsonLd";
 import { InfoCard, Section } from "@/components/Section";
 import { pageSeo } from "@/lib/page-seo";
 import { breadcrumbSchema, faqSchema, buildPageMetadata } from "@/lib/seo";
+import { DataDisclaimer } from "@/components/DataDisclaimer";
 
 export const dynamic = "force-static";
 export const metadata: Metadata = buildPageMetadata(pageSeo.contracts);
@@ -106,6 +107,7 @@ export default function ContractsGuidePage() {
           ))}
         </div>
       </Section>
+      <DataDisclaimer dataType="contract rewards and strategies" />
     </main>
   );
 }

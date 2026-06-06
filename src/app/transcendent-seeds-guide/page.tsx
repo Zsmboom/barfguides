@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { DataDisclaimer } from "@/components/DataDisclaimer";
 import { JsonLd } from "@/components/JsonLd";
 import { InfoCard, Section } from "@/components/Section";
 import { MiniSeedCard } from "@/components/Tables";
@@ -60,6 +61,7 @@ export default function TranscendentSeedsGuidePage() {
           ))}
         </div>
       </Section>
+      <DataDisclaimer dataType="seed luck mechanics" />
     </main>
   );
 }

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { DataDisclaimer } from "@/components/DataDisclaimer";
 import { JsonLd } from "@/components/JsonLd";
 import { InfoCard, Section } from "@/components/Section";
 import { activeCodes, rings, seeds } from "@/lib/data";
@@ -237,6 +238,7 @@ export default function BeginnerGuidePage() {
           ))}
         </div>
       </Section>
+      <DataDisclaimer dataType="beginner strategies" />
     </>
   );
 }

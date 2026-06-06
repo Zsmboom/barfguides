@@ -4,6 +4,7 @@ import { ProfitCalculator } from "@/components/ProfitCalculator";
 import { InfoCard, Section } from "@/components/Section";
 import { pageSeo } from "@/lib/page-seo";
 import { breadcrumbSchema, faqSchema, buildPageMetadata } from "@/lib/seo";
+import { DataDisclaimer } from "@/components/DataDisclaimer";
 
 export const dynamic = "force-static";
 export const metadata: Metadata = buildPageMetadata(pageSeo.calculator);
@@ -48,6 +49,7 @@ export default function ProfitCalculatorPage() {
           ))}
         </div>
       </Section>
+      <DataDisclaimer dataType="profit calculations and seed metrics" />
     </>
   );
 }

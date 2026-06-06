@@ -4,6 +4,7 @@ import { InfoCard, Section } from "@/components/Section";
 import { mutations, pets, seeds } from "@/lib/data";
 import { pageSeo } from "@/lib/page-seo";
 import { breadcrumbSchema, faqSchema, buildPageMetadata } from "@/lib/seo";
+import { DataDisclaimer } from "@/components/DataDisclaimer";
 
 export const dynamic = "force-static";
 export const metadata: Metadata = buildPageMetadata(pageSeo.events);
@@ -183,6 +184,7 @@ export default function EventsGuidePage() {
           ))}
         </div>
       </Section>
+      <DataDisclaimer dataType="event mechanics" />
     </>
   );
 }

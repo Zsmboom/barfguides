@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { JsonLd } from "@/components/JsonLd";
 import { MutationTable } from "@/components/Tables";
 import { InfoCard, Section } from "@/components/Section";
+import { DataDisclaimer } from "@/components/DataDisclaimer";
 import { mutations } from "@/lib/data";
 import { pageSeo } from "@/lib/page-seo";
 import { breadcrumbSchema, faqSchema, buildPageMetadata, jsonLd } from "@/lib/seo";
@@ -37,6 +38,7 @@ export default function MutationsTierListPage() {
           ))}
         </div>
       </Section>
+      <DataDisclaimer dataType="mutation multipliers" />
     </main>
   );
 }

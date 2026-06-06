@@ -4,6 +4,7 @@ import { JsonLd } from "@/components/JsonLd";
 import { InfoCard, Section } from "@/components/Section";
 import { pageSeo } from "@/lib/page-seo";
 import { breadcrumbSchema, faqSchema, buildPageMetadata } from "@/lib/seo";
+import { DataDisclaimer } from "@/components/DataDisclaimer";
 import { activeCodes, rings, seeds } from "@/lib/data";
 
 export const dynamic = "force-static";
@@ -189,6 +190,7 @@ export default function MoneyGuidePage() {
           ))}
         </div>
       </Section>
+      <DataDisclaimer dataType="money-making strategies" />
     </main>
   );
 }

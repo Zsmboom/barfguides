@@ -4,6 +4,7 @@ import { JsonLd } from "@/components/JsonLd";
 import { InfoCard, Section } from "@/components/Section";
 import { pageSeo } from "@/lib/page-seo";
 import { breadcrumbSchema, faqSchema, buildPageMetadata } from "@/lib/seo";
+import { DataDisclaimer } from "@/components/DataDisclaimer";
 
 export const dynamic = "force-static";
 export const metadata: Metadata = buildPageMetadata(pageSeo.compost);
@@ -104,6 +105,7 @@ export default function CompostMachineGuidePage() {
           ))}
         </div>
       </Section>
+      <DataDisclaimer dataType="compost strategies" />
     </main>
   );
 }
