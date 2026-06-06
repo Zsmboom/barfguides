@@ -22,13 +22,13 @@ export function buildPageMetadata({ title, description, keywords, path }: PageSe
       url: canonical,
       siteName: site.name,
       type: "website",
-      images: [{ url: "/og-default.svg", width: 1200, height: 630, alt: title }],
+      images: [{ url: "/images/og-default.jpg", width: 1200, height: 630, alt: title }],
     },
     twitter: {
       card: "summary_large_image",
       title,
       description,
-      images: ["/og-default.svg"],
+      images: ["/images/og-default.jpg"],
     },
     robots: {
       index: true,
