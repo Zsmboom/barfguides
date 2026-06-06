@@ -3,6 +3,7 @@ import Link from "next/link";
 import { JsonLd } from "@/components/JsonLd";
 import { InfoCard, Section } from "@/components/Section";
 import { pageSeo } from "@/lib/page-seo";
+import { DataDisclaimer } from "@/components/DataDisclaimer";
 import { breadcrumbSchema, faqSchema, buildPageMetadata } from "@/lib/seo";
 
 export const dynamic = "force-static";
@@ -196,6 +197,7 @@ export default function FaqPage() {
           </InfoCard>
         </div>
       </Section>
+      <DataDisclaimer dataType="FAQ answers" />
     </>
   );
 }
