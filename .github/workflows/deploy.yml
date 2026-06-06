@@ -11,7 +11,6 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: read
-      deployments: write
     steps:
       - uses: actions/checkout@v4
 
@@ -27,8 +26,7 @@ jobs:
           NEXT_PUBLIC_SITE_URL: https://barfguides.pages.dev
 
       - name: Deploy to Cloudflare Pages
-        uses: cloudflare/wrangler-action@v3
-        with:
-          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          accountId: 247eec2779f66eda54cc3fa6cf692fb8
-          command: pages deploy out --project-name=barfguides --branch=main
+        run: npx wrangler pages deploy out --project-name=barfguides --branch=main
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: 247eec2779f66eda54cc3fa6cf692fb8
