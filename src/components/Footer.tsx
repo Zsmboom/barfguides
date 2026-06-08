@@ -3,7 +3,7 @@ import { pages } from "@/lib/data";
 
 export function Footer() {
   const major = pages.filter((page) =>
-    ["/profit-calculator", "/codes", "/tier-list", "/seeds-database", "/about", "/privacy-policy"].includes(page.path),
+    ["/profit-calculator", "/codes", "/tier-list", "/seeds-database", "/about", "/faq", "/events-guide", "/contact", "/privacy-policy"].includes(page.path),
   );
 
   return (
@@ -52,6 +52,9 @@ export function Footer() {
             </Link>
           ))}
         </div>
+      </div>
+      <div className="border-t border-white/5 px-4 py-3 text-center text-xs text-slate-600">
+        www.buildaringfarmguides.com — Independent fan tools. Not affiliated with Roblox Corp or Gamecreates.
       </div>
     </footer>
   );

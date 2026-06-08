@@ -123,4 +123,5 @@ export const pages = [
   { path: "/privacy-policy", label: "Privacy Policy", priority: 0.2 },
   { path: "/events-guide", label: "Events Guide", priority: 0.78 },
   { path: "/faq", label: "FAQ", priority: 0.7 },
+  { path: "/contact", label: "Contact", priority: 0.3 },
 ];

@@ -24,7 +24,7 @@ export default function AboutPage() {
       <main className="mx-auto max-w-7xl px-4 py-10">
         <Section eyebrow="ABOUT" level={1} title="About BARF Guides">
         <div className="max-w-3xl space-y-6 text-slate-300">
-          <p>BARF Guides is an independent fan-made resource for Build A Ring Farm on Roblox. We provide tools, calculators, and strategy guides to help players maximize their farm efficiency.</p>
+          <p>BARF Guides is an independent fan-made resource for Build A Ring Farm on Roblox, hosted at <strong>www.buildaringfarmguides.com</strong>. We provide tools, calculators, and strategy guides to help players maximize their farm efficiency.</p>
           <p>Our profit calculator is the only tool on the web that calculates profit per minute and ROI for Build A Ring Farm seed setups.</p>
           <p><strong>Not affiliated with Roblox Corporation or Gamecreates.</strong> This is a fan project created by the community, for the community.</p>
           <p>Game: <a href="https://www.roblox.com/games/107646426076756/Build-A-Ring-Farm" className="text-emerald-400 hover:underline">Build A Ring Farm on Roblox</a></p>

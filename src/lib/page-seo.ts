@@ -132,4 +132,10 @@ export const pageSeo = {
       "build a ring farm help",
     ],
   },
+  contact: {
+    path: "/contact",
+    title: "Contact Us - BARF Guides",
+    description: "Get in touch with BARF Guides. Report issues, suggest features, or ask questions about Build A Ring Farm tools and guides.",
+    keywords: ["barf guides contact", "build a ring farm contact", "barf guides support"],
+  },
 } satisfies Record<string, PageSeo>;
