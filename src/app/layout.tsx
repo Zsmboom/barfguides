@@ -4,7 +4,7 @@ import { Header } from "@/components/Header";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://barfguides.pages.dev"),
+  metadataBase: new URL("https://buildaringfarmguides.com"),
   icons: {
     icon: [{ url: "/favicon.svg", type: "image/svg+xml" }],
   },

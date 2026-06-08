@@ -61,7 +61,7 @@ export const site = {
   name: "BARF Guides",
   gameName: "Build A Ring Farm",
   abbreviation: "BARF",
-  baseUrl: "https://barfguides.pages.dev",
+  baseUrl: "https://buildaringfarmguides.com",
   robloxGameId: "107646426076756",
   developer: "Gamecreates",
   genre: "Simulator / Farming",

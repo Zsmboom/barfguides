@@ -23,7 +23,7 @@ jobs:
 
       - run: npm run build
         env:
-          NEXT_PUBLIC_SITE_URL: https://barfguides.pages.dev
+          NEXT_PUBLIC_SITE_URL: https://buildaringfarmguides.com
 
       - name: Deploy to Cloudflare Pages
         run: npx wrangler pages deploy out --project-name=barfguides --branch=main
