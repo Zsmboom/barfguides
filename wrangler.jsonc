@@ -3,5 +3,9 @@
   "name": "barfguides",
   "compatibility_date": "2025-09-24",
   "compatibility_flags": ["nodejs_compat"],
-  "main": "@tanstack/react-start/server-entry"
+  "main": "@tanstack/react-start/server-entry",
+  "routes": [
+    { "pattern": "buildaringfarmguides.com", "zone_name": "buildaringfarmguides.com" },
+    { "pattern": "www.buildaringfarmguides.com", "zone_name": "buildaringfarmguides.com" }
+  ]
 }
