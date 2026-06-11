@@ -64,7 +64,7 @@ export function HomePage() {
             Build A Ring Farm tools
           </p>
           <h1 className="mt-4 text-4xl font-black tracking-tight text-white md:text-6xl">
-            BARF Guides for smarter farms, faster cash, and better seed choices.
+            Build A Ring Farm Guide — Tools, Calculator, Codes &amp; Tier Lists
           </h1>
           <p className="mt-5 max-w-2xl text-lg leading-8 text-slate-300">
             Plan your Build A Ring Farm route with a profit calculator, working codes, seed rankings, pet advice,

@@ -3,7 +3,7 @@ import type { PageSeo } from "@/lib/seo";
 export const pageSeo = {
   home: {
     path: "/",
-    title: "BARF Guides - Build A Ring Farm Tools, Calculators & Guides",
+    title: "Build A Ring Farm Guide — Tools, Calculator, Codes & Tier Lists",
     description:
       "Complete Build A Ring Farm resource hub. Profit calculator, working codes, seed tier list, pets ranking, Update 4 patch notes, and expert guides.",
     keywords: ["build a ring farm", "barf", "build a ring farm guide", "build a ring farm calculator"],

@@ -134,7 +134,7 @@ export function jsonLd(data: object | object[]) {
 
 export function sitemapEntries() {
   return pages.map((page) => ({
-    url: `${site.baseUrl}${page.path === "/" ? "/" : `${page.path}/`}`,
+    url: `${site.baseUrl}${page.path}`,
     lastModified: new Date("2026-06-06"),
     changeFrequency: page.path.includes("codes") ? "daily" : "weekly",
     priority: page.priority,
