@@ -1,14 +1,11 @@
-import type { Metadata } from "next";
 import { JsonLd } from "@/components/JsonLd";
 import { MutationTable } from "@/components/Tables";
 import { InfoCard, Section } from "@/components/Section";
 import { DataDisclaimer } from "@/components/DataDisclaimer";
 import { mutations } from "@/lib/data";
 import { pageSeo } from "@/lib/page-seo";
-import { breadcrumbSchema, faqSchema, buildPageMetadata, jsonLd } from "@/lib/seo";
+import { breadcrumbSchema, faqSchema, jsonLd } from "@/lib/seo";
 
-export const dynamic = "force-static";
-export const metadata: Metadata = buildPageMetadata(pageSeo.mutations);
 
 const faq = [
   { question: "What is the best mutation in Build A Ring Farm?", answer: "Starfall (8x) is the highest multiplier, followed by Admin (7x) and Honeycomb (6.5x). For early game, Wet (1.5x) and Autumn (2x) are most accessible." },
@@ -16,7 +13,7 @@ const faq = [
   { question: "Which mutation should I use with expensive seeds?", answer: "High-value seeds like Dragonfruit, Void Orchid, and Divine Golden Apple benefit most from Starfall (8x), Admin (7x), or Honeycomb (6.5x) mutations." },
 ];
 
-export default function MutationsTierListPage() {
+export function MutationsTierListPage() {
   return (
     <main className="mx-auto max-w-7xl px-4 py-10">
       <JsonLd data={[breadcrumbSchema("/mutations-tier-list", "Mutations Tier List"), faqSchema(faq)]} />
@@ -42,3 +39,5 @@ export default function MutationsTierListPage() {
     </main>
   );
 }
+
+export default MutationsTierListPage;

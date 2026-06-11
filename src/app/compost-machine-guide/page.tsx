@@ -1,13 +1,10 @@
-import type { Metadata } from "next";
-import Link from "next/link";
 import { JsonLd } from "@/components/JsonLd";
+import { Link } from "@tanstack/react-router";
 import { InfoCard, Section } from "@/components/Section";
 import { pageSeo } from "@/lib/page-seo";
-import { breadcrumbSchema, faqSchema, buildPageMetadata } from "@/lib/seo";
+import { breadcrumbSchema, faqSchema } from "@/lib/seo";
 import { DataDisclaimer } from "@/components/DataDisclaimer";
 
-export const dynamic = "force-static";
-export const metadata: Metadata = buildPageMetadata(pageSeo.compost);
 
 const faq = [
   {
@@ -42,7 +39,7 @@ const compostSteps = [
   { title: "Step 5: Upgrade the Machine", body: "Invest compost rewards into machine upgrades to increase capacity, reduce cycle time, and unlock higher-tier compost recipes. Fully upgraded machines can process multiple stacks simultaneously." },
 ];
 
-export default function CompostMachineGuidePage() {
+export function CompostMachineGuidePage() {
   return (
     <main className="mx-auto max-w-7xl px-4 py-10">
       <JsonLd data={[breadcrumbSchema(pageSeo.compost.path, "Compost Machine Guide"), faqSchema(faq)]} />
@@ -91,9 +88,9 @@ export default function CompostMachineGuidePage() {
       <Section eyebrow="Integration" title="Compost Machine + Profit Calculator">
         <div className="rounded-lg border border-amber-400/20 bg-amber-950/15 p-6">
           <p className="leading-7 text-slate-300">
-            Use the <Link href="/profit-calculator" className="font-bold text-emerald-300">profit calculator</Link> to check whether a seed is better harvested or composted.
+            Use the <Link to="/profit-calculator" className="font-bold text-emerald-300">profit calculator</Link> to check whether a seed is better harvested or composted.
             As a rule of thumb: if the seed sells for under $50 with no ring multiplier, compost it.
-            Everything else should be harvested. See the <Link href="/money-guide" className="font-bold text-emerald-300">money guide</Link> for full income strategies.
+            Everything else should be harvested. See the <Link to="/money-guide" className="font-bold text-emerald-300">money guide</Link> for full income strategies.
           </p>
         </div>
       </Section>
@@ -109,3 +106,5 @@ export default function CompostMachineGuidePage() {
     </main>
   );
 }
+
+export default CompostMachineGuidePage;

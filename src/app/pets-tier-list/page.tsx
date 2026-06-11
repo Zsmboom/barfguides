@@ -1,16 +1,13 @@
-import type { Metadata } from "next";
 import { JsonLd } from "@/components/JsonLd";
 import { PetTable } from "@/components/Tables";
 import { InfoCard, Section } from "@/components/Section";
 import { DataDisclaimer } from "@/components/DataDisclaimer";
 import { byTier, pets } from "@/lib/data";
 import { pageSeo } from "@/lib/page-seo";
-import { breadcrumbSchema, buildPageMetadata } from "@/lib/seo";
+import { breadcrumbSchema } from "@/lib/seo";
 
-export const dynamic = "force-static";
-export const metadata: Metadata = buildPageMetadata(pageSeo.pets);
 
-export default function PetsTierListPage() {
+export function PetsTierListPage() {
   const grouped = byTier(pets);
   const tiers = ["S", "A", "B", "C", "D"] as const;
 
@@ -51,3 +48,5 @@ export default function PetsTierListPage() {
     </main>
   );
 }
+
+export default PetsTierListPage;

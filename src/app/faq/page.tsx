@@ -1,13 +1,10 @@
-import type { Metadata } from "next";
-import Link from "next/link";
 import { JsonLd } from "@/components/JsonLd";
+import { Link } from "@tanstack/react-router";
 import { InfoCard, Section } from "@/components/Section";
 import { pageSeo } from "@/lib/page-seo";
 import { DataDisclaimer } from "@/components/DataDisclaimer";
-import { breadcrumbSchema, faqSchema, buildPageMetadata } from "@/lib/seo";
+import { breadcrumbSchema, faqSchema } from "@/lib/seo";
 
-export const dynamic = "force-static";
-export const metadata: Metadata = buildPageMetadata(pageSeo.faq);
 
 const categories = [
   {
@@ -145,7 +142,7 @@ const categories = [
 
 const allFaq = categories.flatMap((c) => c.items);
 
-export default function FaqPage() {
+export function FaqPage() {
   return (
     <>
       <JsonLd
@@ -181,19 +178,19 @@ export default function FaqPage() {
         <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
           <InfoCard title="Profit Calculator">
             Estimate profit per minute and ROI for any seed setup.
-            <Link href="/profit-calculator" className="mt-3 block font-bold text-emerald-300">Open calculator</Link>
+            <Link to="/profit-calculator" className="mt-3 block font-bold text-emerald-300">Open calculator</Link>
           </InfoCard>
           <InfoCard title="Active Codes">
             Copy the 8 active June 2026 codes and claim your free rewards.
-            <Link href="/codes" className="mt-3 block font-bold text-emerald-300">View codes</Link>
+            <Link to="/codes" className="mt-3 block font-bold text-emerald-300">View codes</Link>
           </InfoCard>
           <InfoCard title="Tier List">
             See the full S to D seed ranking plus pets and mutations.
-            <Link href="/tier-list" className="mt-3 block font-bold text-emerald-300">Open rankings</Link>
+            <Link to="/tier-list" className="mt-3 block font-bold text-emerald-300">Open rankings</Link>
           </InfoCard>
           <InfoCard title="Events Guide">
             Plan alien invasions, Plant Rush bosses, and Starfall windows.
-            <Link href="/events-guide" className="mt-3 block font-bold text-emerald-300">Read events guide</Link>
+            <Link to="/events-guide" className="mt-3 block font-bold text-emerald-300">Read events guide</Link>
           </InfoCard>
         </div>
       </Section>
@@ -201,3 +198,5 @@ export default function FaqPage() {
     </>
   );
 }
+
+export default FaqPage;

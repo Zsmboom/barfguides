@@ -1,13 +1,10 @@
-import type { Metadata } from "next";
 import { JsonLd } from "@/components/JsonLd";
 import { InfoCard, Section } from "@/components/Section";
 import { mutations, pets, seeds } from "@/lib/data";
 import { pageSeo } from "@/lib/page-seo";
-import { breadcrumbSchema, faqSchema, buildPageMetadata } from "@/lib/seo";
+import { breadcrumbSchema, faqSchema } from "@/lib/seo";
 import { DataDisclaimer } from "@/components/DataDisclaimer";
 
-export const dynamic = "force-static";
-export const metadata: Metadata = buildPageMetadata(pageSeo.events);
 
 const faq = [
   {
@@ -34,7 +31,7 @@ const faq = [
 
 const eventMuts = mutations.filter((m) => m.multiplier >= 3);
 
-export default function EventsGuidePage() {
+export function EventsGuidePage() {
   return (
     <>
       <JsonLd
@@ -188,3 +185,5 @@ export default function EventsGuidePage() {
     </>
   );
 }
+
+export default EventsGuidePage;

@@ -1,4 +1,3 @@
-import type { Metadata } from "next";
 import { pages, site } from "@/lib/data";
 
 export interface PageSeo {
@@ -8,14 +7,45 @@ export interface PageSeo {
   path: string;
 }
 
-export function buildPageMetadata({ title, description, keywords, path }: PageSeo): Metadata {
+export interface PageMetaTags {
+  title: string;
+  description: string;
+  keywords: string[];
+  canonical: string;
+  openGraph: {
+    title: string;
+    description: string;
+    url: string;
+    siteName: string;
+    type: "website";
+    images: { url: string; width: number; height: number; alt: string }[];
+  };
+  twitter: {
+    card: "summary_large_image";
+    title: string;
+    description: string;
+    images: string[];
+  };
+  robots: {
+    index: boolean;
+    follow: boolean;
+    googleBot: {
+      index: boolean;
+      follow: boolean;
+      "max-image-preview": "large";
+      "max-snippet": number;
+    };
+  };
+}
+
+export function buildPageMetadata({ title, description, keywords, path }: PageSeo): PageMetaTags {
   const canonical = `${site.baseUrl}${path === "/" ? "/" : `${path}/`}`;
 
   return {
     title,
     description,
     keywords,
-    alternates: { canonical },
+    canonical,
     openGraph: {
       title,
       description,

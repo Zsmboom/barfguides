@@ -1,4 +1,4 @@
-import Link from "next/link";
+import { Link } from "@tanstack/react-router";
 import { pages } from "@/lib/data";
 
 export function Footer() {
@@ -47,7 +47,7 @@ export function Footer() {
         </div>
         <div className="grid grid-cols-2 gap-2 text-sm">
           {major.map((page) => (
-            <Link key={page.path} href={page.path} className="text-slate-300 hover:text-emerald-200">
+            <Link key={page.path} to={page.path} className="text-slate-300 hover:text-emerald-200">
               {page.label}
             </Link>
           ))}

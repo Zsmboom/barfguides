@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://buildaringfarmguides.com/sitemap.xml

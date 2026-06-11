@@ -1,15 +1,11 @@
-import Link from "next/link";
-import type { Metadata } from "next";
+import { Link } from "@tanstack/react-router";
 import { JsonLd } from "@/components/JsonLd";
 import { InfoCard, Section } from "@/components/Section";
 import { MutationTable, PetTable, SeedsTable } from "@/components/Tables";
 import { DataDisclaimer } from "@/components/DataDisclaimer";
 import { byTier, mutations, pets, seeds } from "@/lib/data";
 import { pageSeo } from "@/lib/page-seo";
-import { breadcrumbSchema, faqSchema, buildPageMetadata } from "@/lib/seo";
-
-export const dynamic = "force-static";
-export const metadata: Metadata = buildPageMetadata(pageSeo.tierList);
+import { breadcrumbSchema, faqSchema } from "@/lib/seo";
 
 const faq = [
   {
@@ -22,7 +18,7 @@ const faq = [
   },
 ];
 
-export default function TierListPage() {
+export function TierListPage() {
   const tiers = byTier(seeds);
   const mutationRankings = [...mutations].sort((a, b) => b.multiplier - a.multiplier);
 
@@ -61,14 +57,14 @@ export default function TierListPage() {
       <Section title="Pets Tier List">
         <PetTable pets={pets} />
         <p className="mt-4 text-sm text-slate-400">
-          Want a deeper pet breakdown? Read the <Link href="/pets-tier-list" className="font-bold text-emerald-300">pets tier list</Link>.
+          Want a deeper pet breakdown? Read the <Link to="/pets-tier-list" className="font-bold text-emerald-300">pets tier list</Link>.
         </p>
       </Section>
 
       <Section title="Mutations Tier List">
         <MutationTable mutations={mutationRankings} />
         <p className="mt-4 text-sm text-slate-400">
-          For triggers and Update 4 mutation notes, open the <Link href="/mutations-tier-list" className="font-bold text-emerald-300">mutations tier list</Link>.
+          For triggers and Update 4 mutation notes, open the <Link to="/mutations-tier-list" className="font-bold text-emerald-300">mutations tier list</Link>.
         </p>
       </Section>
 
@@ -83,3 +79,5 @@ export default function TierListPage() {
     </>
   );
 }
+
+export default TierListPage;

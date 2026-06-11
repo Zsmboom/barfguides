@@ -1,13 +1,10 @@
-import type { Metadata } from "next";
-import Link from "next/link";
 import { JsonLd } from "@/components/JsonLd";
+import { Link } from "@tanstack/react-router";
 import { InfoCard, Section } from "@/components/Section";
 import { pageSeo } from "@/lib/page-seo";
-import { breadcrumbSchema, faqSchema, buildPageMetadata } from "@/lib/seo";
+import { breadcrumbSchema, faqSchema } from "@/lib/seo";
 import { DataDisclaimer } from "@/components/DataDisclaimer";
 
-export const dynamic = "force-static";
-export const metadata: Metadata = buildPageMetadata(pageSeo.contracts);
 
 const faq = [
   { question: "What are Plant Contracts in Build A Ring Farm?", answer: "Plant Contracts are daily and weekly quests introduced in Update 4. Each contract requires you to plant specific seeds, reach harvest milestones, or achieve mutation-related goals in exchange for rewards including seed packs, mutation sprays, exclusive items, and pet-related rewards." },
@@ -31,7 +28,7 @@ const strategySteps = [
   { title: "5. Track Expiry Timers", body: "Accept contracts as soon as they refresh. The 24-hour daily cycle means missing one day costs you 1/7th of your weekly contract income." },
 ];
 
-export default function ContractsGuidePage() {
+export function ContractsGuidePage() {
   return (
     <main className="mx-auto max-w-7xl px-4 py-10">
       <JsonLd data={[breadcrumbSchema(pageSeo.contracts.path, "Plant Contracts Guide"), faqSchema(faq)]} />
@@ -93,8 +90,8 @@ export default function ContractsGuidePage() {
       <Section eyebrow="Integration" title="Contracts + Compost Machine + Profit Calculator">
         <div className="rounded-lg border border-amber-400/20 bg-amber-950/15 p-6">
           <p className="leading-7 text-slate-300">
-            The three Update 4 systems work together. Run the <Link href="/compost-machine-guide" className="font-bold text-emerald-300">Compost Machine</Link> to generate event tickets and seed packs.
-            Use those resources to complete Plant Contracts faster. Use the <Link href="/profit-calculator" className="font-bold text-emerald-300">profit calculator</Link> to check
+            The three Update 4 systems work together. Run the <Link to="/compost-machine-guide" className="font-bold text-emerald-300">Compost Machine</Link> to generate event tickets and seed packs.
+            Use those resources to complete Plant Contracts faster. Use the <Link to="/profit-calculator" className="font-bold text-emerald-300">profit calculator</Link> to check
             whether completing a contract is worth more than your standard harvest routine.
           </p>
         </div>
@@ -111,3 +108,5 @@ export default function ContractsGuidePage() {
     </main>
   );
 }
+
+export default ContractsGuidePage;

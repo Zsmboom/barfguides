@@ -1,14 +1,11 @@
-import type { Metadata } from "next";
 import { DataDisclaimer } from "@/components/DataDisclaimer";
 import { JsonLd } from "@/components/JsonLd";
 import { InfoCard, Section } from "@/components/Section";
 import { MiniSeedCard } from "@/components/Tables";
 import { pageSeo } from "@/lib/page-seo";
-import { breadcrumbSchema, faqSchema, buildPageMetadata, jsonLd } from "@/lib/seo";
+import { breadcrumbSchema, faqSchema, jsonLd } from "@/lib/seo";
 import { seeds } from "@/lib/data";
 
-export const dynamic = "force-static";
-export const metadata: Metadata = buildPageMetadata(pageSeo.transcendent);
 
 const faq = [
   { question: "How do I get Transcendent seeds in Build A Ring Farm?", answer: "Transcendent seeds are obtained through high-level seed rolling. You need high seed luck stat, good pets (especially Harvest Drone), and Outer Ring unlocked. Keep rolling seeds at higher levels to increase your chances." },
@@ -16,7 +13,7 @@ const faq = [
   { question: "What is the best Transcendent seed?", answer: "Divine Golden Apple ($1.2M) offers the highest profit among Transcendent seeds at $22.8M/hour with Outer Ring, making it ideal for leaderboard pushing." },
 ];
 
-export default function TranscendentSeedsGuidePage() {
+export function TranscendentSeedsGuidePage() {
   const transcendent = seeds.filter(s => s.rarity === "Transcended" || s.rarity === "Divine" || s.rarity === "Exotic" || s.rarity === "Secret+");
   
   return (
@@ -65,3 +62,5 @@ export default function TranscendentSeedsGuidePage() {
     </main>
   );
 }
+
+export default TranscendentSeedsGuidePage;

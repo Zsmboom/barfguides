@@ -1,13 +1,9 @@
-import type { Metadata } from "next";
 import { JsonLd } from "@/components/JsonLd";
 import { Section } from "@/components/Section";
 import { pageSeo } from "@/lib/page-seo";
-import { breadcrumbSchema, buildPageMetadata } from "@/lib/seo";
+import { breadcrumbSchema } from "@/lib/seo";
 
-export const dynamic = "force-static";
-export const metadata: Metadata = buildPageMetadata(pageSeo.contact);
-
-export default function ContactPage() {
+export function ContactPage() {
   return (
     <>
       <JsonLd data={[breadcrumbSchema("/contact", "Contact")]} />
@@ -62,3 +58,5 @@ export default function ContactPage() {
     </>
   );
 }
+
+export default ContactPage;

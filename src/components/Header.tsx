@@ -1,4 +1,4 @@
-import Link from "next/link";
+import { Link } from "@tanstack/react-router";
 
 const nav = [
   { href: "/profit-calculator", label: "Calculator" },
@@ -12,7 +12,7 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 border-b border-white/10 bg-slate-950/88 backdrop-blur">
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-3">
-        <Link href="/" className="flex items-center gap-2 text-base font-black tracking-tight text-white">
+        <Link to="/" className="flex items-center gap-2 text-base font-black tracking-tight text-white">
           <img src="/images/game-icon.png" alt="" className="size-8 rounded-md" />
           <span>BARF Guides</span>
         </Link>
@@ -20,7 +20,7 @@ export function Header() {
           {nav.map((item) => (
             <Link
               key={item.href}
-              href={item.href}
+              to={item.href}
               className="whitespace-nowrap rounded-md px-3 py-2 font-semibold text-slate-300 transition hover:bg-white/8 hover:text-white"
             >
               {item.label}

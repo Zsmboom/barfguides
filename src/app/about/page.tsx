@@ -1,13 +1,9 @@
-import type { Metadata } from "next";
 import { JsonLd } from "@/components/JsonLd";
 import { Section } from "@/components/Section";
 import { pageSeo } from "@/lib/page-seo";
-import { breadcrumbSchema, videoGameSchema, buildPageMetadata, jsonLd } from "@/lib/seo";
+import { breadcrumbSchema, videoGameSchema } from "@/lib/seo";
 
-export const dynamic = "force-static";
-export const metadata: Metadata = buildPageMetadata(pageSeo.about);
-
-export default function AboutPage() {
+export function AboutPage() {
   return (
     <>
       <JsonLd data={[breadcrumbSchema("/about", "About"), videoGameSchema()]} />
@@ -35,3 +31,5 @@ export default function AboutPage() {
     </>
   );
 }
+
+export default AboutPage;

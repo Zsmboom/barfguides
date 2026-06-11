@@ -1,16 +1,13 @@
-import type { Metadata } from "next";
 import { DataDisclaimer } from "@/components/DataDisclaimer";
 import { JsonLd } from "@/components/JsonLd";
 import { Section } from "@/components/Section";
 import { SeedsTable } from "@/components/Tables";
 import { pageSeo } from "@/lib/page-seo";
-import { breadcrumbSchema, buildPageMetadata } from "@/lib/seo";
+import { breadcrumbSchema } from "@/lib/seo";
 import { sortedSeedsByProfit } from "@/lib/data";
 
-export const dynamic = "force-static";
-export const metadata: Metadata = buildPageMetadata(pageSeo.seeds);
 
-export default function SeedsDatabasePage() {
+export function SeedsDatabasePage() {
   return (
     <main className="mx-auto max-w-7xl px-4 py-10">
       <JsonLd data={[breadcrumbSchema("/seeds-database", "Seeds Database")]} />
@@ -24,3 +21,5 @@ export default function SeedsDatabasePage() {
     </main>
   );
 }
+
+export default SeedsDatabasePage;

@@ -1,12 +1,9 @@
-import type { Metadata } from "next";
 import { JsonLd } from "@/components/JsonLd";
 import { InfoCard, Section } from "@/components/Section";
 import { activeCodes, mutations, pets, seeds } from "@/lib/data";
 import { pageSeo } from "@/lib/page-seo";
-import { breadcrumbSchema, faqSchema, buildPageMetadata } from "@/lib/seo";
+import { breadcrumbSchema, faqSchema } from "@/lib/seo";
 
-export const dynamic = "force-static";
-export const metadata: Metadata = buildPageMetadata(pageSeo.update4);
 
 const faq = [
   {
@@ -20,7 +17,7 @@ const faq = [
   },
 ];
 
-export default function Update4Page() {
+export function Update4PatchNotesPage() {
   const updateMutations = mutations.filter((mutation) => mutation.isUpdate4);
   const highSeeds = seeds.slice(11);
   const updateCodes = activeCodes.filter((code) => ["PLANTRUSH", "250KUSERS"].includes(code.code));
@@ -101,3 +98,6 @@ export default function Update4Page() {
     </>
   );
 }
+
+
+export default Update4PatchNotesPage;

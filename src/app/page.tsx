@@ -1,14 +1,9 @@
-import Link from "next/link";
-import type { Metadata } from "next";
-import type { Code, Ring, Mutation, Pet } from "@/lib/data";
+import { Link } from "@tanstack/react-router";
 import { CopyButton } from "@/components/CopyButton";
 import { InfoCard, Section, StatCard } from "@/components/Section";
 import { JsonLd } from "@/components/JsonLd";
-import { activeCodes, mutations, pets, seeds, rings, site } from "@/lib/data";
-import { pageSeo } from "@/lib/page-seo";
-import { breadcrumbSchema, faqSchema, buildPageMetadata, videoGameSchema } from "@/lib/seo";
-export const dynamic = "force-static";
-export const metadata: Metadata = buildPageMetadata(pageSeo.home);
+import { activeCodes, mutations, pets, seeds, site } from "@/lib/data";
+import { breadcrumbSchema, faqSchema, videoGameSchema } from "@/lib/seo";
 
 const faq = [
   {
@@ -46,7 +41,7 @@ const rarityCounts = RARITY_ORDER.map((r) => ({
   count: seeds.filter((s) => s.rarity === r).length,
 }));
 
-export default function HomePage() {
+export function HomePage() {
   const latestCodes = activeCodes.slice(0, 3);
   const topEndgame = seeds.filter((s) => s.tier === "S").slice(0, 5);
 
@@ -74,13 +69,13 @@ export default function HomePage() {
           </p>
           <div className="mt-7 flex flex-wrap gap-3">
             <Link
-              href="/profit-calculator"
+              to="/profit-calculator"
               className="rounded-md bg-emerald-500 px-5 py-3 font-black text-slate-950 hover:bg-emerald-400"
             >
               Open Profit Calculator
             </Link>
             <Link
-              href="/codes"
+              to="/codes"
               className="rounded-md border border-white/15 px-5 py-3 font-black text-white hover:bg-white/8"
             >
               Claim Codes
@@ -174,19 +169,19 @@ export default function HomePage() {
         <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
           <InfoCard title="1. Redeem codes">
             Start with free rewards from active codes. Every new player should redeem PLANTRUSH, 250KUSERS, and 100KVISITS first.
-            <Link href="/codes" className="mt-3 block font-bold text-emerald-300">View all codes</Link>
+            <Link to="/codes" className="mt-3 block font-bold text-emerald-300">View all codes</Link>
           </InfoCard>
           <InfoCard title="2. Plant efficient seeds">
             Carrot, Beetroot, and Pumpkin are your fastest early earners. Reinvest profits into more plots before chasing expensive seeds.
-            <Link href="/beginner-guide" className="mt-3 block font-bold text-emerald-300">Read beginner guide</Link>
+            <Link to="/beginner-guide" className="mt-3 block font-bold text-emerald-300">Read beginner guide</Link>
           </InfoCard>
           <InfoCard title="3. Use the calculator">
             Compare seeds by profit per minute and ROI. Factor in ring multiplier, mutation bonus, saw level, and pet bonus.
-            <Link href="/profit-calculator" className="mt-3 block font-bold text-emerald-300">Open calculator</Link>
+            <Link to="/profit-calculator" className="mt-3 block font-bold text-emerald-300">Open calculator</Link>
           </InfoCard>
           <InfoCard title="4. Explore tier lists">
             See which seeds, pets, and mutations perform best at each stage of the game. Rankings are updated for Update 4.
-            <Link href="/tier-list" className="mt-3 block font-bold text-emerald-300">View rankings</Link>
+            <Link to="/tier-list" className="mt-3 block font-bold text-emerald-300">View rankings</Link>
           </InfoCard>
         </div>
       </Section>
@@ -208,19 +203,19 @@ export default function HomePage() {
         <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
           <InfoCard title="Profit Calculator">
             Compare seed setups by profit per minute, total harvest value, and ROI.
-            <Link href="/profit-calculator" className="mt-3 block font-bold text-emerald-300">Calculate earnings</Link>
+            <Link to="/profit-calculator" className="mt-3 block font-bold text-emerald-300">Calculate earnings</Link>
           </InfoCard>
           <InfoCard title="Codes">
             Copy all {activeCodes.length} active June 2026 codes and see which rewards matter first.
-            <Link href="/codes" className="mt-3 block font-bold text-emerald-300">View codes</Link>
+            <Link to="/codes" className="mt-3 block font-bold text-emerald-300">View codes</Link>
           </InfoCard>
           <InfoCard title="Tier List">
             See all seeds from S to D, plus pets and mutations in one hub.
-            <Link href="/tier-list" className="mt-3 block font-bold text-emerald-300">Open rankings</Link>
+            <Link to="/tier-list" className="mt-3 block font-bold text-emerald-300">Open rankings</Link>
           </InfoCard>
           <InfoCard title="Events Guide">
             Plan alien invasions, Plant Rush boss waves, and Starfall event timing for the highest harvest spikes.
-            <Link href="/events-guide" className="mt-3 block font-bold text-emerald-300">Read events guide</Link>
+            <Link to="/events-guide" className="mt-3 block font-bold text-emerald-300">Read events guide</Link>
           </InfoCard>
         </div>
       </Section>
@@ -230,15 +225,15 @@ export default function HomePage() {
         <div className="grid gap-4 md:grid-cols-3">
           <InfoCard title="Money-Making Guide">
             Optimized routes from broke to millions. Covers seed rotation, ring upgrades, and Compost Machine strategy for Update 4.
-            <Link href="/money-guide" className="mt-3 block font-bold text-emerald-300">Read money guide</Link>
+            <Link to="/money-guide" className="mt-3 block font-bold text-emerald-300">Read money guide</Link>
           </InfoCard>
           <InfoCard title="Transcendent Seeds">
             How to unlock and profit from Transcended, Divine, and Exotic seeds. Luck mechanics and farming strategies explained.
-            <Link href="/transcendent-seeds-guide" className="mt-3 block font-bold text-emerald-300">Learn more</Link>
+            <Link to="/transcendent-seeds-guide" className="mt-3 block font-bold text-emerald-300">Learn more</Link>
           </InfoCard>
           <InfoCard title="Compost Machine">
             Full breakdown of how the Update 4 Compost Machine works, what to compost, and what rewards to expect.
-            <Link href="/compost-machine-guide" className="mt-3 block font-bold text-emerald-300">Compost guide</Link>
+            <Link to="/compost-machine-guide" className="mt-3 block font-bold text-emerald-300">Compost guide</Link>
           </InfoCard>
         </div>
       </Section>
@@ -270,7 +265,7 @@ export default function HomePage() {
           </table>
         </div>
         <p className="mt-4 text-sm text-slate-400">
-          Full ranking of all 35 seeds on the <Link href="/seeds-database" className="font-bold text-emerald-300">seeds database</Link>.
+          Full ranking of all 35 seeds on the <Link to="/seeds-database" className="font-bold text-emerald-300">seeds database</Link>.
         </p>
       </Section>
 
@@ -287,10 +282,10 @@ export default function HomePage() {
                 for new codes and bookmark the events guide for the latest event strategies.
               </p>
               <div className="mt-3 flex flex-wrap gap-3">
-                <Link href="/codes" className="inline-block rounded-md bg-amber-500 px-4 py-2 font-black text-slate-950">
+                <Link to="/codes" className="inline-block rounded-md bg-amber-500 px-4 py-2 font-black text-slate-950">
                   Check codes
                 </Link>
-                <Link href="/events-guide" className="inline-block rounded-md border border-white/15 px-4 py-2 font-black text-white">
+                <Link to="/events-guide" className="inline-block rounded-md border border-white/15 px-4 py-2 font-black text-white">
                   Events guide
                 </Link>
               </div>
@@ -309,13 +304,13 @@ export default function HomePage() {
             Read the full breakdown, then plan your next money route and event timing with the calculator.
           </p>
           <div className="mt-5 flex flex-wrap gap-3">
-            <Link href="/update-4-patch-notes" className="inline-block rounded-md bg-emerald-500 px-4 py-2 font-black text-slate-950">
+            <Link to="/update-4-patch-notes" className="inline-block rounded-md bg-emerald-500 px-4 py-2 font-black text-slate-950">
               Read the full breakdown
             </Link>
-            <Link href="/compost-machine-guide" className="inline-block rounded-md border border-white/15 px-4 py-2 font-black text-white hover:bg-white/8">
+            <Link to="/compost-machine-guide" className="inline-block rounded-md border border-white/15 px-4 py-2 font-black text-white hover:bg-white/8">
               Compost Machine Guide
             </Link>
-            <Link href="/contracts-guide" className="inline-block rounded-md border border-white/15 px-4 py-2 font-black text-white hover:bg-white/8">
+            <Link to="/contracts-guide" className="inline-block rounded-md border border-white/15 px-4 py-2 font-black text-white hover:bg-white/8">
               Plant Contracts Guide
             </Link>
           </div>
@@ -336,7 +331,7 @@ export default function HomePage() {
           </InfoCard>
         </div>
         <p className="mt-4 text-sm text-slate-400">
-          See all questions answered in the <Link href="/faq" className="font-bold text-emerald-300">FAQ hub</Link> or jump straight to the <Link href="/events-guide" className="font-bold text-emerald-300">events guide</Link>.
+          See all questions answered in the <Link to="/faq" className="font-bold text-emerald-300">FAQ hub</Link> or jump straight to the <Link to="/events-guide" className="font-bold text-emerald-300">events guide</Link>.
         </p>
       </Section>
 
@@ -348,9 +343,11 @@ export default function HomePage() {
           ))}
         </div>
         <div className="mt-6 text-sm text-slate-400">
-          Need more answers? Visit the full <Link href="/faq" className="font-bold text-emerald-300">Build A Ring Farm FAQ</Link> page.
+          Need more answers? Visit the full <Link to="/faq" className="font-bold text-emerald-300">Build A Ring Farm FAQ</Link> page.
         </div>
       </Section>
     </>
   );
 }
+
+export default HomePage;

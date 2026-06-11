@@ -1,13 +1,9 @@
-import type { Metadata } from "next";
 import { CopyButton } from "@/components/CopyButton";
 import { JsonLd } from "@/components/JsonLd";
 import { InfoCard, Section } from "@/components/Section";
 import { activeCodes, expiredCodes } from "@/lib/data";
 import { pageSeo } from "@/lib/page-seo";
-import { breadcrumbSchema, faqSchema, buildPageMetadata } from "@/lib/seo";
-
-export const dynamic = "force-static";
-export const metadata: Metadata = buildPageMetadata(pageSeo.codes);
+import { breadcrumbSchema, faqSchema } from "@/lib/seo";
 
 const faq = [
   {
@@ -20,7 +16,7 @@ const faq = [
   },
 ];
 
-export default function CodesPage() {
+export function CodesPage() {
   return (
     <>
       <JsonLd data={[breadcrumbSchema(pageSeo.codes.path, "Codes"), faqSchema(faq)]} />
@@ -70,3 +66,5 @@ export default function CodesPage() {
     </>
   );
 }
+
+export default CodesPage;

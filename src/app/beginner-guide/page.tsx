@@ -1,14 +1,12 @@
-import type { Metadata } from "next";
-import Link from "next/link";
+
+import { Link } from "@tanstack/react-router";
 import { DataDisclaimer } from "@/components/DataDisclaimer";
 import { JsonLd } from "@/components/JsonLd";
 import { InfoCard, Section } from "@/components/Section";
 import { activeCodes, rings, seeds } from "@/lib/data";
 import { pageSeo } from "@/lib/page-seo";
-import { breadcrumbSchema, faqSchema, buildPageMetadata } from "@/lib/seo";
+import { breadcrumbSchema, faqSchema } from "@/lib/seo";
 
-export const dynamic = "force-static";
-export const metadata: Metadata = buildPageMetadata(pageSeo.beginner);
 
 const faq = [
   {
@@ -73,7 +71,7 @@ const pitfalls = [
   "Hoarding instead of expanding - cash sitting in your inventory does nothing, plots and rings are the long-term multiplier.",
 ];
 
-export default function BeginnerGuidePage() {
+export function BeginnerGuidePage() {
   return (
     <>
       <JsonLd
@@ -124,7 +122,7 @@ export default function BeginnerGuidePage() {
         <div className="grid gap-4 md:grid-cols-2">
           <InfoCard title="Step 1: Redeem codes">
             Open the codes panel and paste 250KUSERS, PLANTRUSH, UPDATE2, THANKYOU, BARF:3, 2KLIKES, UPDATE1, and 100KVISITS. The time skips and Tropical Seed Packs immediately help your first hour. {activeCodes.length} active codes are available in June 2026 -{" "}
-            <Link href="/codes" className="font-bold text-emerald-300">see the codes page</Link>.
+            <Link to="/codes" className="font-bold text-emerald-300">see the codes page</Link>.
           </InfoCard>
           <InfoCard title="Step 2: Plant Carrot on every plot">
             Carrot is $3 and recoups in one 10 second harvest. Plant it on every available plot and let the cycle run for at least 5 minutes before doing anything else.
@@ -212,8 +210,8 @@ export default function BeginnerGuidePage() {
         </div>
         <p className="mt-4 text-sm text-slate-400">
           For the full S to D ranking, see the{" "}
-          <Link href="/tier-list" className="font-bold text-emerald-300">tier list</Link> or the{" "}
-          <Link href="/seeds-database" className="font-bold text-emerald-300">seeds database</Link>.
+          <Link to="/tier-list" className="font-bold text-emerald-300">tier list</Link> or the{" "}
+          <Link to="/seeds-database" className="font-bold text-emerald-300">seeds database</Link>.
         </p>
       </Section>
 
@@ -224,7 +222,7 @@ export default function BeginnerGuidePage() {
           </InfoCard>
           <InfoCard title="Pets">
             Pets help with automation, watering, growth, and harvest consistency. Harvest Drone and Rain Cloud are the two S-Tier pets and should be your first pet goals once you have at least Middle Ring unlocked. The full pet ranking is on the{" "}
-            <Link href="/pets-tier-list" className="font-bold text-emerald-300">pets tier list</Link>.
+            <Link to="/pets-tier-list" className="font-bold text-emerald-300">pets tier list</Link>.
           </InfoCard>
         </div>
       </Section>
@@ -242,3 +240,5 @@ export default function BeginnerGuidePage() {
     </>
   );
 }
+
+export default BeginnerGuidePage;

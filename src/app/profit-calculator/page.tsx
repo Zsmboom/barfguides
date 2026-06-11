@@ -1,13 +1,9 @@
-import type { Metadata } from "next";
 import { JsonLd } from "@/components/JsonLd";
 import { ProfitCalculator } from "@/components/ProfitCalculator";
 import { InfoCard, Section } from "@/components/Section";
 import { pageSeo } from "@/lib/page-seo";
-import { breadcrumbSchema, faqSchema, buildPageMetadata } from "@/lib/seo";
+import { breadcrumbSchema, faqSchema } from "@/lib/seo";
 import { DataDisclaimer } from "@/components/DataDisclaimer";
-
-export const dynamic = "force-static";
-export const metadata: Metadata = buildPageMetadata(pageSeo.calculator);
 
 const faq = [
   {
@@ -25,7 +21,7 @@ const faq = [
   },
 ];
 
-export default function ProfitCalculatorPage() {
+export function ProfitCalculatorPage() {
   return (
     <>
       <JsonLd data={[breadcrumbSchema(pageSeo.calculator.path, "Profit Calculator"), faqSchema(faq)]} />
@@ -53,3 +49,5 @@ export default function ProfitCalculatorPage() {
     </>
   );
 }
+
+export default ProfitCalculatorPage;

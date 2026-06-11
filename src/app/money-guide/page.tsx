@@ -1,14 +1,11 @@
-import type { Metadata } from "next";
-import Link from "next/link";
 import { JsonLd } from "@/components/JsonLd";
+import { Link } from "@tanstack/react-router";
 import { InfoCard, Section } from "@/components/Section";
 import { pageSeo } from "@/lib/page-seo";
-import { breadcrumbSchema, faqSchema, buildPageMetadata } from "@/lib/seo";
+import { breadcrumbSchema, faqSchema } from "@/lib/seo";
 import { DataDisclaimer } from "@/components/DataDisclaimer";
 import { activeCodes, rings, seeds } from "@/lib/data";
 
-export const dynamic = "force-static";
-export const metadata: Metadata = buildPageMetadata(pageSeo.money);
 
 const faq = [
   { question: "What is the fastest way to make money in Build A Ring Farm?", answer: "Early game: Redeem all 8 codes (especially PLANTRUSH and 250KUSERS for time skips), then plant Carrot on every plot. Mid game: Unlock Middle Ring (13x) and plant Citrus or Banana. Late game: Outer Ring (19x) with Dragonfruit or Void Orchid, stacking the highest mutation multiplier available during events." },
@@ -67,7 +64,7 @@ const strategies = [
   },
 ];
 
-export default function MoneyGuidePage() {
+export function MoneyGuidePage() {
   return (
     <main className="mx-auto max-w-7xl px-4 py-10">
       <JsonLd data={[breadcrumbSchema("/money-guide", "Money Guide"), faqSchema(faq)]} />
@@ -148,8 +145,8 @@ export default function MoneyGuidePage() {
           </table>
         </div>
         <p className="mt-4 text-sm text-slate-400">
-          Use the <Link href="/profit-calculator" className="font-bold text-emerald-300">profit calculator</Link> to factor in mutations, pets, saw level, and sprinklers for your exact setup.
-          Full seed database at <Link href="/seeds-database" className="font-bold text-emerald-300">seeds database</Link>.
+          Use the <Link to="/profit-calculator" className="font-bold text-emerald-300">profit calculator</Link> to factor in mutations, pets, saw level, and sprinklers for your exact setup.
+          Full seed database at <Link to="/seeds-database" className="font-bold text-emerald-300">seeds database</Link>.
         </p>
       </Section>
 
@@ -159,7 +156,7 @@ export default function MoneyGuidePage() {
             The Compost Machine converts excess seeds into fertilizer, event tickets, and resource packs.
             Compost your cheapest seeds (Carrot, Beetroot, Pumpkin) once you have a steady supply —
             the rewards from the Compost Machine event track can include mutation sprays, seed packs,
-            and exclusive items that directly boost your income. See the full <Link href="/compost-machine-guide" className="font-bold text-emerald-300">Compost Machine guide</Link>.
+            and exclusive items that directly boost your income. See the full <Link to="/compost-machine-guide" className="font-bold text-emerald-300">Compost Machine guide</Link>.
           </p>
         </div>
       </Section>
@@ -194,3 +191,5 @@ export default function MoneyGuidePage() {
     </main>
   );
 }
+
+export default MoneyGuidePage;
