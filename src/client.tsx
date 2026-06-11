@@ -1,6 +1,6 @@
 import { hydrate } from "@tanstack/react-start";
-import { createRouter } from "./router";
+import { getRouter } from "./router";
 
-const router = createRouter();
+const router = getRouter();
 
 hydrate(document.getElementById("root"), { router });
