@@ -127,8 +127,9 @@ export function EventsGuidePage() {
 
       <Section title="Best Seeds For Event Farming">
         <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-          {seeds
+          {[...seeds]
             .filter((s) => s.tier === "S" || s.tier === "A")
+            .sort((a, b) => b.price - a.price)
             .slice(0, 12)
             .map((seed) => (
               <div key={seed.id} className="rounded-lg border border-white/10 bg-white/[0.04] p-4">

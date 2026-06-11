@@ -19,7 +19,7 @@ const faq = [
 
 export function Update4PatchNotesPage() {
   const updateMutations = mutations.filter((mutation) => mutation.isUpdate4);
-  const highSeeds = seeds.slice(11);
+  const highSeeds = [...seeds.slice(11)].sort((a, b) => b.price - a.price);
   const updateCodes = activeCodes.filter((code) => ["PLANTRUSH", "250KUSERS"].includes(code.code));
 
   return (

@@ -14,7 +14,9 @@ const faq = [
 ];
 
 export function TranscendentSeedsGuidePage() {
-  const transcendent = seeds.filter(s => s.rarity === "Transcended" || s.rarity === "Divine" || s.rarity === "Exotic" || s.rarity === "Secret+");
+  const transcendent = [...seeds]
+    .filter(s => s.rarity === "Transcended" || s.rarity === "Divine" || s.rarity === "Exotic" || s.rarity === "Secret+")
+    .sort((a, b) => b.price - a.price);
   
   return (
     <main className="mx-auto max-w-7xl px-4 py-10">

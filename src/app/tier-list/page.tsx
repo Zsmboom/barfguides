@@ -20,6 +20,13 @@ const faq = [
 
 export function TierListPage() {
   const tiers = byTier(seeds);
+  // Sort seeds within each tier by price descending
+  const sortedTiers = Object.fromEntries(
+    Object.entries(tiers).map(([tier, seeds]) => [
+      tier,
+      (seeds as typeof seeds).sort((a, b) => b.price - a.price),
+    ]),
+  ) as Record<"S" | "A" | "B" | "C" | "D", (typeof seeds)[number][]>;
   const mutationRankings = [...mutations].sort((a, b) => b.multiplier - a.multiplier);
 
   return (
@@ -40,7 +47,7 @@ export function TierListPage() {
             <div key={tier} className="rounded-lg border border-white/10 bg-slate-900/70 p-4">
               <h2 className="text-xl font-black text-emerald-300">{tier}-Tier Seeds</h2>
               <div className="mt-3 flex flex-wrap gap-2">
-                {tiers[tier].map((seed) => (
+                {sortedTiers[tier].map((seed) => (
                   <span key={seed.id} className="rounded-md bg-white/[0.06] px-3 py-2 text-sm font-semibold text-slate-200">
                     {seed.name} <span className="text-slate-500">({seed.priceLabel})</span>
                   </span>

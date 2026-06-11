@@ -43,7 +43,10 @@ const rarityCounts = RARITY_ORDER.map((r) => ({
 
 export function HomePage() {
   const latestCodes = activeCodes.slice(0, 3);
-  const topEndgame = seeds.filter((s) => s.tier === "S").slice(0, 5);
+  const topEndgame = [...seeds]
+    .filter((s) => s.tier === "S")
+    .sort((a, b) => b.price - a.price)
+    .slice(0, 5);
 
   return (
     <>
