@@ -10,6 +10,7 @@
     "deploy": "vite build && wrangler pages deploy .output/public"
   },
   "dependencies": {
+    "@cloudflare/vite-plugin": "^1.40.1",
     "@tanstack/react-router": "^1.170.15",
     "@tanstack/react-start": "^1.168.25",
     "react": "^19.2.4",
