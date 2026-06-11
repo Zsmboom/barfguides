@@ -5,7 +5,6 @@
   "compatibility_flags": ["nodejs_compat"],
   "main": "@tanstack/react-start/server-entry",
   "routes": [
-    { "pattern": "buildaringfarmguides.com/*", "zone_name": "buildaringfarmguides.com" },
-    { "pattern": "www.buildaringfarmguides.com/*", "zone_name": "buildaringfarmguides.com" }
+    { "pattern": "buildaringfarmguides.com/*", "zone_name": "buildaringfarmguides.com" }
   ]
 }
