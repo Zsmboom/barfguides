@@ -54,7 +54,7 @@ export function CodesPage() {
         </div>
       </Section>
       <Section title="How to Redeem Build A Ring Farm Codes">
-        <div className="grid gap-4 md:grid-cols-3">
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
           <InfoCard title="1. Open the game">Launch Build A Ring Farm on Roblox and wait until your farm interface fully loads.</InfoCard>
           <InfoCard title="2. Find the codes menu">Open the in-game codes or rewards panel, then paste one code exactly as written.</InfoCard>
           <InfoCard title="3. Claim and repeat">Submit the code, collect the reward, and repeat for the rest of the active code list.</InfoCard>

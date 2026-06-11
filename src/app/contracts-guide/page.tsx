@@ -44,7 +44,7 @@ export function ContractsGuidePage() {
       </section>
 
       <Section eyebrow="Contract types" title="Three Contract Categories">
-        <div className="grid gap-4 md:grid-cols-3">
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
           {contractTypes.map((c) => (
             <div key={c.name} className="rounded-lg border border-white/10 bg-slate-900/50 p-5">
               <h3 className="text-lg font-black text-emerald-300">{c.name}</h3>
@@ -74,7 +74,7 @@ export function ContractsGuidePage() {
       </Section>
 
       <Section eyebrow="Reward priority" title="Contract Reward Tier List">
-        <div className="grid gap-4 md:grid-cols-3">
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
           <InfoCard title="S-Tier Rewards">
             Pet items (Harvest Drone upgrade, Rain Cloud upgrade). These directly improve your automation and long-term income. Drop everything for pet contract rewards.
           </InfoCard>
@@ -90,15 +90,15 @@ export function ContractsGuidePage() {
       <Section eyebrow="Integration" title="Contracts + Compost Machine + Profit Calculator">
         <div className="rounded-lg border border-amber-400/20 bg-amber-950/15 p-6">
           <p className="leading-7 text-slate-300">
-            The three Update 4 systems work together. Run the <Link to="/compost-machine-guide" className="font-bold text-emerald-300">Compost Machine</Link> to generate event tickets and seed packs.
-            Use those resources to complete Plant Contracts faster. Use the <Link to="/profit-calculator" className="font-bold text-emerald-300">profit calculator</Link> to check
+            The three Update 4 systems work together. Run the <Link to="/compost-machine-guide" className="font-bold text-emerald-300 min-h-[44px]">Compost Machine</Link> to generate event tickets and seed packs.
+            Use those resources to complete Plant Contracts faster. Use the <Link to="/profit-calculator" className="font-bold text-emerald-300 min-h-[44px]">profit calculator</Link> to check
             whether completing a contract is worth more than your standard harvest routine.
           </p>
         </div>
       </Section>
 
       <Section title="Frequently Asked Questions">
-        <div className="grid gap-4 md:grid-cols-2">
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
           {faq.map((item) => (
             <InfoCard key={item.question} title={item.question}>{item.answer}</InfoCard>
           ))}

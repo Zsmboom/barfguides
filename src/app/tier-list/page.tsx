@@ -64,19 +64,19 @@ export function TierListPage() {
       <Section title="Pets Tier List">
         <PetTable pets={pets} />
         <p className="mt-4 text-sm text-slate-400">
-          Want a deeper pet breakdown? Read the <Link to="/pets-tier-list" className="font-bold text-emerald-300">pets tier list</Link>.
+          Want a deeper pet breakdown? Read the <Link to="/pets-tier-list" className="font-bold text-emerald-300 min-h-[44px]">pets tier list</Link>.
         </p>
       </Section>
 
       <Section title="Mutations Tier List">
         <MutationTable mutations={mutationRankings} />
         <p className="mt-4 text-sm text-slate-400">
-          For triggers and Update 4 mutation notes, open the <Link to="/mutations-tier-list" className="font-bold text-emerald-300">mutations tier list</Link>.
+          For triggers and Update 4 mutation notes, open the <Link to="/mutations-tier-list" className="font-bold text-emerald-300 min-h-[44px]">mutations tier list</Link>.
         </p>
       </Section>
 
       <Section title="How to Use This Ranking">
-        <div className="grid gap-4 md:grid-cols-3">
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
           <InfoCard title="Early game">Use D/C seeds only long enough to unlock more plots, codes, and your first better seed bracket.</InfoCard>
           <InfoCard title="Mid game">B/A seeds become efficient once Middle Ring and basic automation reduce downtime.</InfoCard>
           <InfoCard title="Endgame">S-Tier seeds scale best with Outer Ring, high-value mutations, pets, and sprinkler investment.</InfoCard>

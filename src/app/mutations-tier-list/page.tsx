@@ -27,7 +27,7 @@ export function MutationsTierListPage() {
       </Section>
 
       <Section title="Frequently Asked Questions">
-        <div className="grid gap-4 md:grid-cols-2">
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
           {faq.map((item, i) => (
             <InfoCard key={i} title={item.question}>
               <p>{item.answer}</p>

@@ -26,7 +26,7 @@ export function DataDisclaimer({ dataType }: DataDisclaimerProps) {
             href={`https://www.roblox.com/games/${site.robloxGameId}/`}
             target="_blank"
             rel="noopener noreferrer"
-            className="font-semibold text-emerald-300 hover:text-emerald-200"
+            className="font-semibold text-emerald-300 hover:text-emerald-200 min-h-[44px]"
           >
             Roblox Game Page
           </a>
@@ -37,7 +37,7 @@ export function DataDisclaimer({ dataType }: DataDisclaimerProps) {
             href="https://www.youtube.com/@Foltyn"
             target="_blank"
             rel="noopener noreferrer"
-            className="font-semibold text-emerald-300 hover:text-emerald-200"
+            className="font-semibold text-emerald-300 hover:text-emerald-200 min-h-[44px]"
           >
             Foltyn
           </a>
@@ -46,7 +46,7 @@ export function DataDisclaimer({ dataType }: DataDisclaimerProps) {
             href="https://www.youtube.com/@MeEnyu"
             target="_blank"
             rel="noopener noreferrer"
-            className="font-semibold text-emerald-300 hover:text-emerald-200"
+            className="font-semibold text-emerald-300 hover:text-emerald-200 min-h-[44px]"
           >
             MeEnyu
           </a>
@@ -55,7 +55,7 @@ export function DataDisclaimer({ dataType }: DataDisclaimerProps) {
             href="https://www.youtube.com/@CoralBlox2"
             target="_blank"
             rel="noopener noreferrer"
-            className="font-semibold text-emerald-300 hover:text-emerald-200"
+            className="font-semibold text-emerald-300 hover:text-emerald-200 min-h-[44px]"
           >
             CoralBlox2
           </a>

@@ -53,7 +53,7 @@ export function EventsGuidePage() {
       </section>
 
       <Section title="Why Events Matter">
-        <div className="grid gap-4 md:grid-cols-3">
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
           <InfoCard title="Highest multipliers in the game">
             Event-driven mutations top the leaderboard. Starfall is 8x, Admin is 7x, Honeycomb is 6.5x, and Bubblegum is 5.5x. Stacking one of these on top of a 19x Outer Ring produces the largest single-harvest numbers in Build A Ring Farm.
           </InfoCard>
@@ -67,7 +67,7 @@ export function EventsGuidePage() {
       </Section>
 
       <Section title="Standard Events (Always Available)">
-        <div className="grid gap-4 md:grid-cols-2">
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
           <InfoCard title="Wet (1.5x)">
             Triggered by watering your crops or by rain. The most accessible mutation in the game. Pairs naturally with the Sprinkler Bot pet and any seed in the early to mid range.
           </InfoCard>
@@ -84,7 +84,7 @@ export function EventsGuidePage() {
       </Section>
 
       <Section title="Update 4 Event Mutations">
-        <div className="grid gap-4 md:grid-cols-2">
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
           {eventMuts.map((mut) => (
             <InfoCard key={mut.id} title={`${mut.name} (${mut.multiplier}x)`}>
               <span className="block text-amber-200">{mut.trigger}</span>
@@ -95,7 +95,7 @@ export function EventsGuidePage() {
       </Section>
 
       <Section title="Boss Events">
-        <div className="grid gap-4 md:grid-cols-2">
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
           <InfoCard title="Plant Rush Boss">
             The Plant Rush boss is tied to the PLANTRUSH code and to recurring boss waves. Defeating the boss grants a Plant Rush Boss Box with sprays, seed packs, and rare event items. Coordinate your server to clear the boss fast and share rewards with friends for the Friend O Tron bonus.
           </InfoCard>
@@ -112,7 +112,7 @@ export function EventsGuidePage() {
       </Section>
 
       <Section title="Event Rotation and Timing Tips">
-        <div className="grid gap-4 md:grid-cols-3">
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
           <InfoCard title="Stack sprays during cooldown">
             When an event is about to end, spray your highest value seeds to lock the mutation in for the next harvest cycle. The mutation lasts until harvest, not until the event ends.
           </InfoCard>
@@ -146,7 +146,7 @@ export function EventsGuidePage() {
       </Section>
 
       <Section title="Best Pets For Event Windows">
-        <div className="grid gap-4 md:grid-cols-2">
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
           {pets
             .filter((p) => p.tier === "S" || p.tier === "A")
             .map((pet) => (
@@ -160,7 +160,7 @@ export function EventsGuidePage() {
       </Section>
 
       <Section title="Event Strategy By Game Stage">
-        <div className="grid gap-4 md:grid-cols-3">
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
           <InfoCard title="Early game">
             Focus on Wet and Autumn. They are reliable, you can trigger them yourself with water and the THANKYOU Autumn Spray, and they compound with the Base Ring 7x multiplier.
           </InfoCard>
@@ -174,7 +174,7 @@ export function EventsGuidePage() {
       </Section>
 
       <Section title="Frequently Asked Questions">
-        <div className="grid gap-4 md:grid-cols-2">
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
           {faq.map((item) => (
             <InfoCard key={item.question} title={item.question}>
               <p>{item.answer}</p>

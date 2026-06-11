@@ -13,6 +13,7 @@ export const Route = createRootRoute({
   head: () => ({
     meta: [
       { charSet: "utf-8" },
+      // MOBILE ADAPTED
       {
         name: "viewport",
         content: "width=device-width, initial-scale=1",

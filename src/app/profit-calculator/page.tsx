@@ -39,7 +39,7 @@ export function ProfitCalculatorPage() {
         <ProfitCalculator />
       </section>
       <Section title="Calculator FAQ">
-        <div className="grid gap-4 md:grid-cols-3">
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
           {faq.map((item) => (
             <InfoCard key={item.question} title={item.question}>{item.answer}</InfoCard>
           ))}

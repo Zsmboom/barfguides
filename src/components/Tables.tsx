@@ -39,7 +39,7 @@ export function SeedsTable({ seeds }: { seeds: Seed[] }) {
 
 export function PetTable({ pets }: { pets: Pet[] }) {
   return (
-    <div className="grid gap-4 md:grid-cols-2">
+    <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
       {pets.map((pet) => (
         <article key={pet.id} className="rounded-lg border border-white/10 bg-white/[0.04] p-5">
           <div className="flex items-center justify-between gap-3">

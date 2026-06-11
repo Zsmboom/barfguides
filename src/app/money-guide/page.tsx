@@ -79,7 +79,7 @@ export function MoneyGuidePage() {
       </section>
 
       <Section eyebrow="Profit by ring" title="How Ring Multipliers Drive Earnings">
-        <div className="grid gap-4 md:grid-cols-3">
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
           {ringProfitTips.map((item) => (
             <div key={item.ring} className="rounded-lg border border-white/10 bg-slate-900/50 p-5">
               <h3 className="text-lg font-black text-emerald-300">{item.ring}</h3>
@@ -145,8 +145,8 @@ export function MoneyGuidePage() {
           </table>
         </div>
         <p className="mt-4 text-sm text-slate-400">
-          Use the <Link to="/profit-calculator" className="font-bold text-emerald-300">profit calculator</Link> to factor in mutations, pets, saw level, and sprinklers for your exact setup.
-          Full seed database at <Link to="/seeds-database" className="font-bold text-emerald-300">seeds database</Link>.
+          Use the <Link to="/profit-calculator" className="font-bold text-emerald-300 min-h-[44px]">profit calculator</Link> to factor in mutations, pets, saw level, and sprinklers for your exact setup.
+          Full seed database at <Link to="/seeds-database" className="font-bold text-emerald-300 min-h-[44px]">seeds database</Link>.
         </p>
       </Section>
 
@@ -156,13 +156,13 @@ export function MoneyGuidePage() {
             The Compost Machine converts excess seeds into fertilizer, event tickets, and resource packs.
             Compost your cheapest seeds (Carrot, Beetroot, Pumpkin) once you have a steady supply —
             the rewards from the Compost Machine event track can include mutation sprays, seed packs,
-            and exclusive items that directly boost your income. See the full <Link to="/compost-machine-guide" className="font-bold text-emerald-300">Compost Machine guide</Link>.
+            and exclusive items that directly boost your income. See the full <Link to="/compost-machine-guide" className="font-bold text-emerald-300 min-h-[44px]">Compost Machine guide</Link>.
           </p>
         </div>
       </Section>
 
       <Section eyebrow="Avoid these" title="Common Money-Wasting Mistakes">
-        <div className="grid gap-3 md:grid-cols-2">
+        <div className="grid grid-cols-1 gap-3 md:grid-cols-2">
           {[
             "Buying expensive seeds before Middle Ring — the profit per minute is lower than stacking Common plots.",
             "Hoarding cash instead of buying plots or rings — idle money earns nothing.",
@@ -179,7 +179,7 @@ export function MoneyGuidePage() {
       </Section>
 
       <Section title="Frequently Asked Questions">
-        <div className="grid gap-4 md:grid-cols-2">
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
           {faq.map((item, i) => (
             <InfoCard key={i} title={item.question}>
               <p>{item.answer}</p>

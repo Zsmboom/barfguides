@@ -27,7 +27,7 @@ export function TranscendentSeedsGuidePage() {
       </Section>
 
       <Section title="What Are Transcendent Seeds?">
-        <div className="grid gap-4 md:grid-cols-2">
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
           <InfoCard title="Seed Tiers">
             Seeds go from Common → Uncommon → Rare → Epic → Legendary → Secret → Secret+ → Transcended → Divine → Exotic. Each tier is progressively harder to obtain.
           </InfoCard>
@@ -52,7 +52,7 @@ export function TranscendentSeedsGuidePage() {
       </Section>
 
       <Section title="Frequently Asked Questions">
-        <div className="grid gap-4 md:grid-cols-2">
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
           {faq.map((item, i) => (
             <InfoCard key={i} title={item.question}>
               <p>{item.answer}</p>

@@ -119,10 +119,10 @@ export function BeginnerGuidePage() {
       </Section>
 
       <Section title="First 10 Minutes: Step by Step">
-        <div className="grid gap-4 md:grid-cols-2">
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
           <InfoCard title="Step 1: Redeem codes">
             Open the codes panel and paste 250KUSERS, PLANTRUSH, UPDATE2, THANKYOU, BARF:3, 2KLIKES, UPDATE1, and 100KVISITS. The time skips and Tropical Seed Packs immediately help your first hour. {activeCodes.length} active codes are available in June 2026 -{" "}
-            <Link to="/codes" className="font-bold text-emerald-300">see the codes page</Link>.
+            <Link to="/codes" className="font-bold text-emerald-300 min-h-[44px]">see the codes page</Link>.
           </InfoCard>
           <InfoCard title="Step 2: Plant Carrot on every plot">
             Carrot is $3 and recoups in one 10 second harvest. Plant it on every available plot and let the cycle run for at least 5 minutes before doing anything else.
@@ -137,7 +137,7 @@ export function BeginnerGuidePage() {
       </Section>
 
       <Section title="First Upgrade Priority">
-        <div className="grid gap-4 md:grid-cols-3">
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
           {upgradeOrder.map(([title, body]) => (
             <InfoCard key={title} title={title}>{body}</InfoCard>
           ))}
@@ -145,7 +145,7 @@ export function BeginnerGuidePage() {
       </Section>
 
       <Section title="Common Beginner Pitfalls">
-        <ul className="grid gap-3 text-slate-300 md:grid-cols-2">
+        <ul className="grid grid-cols-1 gap-3 text-slate-300 md:grid-cols-2">
           {pitfalls.map((item, i) => (
             <li
               key={i}
@@ -158,7 +158,7 @@ export function BeginnerGuidePage() {
       </Section>
 
       <Section title="Ring System Explained">
-        <div className="grid gap-4 md:grid-cols-3">
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
           {rings.map((ring) => (
             <InfoCard key={ring.id} title={`${ring.name} - ${ring.multiplier}x`}>
               {ring.description}. Use it in the profit calculator to see how fast the same seed setup scales. The 19x Outer Ring is required for any Transcended, Divine, or Exotic seed to be profitable.
@@ -210,25 +210,25 @@ export function BeginnerGuidePage() {
         </div>
         <p className="mt-4 text-sm text-slate-400">
           For the full S to D ranking, see the{" "}
-          <Link to="/tier-list" className="font-bold text-emerald-300">tier list</Link> or the{" "}
-          <Link to="/seeds-database" className="font-bold text-emerald-300">seeds database</Link>.
+          <Link to="/tier-list" className="font-bold text-emerald-300 min-h-[44px]">tier list</Link> or the{" "}
+          <Link to="/seeds-database" className="font-bold text-emerald-300 min-h-[44px]">seeds database</Link>.
         </p>
       </Section>
 
       <Section title="Mutation and Pet Basics">
-        <div className="grid gap-4 md:grid-cols-2">
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
           <InfoCard title="Mutations">
             Mutations multiply harvest value. Beginners should focus on the 1.5x Wet mutation and the 2x Autumn mutation (the THANKYOU code gives a free Autumn Spray). The strongest mutations like Starfall and Admin are Update 4 event rewards and are too rare to rely on until mid game.
           </InfoCard>
           <InfoCard title="Pets">
             Pets help with automation, watering, growth, and harvest consistency. Harvest Drone and Rain Cloud are the two S-Tier pets and should be your first pet goals once you have at least Middle Ring unlocked. The full pet ranking is on the{" "}
-            <Link to="/pets-tier-list" className="font-bold text-emerald-300">pets tier list</Link>.
+            <Link to="/pets-tier-list" className="font-bold text-emerald-300 min-h-[44px]">pets tier list</Link>.
           </InfoCard>
         </div>
       </Section>
 
       <Section title="Frequently Asked Questions">
-        <div className="grid gap-4 md:grid-cols-2">
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
           {faq.map((item) => (
             <InfoCard key={item.question} title={item.question}>
               <p>{item.answer}</p>

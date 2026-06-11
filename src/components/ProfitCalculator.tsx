@@ -52,7 +52,7 @@ export function ProfitCalculator() {
   const copyValue = `${selected.name} setup: ${ring.name}, ${mutation.name}, ${plantCount} plants, ${formatMoney(primary.perMinute)}/min, ${formatMoney(primary.totalHarvest)} per harvest, ROI ${primary.roiHarvests.toFixed(2)} harvests.`;
 
   return (
-    <div className="grid gap-6 lg:grid-cols-[1fr_0.95fr]">
+    <div className="grid grid-cols-1 gap-6 lg:grid-cols-[1fr_0.95fr]">
       <section className="rounded-lg border border-white/10 bg-slate-900/72 p-5">
         <div className="grid gap-4 sm:grid-cols-2">
           <label className="grid gap-2 text-sm font-semibold text-slate-200">

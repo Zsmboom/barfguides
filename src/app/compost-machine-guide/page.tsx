@@ -65,7 +65,7 @@ export function CompostMachineGuidePage() {
       </Section>
 
       <Section eyebrow="Decision guide" title="What to Compost vs. What to Keep">
-        <div className="grid gap-4 md:grid-cols-3">
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
           {compostTips.map((t) => (
             <div key={t.tier} className="rounded-lg border border-white/10 bg-slate-900/50 p-5">
               <h3 className="text-lg font-black text-emerald-300">{t.tier}</h3>
@@ -77,7 +77,7 @@ export function CompostMachineGuidePage() {
       </Section>
 
       <Section eyebrow="Rewards" title="Compost Machine Rewards">
-        <div className="grid gap-4 md:grid-cols-2">
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
           <InfoCard title="Fertilizer">Speeds up plant growth for a set duration. Stack fertilizer with mutation multipliers for the highest profit-per-minute windows.</InfoCard>
           <InfoCard title="Event Tickets">Progress the Compost Machine event track, which unlocks exclusive rewards including cosmetic items, mutation sprays, and rare seed packs.</InfoCard>
           <InfoCard title="Mutation Sprays">The event track can reward limited-use mutation sprays (Autumn, Wet, Fire) that apply specific mutations to your crops on demand.</InfoCard>
@@ -88,15 +88,15 @@ export function CompostMachineGuidePage() {
       <Section eyebrow="Integration" title="Compost Machine + Profit Calculator">
         <div className="rounded-lg border border-amber-400/20 bg-amber-950/15 p-6">
           <p className="leading-7 text-slate-300">
-            Use the <Link to="/profit-calculator" className="font-bold text-emerald-300">profit calculator</Link> to check whether a seed is better harvested or composted.
+            Use the <Link to="/profit-calculator" className="font-bold text-emerald-300 min-h-[44px]">profit calculator</Link> to check whether a seed is better harvested or composted.
             As a rule of thumb: if the seed sells for under $50 with no ring multiplier, compost it.
-            Everything else should be harvested. See the <Link to="/money-guide" className="font-bold text-emerald-300">money guide</Link> for full income strategies.
+            Everything else should be harvested. See the <Link to="/money-guide" className="font-bold text-emerald-300 min-h-[44px]">money guide</Link> for full income strategies.
           </p>
         </div>
       </Section>
 
       <Section title="Frequently Asked Questions">
-        <div className="grid gap-4 md:grid-cols-2">
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
           {faq.map((item) => (
             <InfoCard key={item.question} title={item.question}>{item.answer}</InfoCard>
           ))}

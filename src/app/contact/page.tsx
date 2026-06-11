@@ -26,7 +26,7 @@ export function ContactPage() {
                   href="https://github.com/Zsmboom/barfguides/issues"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mt-2 inline-block text-sm text-emerald-400 hover:text-emerald-300 hover:underline"
+                  className="mt-2 inline-block text-sm text-emerald-400 hover:text-emerald-300 hover:underline min-h-[44px]"
                 >
                   github.com/Zsmboom/barfguides/issues →
                 </a>

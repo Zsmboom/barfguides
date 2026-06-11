@@ -35,7 +35,7 @@ export function Update4PatchNotesPage() {
       </section>
 
       <Section title="New Features">
-        <div className="grid gap-4 md:grid-cols-2">
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
           <InfoCard title="Compost Machine">Turns spare crop value into progression rewards. Prioritize low-efficiency leftovers instead of sacrificing your best earning seeds.</InfoCard>
           <InfoCard title="Plant Contracts">Quest-style objectives that reward deliberate planting routes instead of pure highest-price farming.</InfoCard>
           <InfoCard title="Farm Skins">Cosmetic progression for players who want a more personalized farm layout while pushing earnings.</InfoCard>
@@ -59,7 +59,7 @@ export function Update4PatchNotesPage() {
       </Section>
 
       <Section title="New Mutations">
-        <div className="grid gap-4 md:grid-cols-4">
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-4">
           {updateMutations.map((mutation) => (
             <InfoCard key={mutation.id} title={`${mutation.name} (${mutation.multiplier}x)`}>
               {mutation.trigger}. {mutation.effect}.
@@ -69,7 +69,7 @@ export function Update4PatchNotesPage() {
       </Section>
 
       <Section title="New Pets System">
-        <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
           {pets.map((pet) => (
             <InfoCard key={pet.id} title={`${pet.name} - ${pet.tier}`}>
               {pet.bonus}. {pet.recommendation}
@@ -79,7 +79,7 @@ export function Update4PatchNotesPage() {
       </Section>
 
       <Section title="Bug Fixes and Balance Changes">
-        <div className="grid gap-4 md:grid-cols-3">
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
           <InfoCard title="Economy balance">Higher seed brackets make ring and mutation optimization more important than raw purchase price.</InfoCard>
           <InfoCard title="Automation value">Pets reduce missed harvest time, which directly improves practical profit per minute.</InfoCard>
           <InfoCard title="Quest routing">Plant Contracts make it useful to keep some mid-tier seeds available instead of only chasing top rarity.</InfoCard>
@@ -87,7 +87,7 @@ export function Update4PatchNotesPage() {
       </Section>
 
       <Section title="New Active Codes From This Update">
-        <div className="grid gap-4 md:grid-cols-2">
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
           {updateCodes.map((code) => (
             <InfoCard key={code.code} title={code.code}>
               {code.reward}. {code.note}

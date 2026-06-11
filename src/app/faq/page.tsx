@@ -164,7 +164,7 @@ export function FaqPage() {
 
       {categories.map((cat) => (
         <Section key={cat.title} title={cat.title}>
-          <div className="grid gap-4 md:grid-cols-2">
+          <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
             {cat.items.map((item) => (
               <InfoCard key={item.question} title={item.question}>
                 <p>{item.answer}</p>
@@ -175,22 +175,22 @@ export function FaqPage() {
       ))}
 
       <Section title="Quick Links">
-        <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
           <InfoCard title="Profit Calculator">
             Estimate profit per minute and ROI for any seed setup.
-            <Link to="/profit-calculator" className="mt-3 block font-bold text-emerald-300">Open calculator</Link>
+            <Link to="/profit-calculator" className="mt-3 block font-bold text-emerald-300 min-h-[44px]">Open calculator</Link>
           </InfoCard>
           <InfoCard title="Active Codes">
             Copy the 8 active June 2026 codes and claim your free rewards.
-            <Link to="/codes" className="mt-3 block font-bold text-emerald-300">View codes</Link>
+            <Link to="/codes" className="mt-3 block font-bold text-emerald-300 min-h-[44px]">View codes</Link>
           </InfoCard>
           <InfoCard title="Tier List">
             See the full S to D seed ranking plus pets and mutations.
-            <Link to="/tier-list" className="mt-3 block font-bold text-emerald-300">Open rankings</Link>
+            <Link to="/tier-list" className="mt-3 block font-bold text-emerald-300 min-h-[44px]">Open rankings</Link>
           </InfoCard>
           <InfoCard title="Events Guide">
             Plan alien invasions, Plant Rush bosses, and Starfall windows.
-            <Link to="/events-guide" className="mt-3 block font-bold text-emerald-300">Read events guide</Link>
+            <Link to="/events-guide" className="mt-3 block font-bold text-emerald-300 min-h-[44px]">Read events guide</Link>
           </InfoCard>
         </div>
       </Section>

@@ -29,7 +29,7 @@ export function PetsTierListPage() {
         );
       })}
       <Section title="How to Get Pets">
-        <div className="grid gap-4 md:grid-cols-2">
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
           <InfoCard title="Gamepass Purchase">
             Some pets can be purchased directly from the in-game shop using in-game currency.
           </InfoCard>
