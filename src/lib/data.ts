@@ -58,7 +58,7 @@ const gameData = gameDataJson as unknown as {
 const codeData = codesJson as unknown as { codes: Code[]; expiredCodes: Code[] };
 
 export const site = {
-  name: "BARF Guides",
+  name: "Build A Ring Farm Guides",
   gameName: "Build A Ring Farm",
   abbreviation: "BARF",
   baseUrl: "https://buildaringfarmguides.com",

@@ -1,0 +1,8 @@
+# Cloudflare Pages redirects
+# 404 → home
+/cmd_sco      /     301
+
+# Common misspellings / alternate paths
+/seeds        /seeds-database/     301
+/mutations    /mutations-tier-list/     301
+/pets         /pets-tier-list/     301

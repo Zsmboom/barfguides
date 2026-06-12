@@ -20,7 +20,7 @@ export const Route = createRootRoute({
       },
       {
         title:
-          "BARF Guides — Build A Ring Farm Tools, Codes, Calculator & Tier List",
+          "Build A Ring Farm Guides — Tools, Codes, Calculator & Tier List",
       },
       {
         name: "description",

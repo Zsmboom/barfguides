@@ -3,10 +3,10 @@ import type { PageSeo } from "@/lib/seo";
 export const pageSeo = {
   home: {
     path: "/",
-    title: "Build A Ring Farm Guide — Tools, Calculator, Codes & Tier Lists",
+    title: "Build A Ring Farm Guides — Tools, Calculator, Codes &amp; Tier Lists",
     description:
       "Complete Build A Ring Farm resource hub. Profit calculator, working codes, seed tier list, pets ranking, Update 4 patch notes, and expert guides.",
-    keywords: ["build a ring farm", "barf", "build a ring farm guide", "build a ring farm calculator"],
+    keywords: ["build a ring farm", "barf", "build a ring farm guide", "build a ring farm calculator", "buildaringfarmguides"],
   },
   calculator: {
     path: "/profit-calculator",
@@ -17,6 +17,7 @@ export const pageSeo = {
       "build a ring farm profit calculator",
       "build a ring farm calculator",
       "build a ring farm earnings calculator",
+      "buildaringfarmguides",
     ],
   },
   codes: {
@@ -31,7 +32,7 @@ export const pageSeo = {
     title: "Build A Ring Farm Tier List - Best Seeds Ranked (S-Tier to D-Tier)",
     description:
       "All 35 seeds ranked S to D by profit, growth time, and endgame viability. Includes pets and mutations tier lists for Build A Ring Farm.",
-    keywords: ["build a ring farm tier list", "build a ring farm seeds tier list", "best seeds build a ring farm"],
+    keywords: ["build a ring farm tier list", "build a ring farm seeds tier list", "best seeds build a ring farm", "buildaringfarmguides"],
   },
   update4: {
     path: "/update-4-patch-notes",

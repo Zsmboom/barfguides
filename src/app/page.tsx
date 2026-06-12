@@ -20,7 +20,7 @@ const faq = [
   },
   {
     question: "Is BARF Guides an official website?",
-    answer: "No, BARF Guides is an independent fan resource. We are not affiliated with Gamecreates or Roblox. All game data is based on community research and in-game observation.",
+    answer: "No, Build A Ring Farm Guides is an independent fan resource. We are not affiliated with Gamecreates or Roblox. All game data is based on community research and in-game observation.",
   },
 ];
 
@@ -64,7 +64,7 @@ export function HomePage() {
             Build A Ring Farm tools
           </p>
           <h1 className="mt-4 text-4xl font-black tracking-tight text-white md:text-6xl">
-            Build A Ring Farm Guide — Tools, Calculator, Codes &amp; Tier Lists
+            Build A Ring Farm Guides — Tools, Calculator, Codes &amp; Tier Lists
           </h1>
           <p className="mt-5 max-w-2xl text-lg leading-8 text-slate-300">
             Plan your Build A Ring Farm route with a profit calculator, working codes, seed rankings, pet advice,
