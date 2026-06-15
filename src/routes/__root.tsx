@@ -42,6 +42,20 @@ function RootDocument({ children }: { children: React.ReactNode }) {
     <html lang="en">
       <head>
         <HeadContent />
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-ML9ZCCR4X7"
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-ML9ZCCR4X7');
+            `,
+          }}
+        />
       </head>
       <body>
         <div className="font-sans">{children}</div>
