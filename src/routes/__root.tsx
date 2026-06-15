@@ -19,10 +19,6 @@ export const Route = createRootRoute({
         content: "width=device-width, initial-scale=1",
       },
       {
-        title:
-          "Build A Ring Farm Guides — Tools, Codes, Calculator & Tier List",
-      },
-      {
         name: "description",
         content:
           "Build A Ring Farm guides — profit calculator, active codes, seed tier list, pets, mutations, and Update 4 info for Roblox BARF.",
@@ -31,6 +27,8 @@ export const Route = createRootRoute({
     links: [
       { rel: "stylesheet", href: appCss },
       { rel: "icon", type: "image/svg+xml", href: "/favicon.svg" },
+      { rel: "preconnect", href: "https://www.googletagmanager.com" },
+      { rel: "preconnect", href: "https://www.google-analytics.com" },
     ],
   }),
   shellComponent: RootDocument,
@@ -45,6 +43,11 @@ function RootDocument({ children }: { children: React.ReactNode }) {
         <script
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-ML9ZCCR4X7"
+        />
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3825534897375588"
+          crossOrigin="anonymous"
         />
         <script
           dangerouslySetInnerHTML={{

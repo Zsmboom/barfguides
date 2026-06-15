@@ -3,7 +3,7 @@ import { CopyButton } from "@/components/CopyButton";
 import { InfoCard, Section, StatCard } from "@/components/Section";
 import { JsonLd } from "@/components/JsonLd";
 import { activeCodes, mutations, pets, seeds, site } from "@/lib/data";
-import { breadcrumbSchema, faqSchema, videoGameSchema } from "@/lib/seo";
+import { breadcrumbSchema, faqSchema, videoGameSchema, webSiteSchema } from "@/lib/seo";
 
 const faq = [
   {
@@ -53,6 +53,7 @@ export function HomePage() {
       <JsonLd
         data={[
           breadcrumbSchema("/", "Home"),
+          webSiteSchema(),
           faqSchema(faq),
           videoGameSchema(),
         ]}
@@ -89,19 +90,21 @@ export function HomePage() {
           <img
             src="/images/game-screenshot.jpg"
             alt="Build A Ring Farm gameplay screenshot — rings, crops, and farm progression in Roblox"
+            width="498"
+            height="280"
             className="w-full object-cover"
             loading="eager"
           />
           <div className="flex items-center justify-between gap-2 p-3">
             <div className="flex items-center gap-2">
-              <img src="/images/game-icon.png" alt="Build A Ring Farm icon" className="size-8 rounded" />
+              <img src="/images/game-icon.png" alt="Build A Ring Farm icon" width="180" height="180" className="size-8 rounded" />
               <div>
                 <div className="text-sm font-bold text-white">Build A Ring Farm</div>
                 <div className="text-xs text-slate-400">Gamecreates</div>
               </div>
             </div>
             <a
-              href="https://www.roblox.com/games/107646426076756/"
+              href="https://www.roblox.com/games/107646426076756"
               target="_blank"
               rel="noopener noreferrer"
               className="rounded-md bg-emerald-500 px-3 py-1.5 text-xs font-bold text-slate-950 hover:bg-emerald-400 min-h-[44px]"
@@ -126,6 +129,8 @@ export function HomePage() {
             <img
               src="/images/game-screenshot.jpg"
               alt="Build A Ring Farm rings and farm layout"
+              width="498"
+              height="280"
               className="w-full object-cover"
               loading="lazy"
             />
