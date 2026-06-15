@@ -45,11 +45,6 @@ function RootDocument({ children }: { children: React.ReactNode }) {
           src="https://www.googletagmanager.com/gtag/js?id=G-ML9ZCCR4X7"
         />
         <script
-          async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3825534897375588"
-          crossOrigin="anonymous"
-        />
-        <script
           dangerouslySetInnerHTML={{
             __html: `
               window.dataLayer = window.dataLayer || [];
