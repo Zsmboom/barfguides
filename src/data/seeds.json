@@ -34,6 +34,8 @@
     { "id": "celestial-cactus", "name": "Celestial Cactus", "rarity": "Divine", "price": 1800000, "priceLabel": "$1.8M", "sellPrice": 3600000, "growthTime": 180, "tier": "S", "scenario": "Late-game transition" },
     { "id": "ethereal-bloom", "name": "Ethereal Bloom", "rarity": "Divine", "price": 2000000, "priceLabel": "$2M", "sellPrice": 4000000, "growthTime": 185, "tier": "S", "scenario": "Divine seed core" },
     { "id": "starlight-fern", "name": "Starlight Fern", "rarity": "Exotic", "price": 3500000, "priceLabel": "$3.5M", "sellPrice": 7000000, "growthTime": 200, "tier": "S", "scenario": "Exotic leaderboard push" },
-    { "id": "void-orchid", "name": "Void Orchid", "rarity": "Exotic", "price": 5000000, "priceLabel": "$5M", "sellPrice": 10000000, "growthTime": 220, "tier": "S", "scenario": "Current top profit target" }
+    { "id": "void-orchid", "name": "Void Orchid", "rarity": "Exotic", "price": 5000000, "priceLabel": "$5M", "sellPrice": 10000000, "growthTime": 220, "tier": "S", "scenario": "Current top profit target" },
+    { "id": "honeysuckle", "name": "Honeysuckle", "rarity": "Epic", "price": 0, "priceLabel": "Event", "sellPrice": 500, "growthTime": 14, "tier": "A", "scenario": "Update 7 bee event — 37% from Honey Pot" },
+    { "id": "queens-blossom", "name": "Queen's Blossom", "rarity": "Transcended", "price": 400000000000, "priceLabel": "$400T", "sellPrice": 550000, "growthTime": 90, "tier": "S", "scenario": "Update 7 bee event — 0.1% from Honey Pot" }
   ]
 }

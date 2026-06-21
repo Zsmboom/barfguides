@@ -8,11 +8,11 @@ import { breadcrumbSchema, faqSchema } from "@/lib/seo";
 const faq = [
   {
     question: "How many Build A Ring Farm codes are working in June 2026?",
-    answer: "This page lists 8 active codes: 250KUSERS, PLANTRUSH, UPDATE2, THANKYOU, BARF:3, 2KLIKES, UPDATE1, and 100KVISITS.",
+    answer: "This page lists 11 active codes: BZZBZZ, CARNIVAL, UPDATE5, 250KUSERS, PLANTRUSH, UPDATE2, THANKYOU, BARF:3, 2KLIKES, UPDATE1, and 100KVISITS.",
   },
   {
     question: "Which code should new players redeem first?",
-    answer: "Redeem PLANTRUSH, 250KUSERS, and 100KVISITS early because skip and box rewards help reduce waiting during the first farm upgrades.",
+    answer: "Redeem BZZBZZ first for 50 Honey Tokens (Update 7 bee system), then CARNIVAL for 100 Carnival Pass Tickets, and UPDATE5 for a Super Pet Treat. PLANTRUSH, 250KUSERS, and 100KVISITS are also great for skip rewards.",
   },
 ];
 

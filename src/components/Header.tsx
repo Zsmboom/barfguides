@@ -25,7 +25,7 @@ export function Header() {
           className="flex items-center gap-2 text-base font-black tracking-tight text-white min-h-[44px]"
           onClick={close}
         >
-          <img src="/images/game-icon.png" alt="" width="180" height="180" className="size-8 rounded-md" />
+          <img src="/images/game-icon.png" alt="" className="size-8 rounded-md" />
           <span>BARF Guides</span>
         </Link>
 

@@ -39,15 +39,15 @@ export function EventsGuidePage() {
       />
       <section className="mx-auto max-w-7xl px-4 py-12">
         <p className="text-sm font-bold uppercase tracking-[0.2em] text-emerald-300">
-          Update 4 events coverage
+          Update 4 + Update 7 events coverage
         </p>
         <h1 className="mt-3 text-4xl font-black text-white md:text-5xl">
           Build A Ring Farm Events Guide
         </h1>
         <p className="mt-4 max-w-3xl text-lg leading-8 text-slate-300">
           Every event in Build A Ring Farm explained: alien invasions, Plant Rush boss waves, void
-          storms, radioactive pulses, hive outbreaks, fire bursts, and the new Starfall cosmic
-          event from Update 4. Use this guide to plan which events to chase, which mutations they
+          storms, radioactive pulses, hive outbreaks, fire bursts, the new Starfall cosmic
+          event from Update 4, and the Queen Bee event from Update 7. Use this guide to plan which events to chase, which mutations they
           apply, and which seeds to plant for the highest possible harvest spike.
         </p>
       </section>
@@ -91,6 +91,30 @@ export function EventsGuidePage() {
               <span className="mt-2 block text-slate-300">{mut.effect}</span>
             </InfoCard>
           ))}
+        </div>
+      </Section>
+
+      <Section title="🐝 Update 7 — Queen Bee Event (Bee System)">
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
+          <InfoCard title="How It Works">
+            The Queen Bee Event is a rotating weather event that covers the map with a honeycomb dome for 5 minutes. Talk to the Beekeeper NPC for a free Worker Bee, place bees in your Hive, and they will automatically fly out to collect Nectar from your crops. When a bee's Nectar bar is full, it returns to the Hive and converts it into Honey — the event currency. Fill your Hive with bees, upgrade duplicates, and buy Hive upgrades from the Bee Merchant to accelerate honey production.
+          </InfoCard>
+          <InfoCard title="Honey Pot Rewards">
+            Collect 5 Honeycombs from the map to craft 1 Honey Token. Spend Tokens at the Honey Pot:
+            <ul className="mt-2 space-y-1 text-sm text-slate-300">
+              <li>• 2-min Time Skip — 58%</li>
+              <li>• Honeysuckle Seed (Epic, $500) — 37%</li>
+              <li>• 15-min Time Skip — 4.8%</li>
+              <li>• Queen Bee Fertilizer (Honeycomb 6.5x) — 0.15%</li>
+              <li>• Queen's Blossom Seed (Transcended, $550K) — 0.1%</li>
+            </ul>
+          </InfoCard>
+          <InfoCard title="Permanent Bees">
+            The Bee Merchant sells permanent bees tied to event milestones. These bees persist after the event ends, making them the most valuable long-term reward. Prioritize Hive upgrades and bee rolling to unlock them before the event rotation changes.
+          </InfoCard>
+          <InfoCard title="New Update 7 Codes">
+            Use code <strong>BZZBZZ</strong> for 50 Honey Tokens (free) and <strong>CARNIVAL</strong> for 100 Carnival Pass Tickets. Visit the codes page for the full list.
+          </InfoCard>
         </div>
       </Section>
 
