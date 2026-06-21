@@ -16,7 +16,7 @@ const faq = [
   },
   {
     question: "How many active codes are available?",
-    answer: "There are 8 active codes in June 2026: 250KUSERS, PLANTRUSH, UPDATE2, THANKYOU, BARF:3, 2KLIKES, UPDATE1, and 100KVISITS. Visit the codes page to copy them and see what each reward does.",
+    answer: "There are 11 active codes: BZZBZZ, CARNIVAL, UPDATE5, 250KUSERS, PLANTRUSH, UPDATE2, THANKYOU, BARF:3, 2KLIKES, UPDATE1, and 100KVISITS. Visit the codes page to copy them and see what each reward does.",
   },
   {
     question: "Is BARF Guides an official website?",
@@ -119,7 +119,7 @@ export function HomePage() {
           <div className="rounded-lg border border-white/10 bg-slate-900/50 p-6">
             <h2 className="text-xl font-bold text-white">What Is Build A Ring Farm?</h2>
             <p className="mt-3 leading-7 text-slate-300">
-              Build A Ring Farm is a Roblox farming simulator published by Gamecreates under game ID 107646426076756. You plant and harvest crops inside progressively larger rings, with the Base Ring giving a 7x multiplier, Middle Ring 13x, and Outer Ring 19x. Your farm earns cash even while you are offline, so every upgrade keeps paying out between play sessions. The current dataset tracks 35 seeds across 10 rarity tiers, 14 mutations that boost harvest value by up to 8x, 8 pets for automation, and a global leaderboard system.
+              Build A Ring Farm is a Roblox farming simulator published by Gamecreates under game ID 107646426076756. You plant and harvest crops inside progressively larger rings, with the Base Ring giving a 7x multiplier, Middle Ring 13x, and Outer Ring 19x. Your farm earns cash even while you are offline, so every upgrade keeps paying out between play sessions. The current dataset tracks 115 seeds across 11 rarity tiers, 15 mutations that boost harvest value by up to 9.5x, 33 pets for automation, and a global leaderboard system.
             </p>
           </div>
           <div className="overflow-hidden rounded-lg border border-white/10 bg-slate-900/50">
@@ -146,7 +146,7 @@ export function HomePage() {
           <StatCard label="Pets listed" value={`${pets.length}`} />
           <StatCard label="Active codes" value={activeCodes.length.toString()} />
           <StatCard label="Game version" value={site.update} />
-          <StatCard label="Rarity tiers" value="10" />
+          <StatCard label="Rarity tiers" value="11" />
           <StatCard label="Ring multipliers" value="7x - 19x" />
           <StatCard label="Seed price range" value="$3 - $5M" />
         </div>
@@ -268,7 +268,7 @@ export function HomePage() {
           </table>
         </div>
         <p className="mt-4 text-sm text-slate-400">
-          Full ranking of all 35 seeds on the <Link to="/seeds-database" className="font-bold text-emerald-300 min-h-[44px]">seeds database</Link>.
+          Full ranking of all 115 seeds on the <Link to="/seeds-database" className="font-bold text-emerald-300 min-h-[44px]">seeds database</Link>.
         </p>
       </Section>
 

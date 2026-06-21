@@ -26,7 +26,7 @@ export function Update4PatchNotesPage() {
     <>
       <JsonLd data={[breadcrumbSchema(pageSeo.update4.path, "Update 4 Patch Notes"), faqSchema(faq)]} />
       <section className="mx-auto max-w-7xl px-4 py-12">
-        <p className="text-sm font-bold uppercase tracking-[0.2em] text-emerald-300">June 2026 content gap</p>
+        <p className="text-sm font-bold uppercase tracking-[0.2em] text-emerald-300">Update 4 + later updates</p>
         <h1 className="mt-3 text-4xl font-black text-white md:text-5xl">Build A Ring Farm Update 4 Patch Notes</h1>
         <p className="mt-4 max-w-3xl text-lg leading-8 text-slate-300">
           Update 4 expands BARF with new progression systems, pets, mutations, codes, and a much deeper seed economy.
@@ -45,7 +45,7 @@ export function Update4PatchNotesPage() {
 
       <Section title="New Seeds: 24 New Plants Added">
         <p className="mb-5 max-w-3xl text-slate-300">
-          The current data set tracks 35 total seeds, with the upper 24 entries forming the expanded mid-game, Secret,
+          The current data set tracks 115 seeds, with the upper entries forming the expanded mid-game, Secret,
           Transcended, Divine, and Exotic economy that Update 4 players care about most.
         </p>
         <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">

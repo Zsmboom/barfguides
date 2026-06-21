@@ -12,7 +12,7 @@ const categories = [
     items: [
       {
         question: "What is Build A Ring Farm?",
-        answer: "Build A Ring Farm is a Roblox farming simulator by Gamecreates where players plant seeds, harvest crops, upgrade rings, collect pets, and compete on leaderboards. The game features 35 seed types, 14 mutations, 8 pets, and a Base/Middle/Outer ring system that multiplies harvest value up to 19x.",
+        answer: "Build A Ring Farm is a Roblox farming simulator by Gamecreates where players plant seeds, harvest crops, upgrade rings, collect pets, and compete on leaderboards. The game features 115 seed types, 15 mutations, 33 pets, and a Base/Middle/Outer ring system that multiplies harvest value up to 19x.",
       },
       {
         question: "What is the game ID and developer?",
@@ -24,7 +24,7 @@ const categories = [
       },
       {
         question: "How many seeds are in the game?",
-        answer: "The current dataset covers 35 seeds spread across 10 rarity tiers: Common, Uncommon, Rare, Epic, Legendary, Secret, Secret+, Transcended, Divine, and Exotic. Update 4 expanded the upper end with the Transcended, Divine, and Exotic tiers.",
+        answer: "The current dataset covers 115 seeds spread across 11 rarity tiers: Common, Uncommon, Rare, Epic, Legendary, Secret, Secret+, Transcended, Divine, Exotic, and Celestial. Update 4 expanded the upper end with the Transcended, Divine, Exotic, and Celestial tiers.",
       },
     ],
   },
@@ -33,7 +33,7 @@ const categories = [
     items: [
       {
         question: "How many BARF codes are active in June 2026?",
-        answer: "Eight codes are currently active: 250KUSERS, PLANTRUSH, UPDATE2, THANKYOU, BARF:3, 2KLIKES, UPDATE1, and 100KVISITS. Rewards include time skips, seed packs, sprays, fertilizer, and a Plant Rush Boss Box.",
+        answer: "Eleven codes are currently active: BZZBZZ, CARNIVAL, UPDATE5, 250KUSERS, PLANTRUSH, UPDATE2, THANKYOU, BARF:3, 2KLIKES, UPDATE1, and 100KVISITS. Rewards include time skips, seed packs, sprays, fertilizer, and a Plant Rush Boss Box.",
       },
       {
         question: "Which code should I claim first?",
@@ -58,7 +58,7 @@ const categories = [
       },
       {
         question: "What is the most profitable seed in the game?",
-        answer: "Void Orchid ($5M seed, $10M sell, 220s growth) currently tops the Outer Ring profit per minute ranking. Ethereal Bloom, Starlight Fern, Celestial Cactus, and Divine Golden Apple round out the top 5. The exact order is shown on the seeds database page.",
+        answer: "Void Fruit ($15T seed, $360K sell, 70s growth) and Aethercoil ($1.8Qi seed, $9.38M sell, 30s growth) currently top the Outer Ring profit per minute ranking. Titan Arum (Transcended, $6.40M sell) and Boom Bloom (Transcended, $760K sell) round out the top tier. The exact order is shown on the seeds database page.",
       },
       {
         question: "What is the best early-game seed?",
@@ -96,7 +96,7 @@ const categories = [
       },
       {
         question: "How many pets are in the game?",
-        answer: "There are 8 pets in the current dataset, ranked from S-Tier to D-Tier. They are: Harvest Drone, Rain Cloud, Seed Planter, Sprinkler Bot, Fertilizer Cat, Market Dog, Basic Helper, and Slow Snail.",
+        answer: "There are 33 pets in the current dataset, ranked from S-Tier to D-Tier. Harvest Drone (S-Tier) and Starfall Griffin (S-Tier) are the top two for endgame, with Rain Cloud (S-Tier) as the best support pet.",
       },
     ],
   },
@@ -117,7 +117,7 @@ const categories = [
       },
       {
         question: "How do I get Transcendent seeds?",
-        answer: "Transcendent seeds drop from high-level seed rolling once your seed luck stat and Outer Ring are unlocked. Pair Harvest Drone and Rain Cloud for the smoothest rolling operation. Moonflower ($380K) is the cheapest entry point and Divine Golden Apple ($1.2M) is the highest-profit Transcendent seed.",
+        answer: "Transcendent seeds drop from high-level seed rolling once your seed luck stat and Outer Ring are unlocked. Pair Harvest Drone and Rain Cloud for the smoothest rolling operation. Kitsune is the best A-tier pet for mutation upgrades. Pumpkin is the cheapest entry point at Common rarity.",
       },
     ],
   },
@@ -181,7 +181,7 @@ export function FaqPage() {
             <Link to="/profit-calculator" className="mt-3 block font-bold text-emerald-300 min-h-[44px]">Open calculator</Link>
           </InfoCard>
           <InfoCard title="Active Codes">
-            Copy the 8 active June 2026 codes and claim your free rewards.
+            Copy the 11 active June 2026 codes and claim your free rewards.
             <Link to="/codes" className="mt-3 block font-bold text-emerald-300 min-h-[44px]">View codes</Link>
           </InfoCard>
           <InfoCard title="Tier List">

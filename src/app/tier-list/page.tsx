@@ -36,7 +36,7 @@ export function TierListPage() {
         <p className="text-sm font-bold uppercase tracking-[0.2em] text-emerald-300">Seeds, pets, and mutations</p>
         <h1 className="mt-3 text-4xl font-black text-white md:text-5xl">Build A Ring Farm Tier List</h1>
         <p className="mt-4 max-w-3xl text-lg leading-8 text-slate-300">
-          All 35 seeds ranked from S to D using price, sell value, growth time, profit potential, and practical game stage.
+          All 115 seeds ranked from S to D using price, sell value, growth time, profit potential, and practical game stage.
           Pets and mutations are included below for full setup planning.
         </p>
       </section>

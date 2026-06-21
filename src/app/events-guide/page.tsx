@@ -15,7 +15,7 @@ const faq = [
   {
     question: "How do alien invasion events work?",
     answer:
-      "Alien invasion events spawn waves of alien mobs across the farm. Defeating them applies the Alien mutation to nearby crops, which multiplies harvest value by 3.25x. Pairing the Alien event with high-value seeds such as Dragonfruit, Aurora Lotus, or Void Orchid produces the largest single-harvest spikes.",
+      "Alien invasion events spawn waves of alien mobs across the farm. Defeating them applies the Alien mutation to nearby crops, which multiplies harvest value by 3.25x. Pairing the Alien event with high-value seeds such as Dragonfruit, Aurora Lotus, or Void Fruit produces the largest single-harvest spikes.",
   },
   {
     question: "Do bosses drop mutation sprays?",
@@ -30,7 +30,7 @@ const faq = [
   {
     question: "What is Admin Abuse Week and how do I prepare?",
     answer:
-      "Admin Abuse Week (June 20–27) is a limited Update 6 event that triggers the 7x Admin mutation at high spawn rates. Prepare by: (1) saving your best seeds — Void Orchid, Ethereal Bloom, and Celestial Cactus — for the event window; (2) enabling Outer Ring 19x; (3) stacking Harvest Drone and Starfall Griffin pets; (4) redeeming code BZZBZZ for 50 Honey Tokens before the bee event rotates out. The Admin mutation is the second-highest in the game and compounds aggressively with ring and pet multipliers.",
+      "Admin Abuse Week is a limited Update 6 event that triggers the 7x Admin mutation at high spawn rates. Prepare by: (1) saving your best seeds — Void Fruit, Aethercoil, and Celestial seeds — for the event window; (2) enabling Outer Ring 19x; (3) stacking Harvest Drone and Starfall Griffin pets; (4) redeeming code BZZBZZ for 50 Honey Tokens before the bee event rotates out. The Admin mutation is the second-highest in the game and compounds aggressively with ring and pet multipliers.",
   },
   {
     question: "How does the Summer Plant Fuse Machine work?",
@@ -57,7 +57,7 @@ export function EventsGuidePage() {
         <p className="mt-4 max-w-3xl text-lg leading-8 text-slate-300">
           Every event in Build A Ring Farm explained: alien invasions, Plant Rush boss waves, void
           storms, radioactive pulses, hive outbreaks, fire bursts, the Starfall cosmic
-          event from Update 4, the Queen Bee event from Update 7, and the Admin Abuse Week (June 20–27) from Update 6. Use this guide to plan which events to chase, which mutations they
+          event from Update 4, the Queen Bee event from Update 7, and the Admin Abuse Week from Update 6. Use this guide to plan which events to chase, which mutations they
           apply, and which seeds to plant for the highest possible harvest spike.
         </p>
       </section>
@@ -106,8 +106,27 @@ export function EventsGuidePage() {
 
       <Section title="🐝 Update 7 — Queen Bee Event (Bee System)">
         <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
-          <InfoCard title="How It Works">
-            The Queen Bee Event is a rotating weather event that covers the map with a honeycomb dome for 5 minutes. Talk to the Beekeeper NPC for a free Worker Bee, place bees in your Hive, and they will automatically fly out to collect Nectar from your crops. When a bee's Nectar bar is full, it returns to the Hive and converts it into Honey — the event currency. Fill your Hive with bees, upgrade duplicates, and buy Hive upgrades from the Bee Merchant to accelerate honey production.
+          <InfoCard title="How to Start">
+            The Queen Bee Event covers the map with a honeycomb dome for 5 minutes. Start by talking to the <strong>Beekeeper NPC</strong> near your farm for a free <strong>Worker Bee</strong>. Place the bee in your <strong>Hive</strong> — the bee immediately begins flying out to collect <strong>Nectar</strong> from your crops. When its Nectar bar fills, it returns to the Hive and converts it into <strong>Honey</strong>, the event currency. The cycle repeats automatically.
+          </InfoCard>
+          <InfoCard title="Nectar → Honey Cycle">
+            Each bee has its own independent Nectar bar. Flying over any crop adds Nectar; once full, the bee returns home and deposits it as Honey, then immediately flies out again. The cycle is fully automatic and runs while you farm. Keep your Hive full of bees and your farm planted with crops at all times to maximize throughput.
+          </InfoCard>
+          <InfoCard title="Duplicate Bees — Upgrade or Sell">
+            When you roll a bee you already own, you have two choices:
+            <ul className="mt-2 space-y-1 text-sm text-slate-300">
+              <li>• <strong>Upgrade</strong> the existing bee — makes it stronger, faster Nectar collection, shorter cycle time. <em>Recommended.</em></li>
+              <li>• <strong>Sell</strong> the duplicate for a small amount of Honey — only use this when you need quick Honey to roll or buy a specific item.</li>
+            </ul>
+            Upgrading always gives better long-term returns than selling.
+          </InfoCard>
+          <InfoCard title="Hive Optimization Tips">
+            <ul className="mt-2 space-y-1 text-sm text-slate-300">
+              <li>• <strong>Keep the Hive full:</strong> Bees in your inventory do not produce Honey — every slot must be filled.</li>
+              <li>• <strong>Plant your whole farm:</strong> More crops means bees encounter Nectar sources faster on every flight path.</li>
+              <li>• <strong>Buy Hive Upgrades early:</strong> They increase capacity, production speed, and Honey yield — the single biggest lever for long-term output.</li>
+              <li>• <strong>Visit the Bee Merchant often:</strong> Permanent bees and exclusive items sell out; check the shop daily.</li>
+            </ul>
           </InfoCard>
           <InfoCard title="Honey Pot Rewards">
             Collect 5 Honeycombs from the map to craft 1 Honey Token. Spend Tokens at the Honey Pot:
@@ -119,11 +138,8 @@ export function EventsGuidePage() {
               <li>• Queen's Blossom Seed (Transcended, $550K) — 0.1%</li>
             </ul>
           </InfoCard>
-          <InfoCard title="Permanent Bees">
-            The Bee Merchant sells permanent bees tied to event milestones. These bees persist after the event ends, making them the most valuable long-term reward. Prioritize Hive upgrades and bee rolling to unlock them before the event rotation changes.
-          </InfoCard>
-          <InfoCard title="New Update 7 Codes">
-            Use code <strong>BZZBZZ</strong> for 50 Honey Tokens (free) and <strong>CARNIVAL</strong> for 100 Carnival Pass Tickets. Visit the codes page for the full list.
+          <InfoCard title="Bee Rolling Station & Merchant">
+            Use <strong>Honey</strong> at the <strong>Bee Rolling Station</strong> to pull random new bees. At the <strong>Bee Merchant</strong> (center of map) spend Honey on permanent bees, Hive upgrades, and special items — permanent bees <em>persist after the event ends</em>, making them the highest-value long-term reward from Update 7. The Bee Merchant's stock rotates, so check back frequently during the event window .
           </InfoCard>
         </div>
       </Section>
@@ -134,7 +150,7 @@ export function EventsGuidePage() {
             The Plant Rush boss is tied to the PLANTRUSH code and to recurring boss waves. Defeating the boss grants a Plant Rush Boss Box with sprays, seed packs, and rare event items. Coordinate your server to clear the boss fast and share rewards with friends for the Friend O Tron bonus.
           </InfoCard>
           <InfoCard title="Hive Boss (Honeycomb)">
-            Hive events trigger the 6.5x Honeycomb mutation. The hive boss is the toughest standard event. Bring an S-Tier seed such as Aurora Lotus or Celestial Cactus to maximize the per-harvest payoff if you manage to apply Honeycomb.
+            Hive events trigger the 6.5x Honeycomb mutation. The hive boss is the toughest standard event. Bring an S-Tier seed such as Aurora Lotus or Aethercoil to maximize the per-harvest payoff if you manage to apply Honeycomb.
           </InfoCard>
           <InfoCard title="Update 4 Cosmic Bosses">
             Update 4 added cosmic-tier bosses that can apply Fire, Bubblegum, Admin, and Starfall mutations. These bosses are rare, so save your best seeds for when they spawn instead of burning them on standard waves.
@@ -193,10 +209,10 @@ export function EventsGuidePage() {
         </div>
       </Section>
 
-      <Section title="⚡ Update 6 — Admin Abuse Week (June 20–27)">
+      <Section title="⚡ Update 6 — Admin Abuse Week">
         <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
           <InfoCard title="How Admin Abuse Week Works">
-            Admin Abuse is a limited-time weekly event running <strong>June 20–27</strong>. During this window, a special Admin Abuse event triggers across all servers, applying the <strong>7x Admin mutation</strong> to crops. The event has a higher spawn rate than standard cosmic events and lasts for extended windows, making it ideal for leaderboard pushes.
+            Admin Abuse is a limited-time weekly event. During this window, a special Admin Abuse event triggers across all servers, applying the <strong>7x Admin mutation</strong> to crops. The event has a higher spawn rate than standard cosmic events and lasts for extended windows, making it ideal for leaderboard pushes.
           </InfoCard>
           <InfoCard title="Admin Mutation (7x)">
             The Admin mutation applies a <strong>7x harvest multiplier</strong> — the second-highest in the game behind Carnival at 9.5x. It is a special-tier mutation that stacks with ring multipliers (7x → 13x → 19x base) and pet bonuses. Pair with Transcended or Divine seeds for maximum profit spikes.
@@ -205,7 +221,7 @@ export function EventsGuidePage() {
             Admin Abuse week introduces a rotating exclusive seed pool available only during the event window. These seeds have boosted drop rates from standard farming activities. Check the in-game shop daily for limited seed packs tied to the event.
           </InfoCard>
           <InfoCard title="Admin Abuse Strategy">
-            Time your best seeds (Void Orchid, Ethereal Bloom, Starlight Fern) for the Admin Abuse event window. Enable Outer Ring 19x, stack with Harvest Drone automation, and use the 7x mutation for the largest single-harvest numbers of the week. This is a <strong>one-week-only leaderboard opportunity</strong>.
+            Time your best seeds (Void Fruit, Aethercoil, Titan Arum) for the Admin Abuse event window. Enable Outer Ring 19x, stack with Harvest Drone automation, and use the 7x mutation for the largest single-harvest numbers of the week. This is a <strong>one-week-only leaderboard opportunity</strong>.
           </InfoCard>
         </div>
       </Section>
@@ -239,7 +255,7 @@ export function EventsGuidePage() {
             The Prize Wheel drops Lucky Clover seeds which passively boost fusion and spray success rates. Rotate prize wheel spins daily to accumulate clovers before major fusion sessions.
           </InfoCard>
           <InfoCard title="Event Calendar Tip">
-            Admin Abuse Week (June 20–27) overlaps with the final days of the Queen Bee Update 7 event. Players with remaining Honey Tokens should prioritize spending them before the event rotation changes, as the Bee System rewards are expected to shift in Update 8.
+            Admin Abuse Week overlaps with the final days of the Queen Bee Update 7 event. Players with remaining Honey Tokens should prioritize spending them before the event rotation changes, as the Bee System rewards are expected to shift in Update 8.
           </InfoCard>
         </div>
       </Section>

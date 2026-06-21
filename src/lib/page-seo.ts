@@ -22,16 +22,16 @@ export const pageSeo = {
   },
   codes: {
     path: "/codes",
-    title: "Build A Ring Farm Codes (June 2026) - 8 Working Codes",
+    title: "Build A Ring Farm Codes (June 2026) - 11 Working Codes",
     description:
-      "Active Build A Ring Farm codes: 250KUSERS, PLANTRUSH, UPDATE2, THANKYOU, BARF:3, 2KLIKES, UPDATE1, 100KVISITS. Copy and redeem instantly. Updated June 2026.",
+      "Active Build A Ring Farm codes: BZZBZZ, CARNIVAL, UPDATE5, 250KUSERS, PLANTRUSH, UPDATE2, THANKYOU, BARF:3, 2KLIKES, UPDATE1, 100KVISITS. Copy and redeem instantly. Updated June 2026.",
     keywords: ["barf codes", "build a ring farm codes 2026", "build a ring farm redeem codes"],
   },
   tierList: {
     path: "/tier-list",
     title: "Build A Ring Farm Tier List - Best Seeds Ranked (S-Tier to D-Tier)",
     description:
-      "All 35 seeds ranked S to D by profit, growth time, and endgame viability. Includes pets and mutations tier lists for Build A Ring Farm.",
+      "All 115 seeds ranked S to D by profit, growth time, and endgame viability. Includes pets and mutations tier lists for Build A Ring Farm.",
     keywords: ["build a ring farm tier list", "build a ring farm seeds tier list", "best seeds build a ring farm", "buildaringfarmguides"],
   },
   update4: {
@@ -52,14 +52,14 @@ export const pageSeo = {
     path: "/pets-tier-list",
     title: "Build A Ring Farm Pets Tier List - Best Pets Ranked (S to D)",
     description:
-      "Complete pets tier list for Build A Ring Farm. We rank Harvest Drone, Rain Cloud, and all 8 pets from S-Tier (best) to D-Tier (skip).",
+      "Complete pets tier list for Build A Ring Farm. We rank Harvest Drone, Rain Cloud, and all 33 pets from S-Tier (best) to D-Tier (skip).",
     keywords: ["build a ring farm pets tier list", "best pets build a ring farm", "build a ring farm pets"],
   },
   mutations: {
     path: "/mutations-tier-list",
-    title: "Build A Ring Farm Mutations Tier List - All 14 Mutations Ranked",
+    title: "Build A Ring Farm Mutations Tier List - All 15 Mutations Ranked",
     description:
-      "Every mutation in Build A Ring Farm ranked by multiplier value. From Wet (1.5x) to Starfall (8x) - plus Update 4's Fire, Bubblegum, Admin, and Starfall.",
+      "Every mutation in Build A Ring Farm ranked by multiplier value. From Wet (1.5x) to Carnival (9.5x) - plus Update 4's Fire, Bubblegum, Admin, and Starfall.",
     keywords: ["build a ring farm mutations tier list", "build a ring farm mutations"],
   },
   transcendent: {
@@ -92,9 +92,9 @@ export const pageSeo = {
   },
   seeds: {
     path: "/seeds-database",
-    title: "Build A Ring Farm Seeds Database - All 35 Seeds, Prices & Profit",
+    title: "Build A Ring Farm Seeds Database - All 115 Seeds, Prices & Profit",
     description:
-      "Browse all 35 Build A Ring Farm seeds by rarity, price, sell value, growth time, tier, and estimated profit per minute. Updated for Update 4.",
+      "Browse all 115 Build A Ring Farm seeds by rarity, price, sell value, growth time, tier, and estimated profit per minute. Updated for Update 4.",
     keywords: ["build a ring farm seeds", "build a ring farm seed database", "build a ring farm all seeds"],
   },
   about: {

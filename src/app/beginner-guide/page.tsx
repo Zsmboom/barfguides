@@ -11,7 +11,7 @@ import { breadcrumbSchema, faqSchema } from "@/lib/seo";
 const faq = [
   {
     question: "What should beginners do first in Build A Ring Farm?",
-    answer: "Redeem all 8 active codes (PLANTRUSH, 250KUSERS, UPDATE2, THANKYOU, BARF:3, 2KLIKES, UPDATE1, 100KVISITS), plant cheap fast seeds (Carrot, Beetroot, Pumpkin), reinvest profits into more plots, and only then move into better seed tiers. Skip the rare mutation chase until you have at least the Base Ring.",
+    answer: "Redeem all 11 active codes (BZZBZZ, CARNIVAL, UPDATE5, PLANTRUSH, 250KUSERS, UPDATE2, THANKYOU, BARF:3, 2KLIKES, UPDATE1, 100KVISITS), plant cheap fast seeds (Carrot, Beetroot, Pumpkin), reinvest profits into more plots, and only then move into better seed tiers. Skip the rare mutation chase until you have at least the Base Ring.",
   },
   {
     question: "When should I unlock the Middle Ring?",
@@ -34,7 +34,7 @@ const faq = [
 const stages = [
   {
     title: "Stage 1: First Hour ($0 to $100)",
-    body: "Redeem all 8 active codes first, especially PLANTRUSH, 250KUSERS, and 100KVISITS for the time skips. Plant Carrot on every available plot - the $3 buy cost pays back in a single 10 second harvest. After every 5 to 10 harvests, spend profits on one more plot before upgrading seed tier. The fastest exit out of stage 1 is plot count, not seed swaps.",
+    body: "Redeem all 11 active codes first, especially PLANTRUSH, 250KUSERS, and 100KVISITS for the time skips. Plant Carrot on every available plot - the $3 buy cost pays back in a single 10 second harvest. After every 5 to 10 harvests, spend profits on one more plot before upgrading seed tier. The fastest exit out of stage 1 is plot count, not seed swaps.",
   },
   {
     title: "Stage 2: $100 to $1,000",
@@ -50,7 +50,7 @@ const stages = [
   },
   {
     title: "Stage 5: Endgame ($100,000+)",
-    body: "Outer Ring (19x) is mandatory for any Transcended, Divine, or Exotic seed to be profitable. Save for it first, then push Dragonfruit, Aurora Lotus, and Void Orchid. Add Harvest Drone for full automation, and start timing your harvest spikes around Starfall or Admin events. This is the path to the top 100 of the leaderboard.",
+    body: "Outer Ring (19x) is mandatory for any Transcended, Divine, or Exotic seed to be profitable. Save for it first, then push Dragonfruit, Aethercoil, and Void Fruit. Add Harvest Drone for full automation, and start timing your harvest spikes around Carnival or Admin events. This is the path to the top 100 of the leaderboard.",
   },
 ];
 
@@ -121,7 +121,7 @@ export function BeginnerGuidePage() {
       <Section title="First 10 Minutes: Step by Step">
         <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
           <InfoCard title="Step 1: Redeem codes">
-            Open the codes panel and paste 250KUSERS, PLANTRUSH, UPDATE2, THANKYOU, BARF:3, 2KLIKES, UPDATE1, and 100KVISITS. The time skips and Tropical Seed Packs immediately help your first hour. {activeCodes.length} active codes are available in June 2026 -{" "}
+            Open the codes panel and paste BZZBZZ, CARNIVAL, UPDATE5, 250KUSERS, PLANTRUSH, UPDATE2, THANKYOU, BARF:3, 2KLIKES, UPDATE1, and 100KVISITS. The time skips and Tropical Seed Packs immediately help your first hour. {activeCodes.length} active codes are available -{" "}
             <Link to="/codes" className="font-bold text-emerald-300 min-h-[44px]">see the codes page</Link>.
           </InfoCard>
           <InfoCard title="Step 2: Plant Carrot on every plot">

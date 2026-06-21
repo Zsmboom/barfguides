@@ -8,10 +8,10 @@ import { activeCodes, rings, seeds } from "@/lib/data";
 
 
 const faq = [
-  { question: "What is the fastest way to make money in Build A Ring Farm?", answer: "Early game: Redeem all 8 codes (especially PLANTRUSH and 250KUSERS for time skips), then plant Carrot on every plot. Mid game: Unlock Middle Ring (13x) and plant Citrus or Banana. Late game: Outer Ring (19x) with Dragonfruit or Void Orchid, stacking the highest mutation multiplier available during events." },
+  { question: "What is the fastest way to make money in Build A Ring Farm?", answer: "Early game: Redeem all 11 codes (especially PLANTRUSH and 250KUSERS for time skips), then plant Carrot on every plot. Mid game: Unlock Middle Ring (13x) and plant Citrus or Banana. Late game: Outer Ring (19x) with Dragonfruit or Void Fruit, stacking the highest mutation multiplier available during events." },
   { question: "Should I use the Compost Machine for money?", answer: "Yes, once you have excess low-tier seeds. Compost Carrot, Beetroot, and Pumpkin stacks to earn event rewards and fertilizer packs. But do not compost high-value seeds — their harvest value always beats the compost reward." },
   { question: "What ring is best for making money?", answer: "Outer Ring (19x) is the best, but it costs the most to unlock. Progress from Base Ring (7x) to Middle Ring (13x) first, then save for Outer Ring before buying expensive Transcended seeds." },
-  { question: "How much can I earn per hour with the best setup?", answer: "With Outer Ring (19x), a Starfall mutation (8x), and a full plot of Void Orchid ($10M each), a single harvest can reach $152M in under 4 minutes — roughly $2.28B/hour theoretical max. Realistic late-game setups earn $50-100M/hour." },
+  { question: "How much can I earn per hour with the best setup?", answer: "With Outer Ring (19x), a Starfall mutation (8x), and a full plot of Void Fruit ($15T each), a single harvest can reach astronomical values in under 4 minutes. Realistic late-game setups earn $50-100M/hour." },
   { question: "Should I buy pets for money making?", answer: "Harvest Drone (S-Tier) and Rain Cloud (S-Tier) pay for themselves within hours by eliminating manual harvest loss and maintaining Wet mutation uptime. Skip lower-tier pets unless you have spare funds." },
 ];
 
@@ -22,14 +22,14 @@ const topProfitSeeds = seeds
 const ringProfitTips = [
   { ring: "Base Ring (7x)", tip: "Unlock at $100. With Carrot ($4 sell), each harvest earns $28 instead of $4. Payback: 3 harvests." },
   { ring: "Middle Ring (13x)", tip: "Unlock at ~$1,000. With Banana ($4.4K sell), each harvest earns $57.2K. Payback: 2-3 harvests with a full plot." },
-  { ring: "Outer Ring (19x)", tip: "Unlock at ~$50,000+. With Void Orchid ($10M sell), each harvest earns $190M. Absolute requirement for endgame." },
+  { ring: "Outer Ring (19x)", tip: "Unlock at ~$50,000+. With Void Fruit ($360K sell), each harvest earns $6.84M. Absolute requirement for endgame." },
 ];
 
 const strategies = [
   {
     title: "Strategy 1: Speed Farming (Early Game)",
     steps: [
-      "Redeem all 8 active codes first — PLANTRUSH and 250KUSERS give time skips that skip the first few minutes of waiting.",
+      "Redeem all 11 active codes first — PLANTRUSH and 250KUSERS give time skips that skip the first few minutes of waiting.",
       "Plant Carrot on every available plot. At $3 each with a 10-second growth cycle, this is the fastest cash-to-time ratio in the game.",
       "Reinvest every $3 profit into a new plot, not a better seed. Plot count > seed quality until you have 8+ slots.",
       "At $100, buy Base Ring (7x). Your profit per harvest jumps from $4 to $28 per Carrot.",
@@ -58,7 +58,7 @@ const strategies = [
     steps: [
       "Outer Ring (19x) is non-negotiable. Save $50K+ for it before buying any Transcended or Divine seeds.",
       "Dragonfruit ($350K buy, $650K sell) is the entry point. With Outer Ring, a single harvest earns $12.35M.",
-      "Void Orchid ($5M buy, $10M sell) is the current top profit seed. With Outer Ring + Starfall, one harvest = $152M.",
+      "Void Fruit ($15T buy, $360K sell) is the current top profit seed. With Outer Ring + Starfall, one harvest reaches the billions.",
       "Harvest Drone automates the entire process. Once you have it, you scale from millions to billions per hour.",
     ],
   },
@@ -167,7 +167,7 @@ export function MoneyGuidePage() {
             "Buying expensive seeds before Middle Ring — the profit per minute is lower than stacking Common plots.",
             "Hoarding cash instead of buying plots or rings — idle money earns nothing.",
             "Harvesting during non-mutation periods on high-value seeds — wait for Wet or better.",
-            "Skipping code redemptions — 8 active codes give time skips, seed packs, and sprays for free.",
+            "Skipping code redemptions — 11 active codes give time skips, seed packs, and sprays for free.",
             "Composting high-tier seeds — the harvest value always exceeds the compost reward.",
             "Ignoring pet automation past mid game — manual harvest becomes a bottleneck at scale.",
           ].map((tip) => (
