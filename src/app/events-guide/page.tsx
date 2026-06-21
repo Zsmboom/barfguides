@@ -27,6 +27,16 @@ const faq = [
     answer:
       "No. New players should focus on stable event triggers such as Wet, Autumn, and Radioactive. Save event-based rare mutations for mid and late game once you can afford to wait through long cooldowns and have at least Outer Ring unlocked.",
   },
+  {
+    question: "What is Admin Abuse Week and how do I prepare?",
+    answer:
+      "Admin Abuse Week (June 20–27) is a limited Update 6 event that triggers the 7x Admin mutation at high spawn rates. Prepare by: (1) saving your best seeds — Void Orchid, Ethereal Bloom, and Celestial Cactus — for the event window; (2) enabling Outer Ring 19x; (3) stacking Harvest Drone and Starfall Griffin pets; (4) redeeming code BZZBZZ for 50 Honey Tokens before the bee event rotates out. The Admin mutation is the second-highest in the game and compounds aggressively with ring and pet multipliers.",
+  },
+  {
+    question: "How does the Summer Plant Fuse Machine work?",
+    answer:
+      "The Summer Plant Fuse Machine consumes 4 seeds of the same rarity tier and has a chance to output a seed from the next tier up. Each successful fuse permanently adds +5% to your farm earnings — these stack and persist after the event. Use Lucky Clover seeds adjacent to the machine for +10% fusion success rate, and save Eternal seeds for your highest-rarity fuse attempts to guarantee success on Secret+ tier seeds.",
+  },
 ];
 
 const eventMuts = mutations.filter((m) => m.multiplier >= 3);
@@ -39,15 +49,15 @@ export function EventsGuidePage() {
       />
       <section className="mx-auto max-w-7xl px-4 py-12">
         <p className="text-sm font-bold uppercase tracking-[0.2em] text-emerald-300">
-          Update 4 + Update 7 events coverage
+          Update 4 + Update 6 + Update 7 events coverage
         </p>
         <h1 className="mt-3 text-4xl font-black text-white md:text-5xl">
           Build A Ring Farm Events Guide
         </h1>
         <p className="mt-4 max-w-3xl text-lg leading-8 text-slate-300">
           Every event in Build A Ring Farm explained: alien invasions, Plant Rush boss waves, void
-          storms, radioactive pulses, hive outbreaks, fire bursts, the new Starfall cosmic
-          event from Update 4, and the Queen Bee event from Update 7. Use this guide to plan which events to chase, which mutations they
+          storms, radioactive pulses, hive outbreaks, fire bursts, the Starfall cosmic
+          event from Update 4, the Queen Bee event from Update 7, and the Admin Abuse Week (June 20–27) from Update 6. Use this guide to plan which events to chase, which mutations they
           apply, and which seeds to plant for the highest possible harvest spike.
         </p>
       </section>
@@ -180,6 +190,57 @@ export function EventsGuidePage() {
                 <span className="mt-2 block text-slate-400">{pet.recommendation}</span>
               </InfoCard>
             ))}
+        </div>
+      </Section>
+
+      <Section title="⚡ Update 6 — Admin Abuse Week (June 20–27)">
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
+          <InfoCard title="How Admin Abuse Week Works">
+            Admin Abuse is a limited-time weekly event running <strong>June 20–27</strong>. During this window, a special Admin Abuse event triggers across all servers, applying the <strong>7x Admin mutation</strong> to crops. The event has a higher spawn rate than standard cosmic events and lasts for extended windows, making it ideal for leaderboard pushes.
+          </InfoCard>
+          <InfoCard title="Admin Mutation (7x)">
+            The Admin mutation applies a <strong>7x harvest multiplier</strong> — the second-highest in the game behind Carnival at 9.5x. It is a special-tier mutation that stacks with ring multipliers (7x → 13x → 19x base) and pet bonuses. Pair with Transcended or Divine seeds for maximum profit spikes.
+          </InfoCard>
+          <InfoCard title="Exclusive Seed Pool">
+            Admin Abuse week introduces a rotating exclusive seed pool available only during the event window. These seeds have boosted drop rates from standard farming activities. Check the in-game shop daily for limited seed packs tied to the event.
+          </InfoCard>
+          <InfoCard title="Admin Abuse Strategy">
+            Time your best seeds (Void Orchid, Ethereal Bloom, Starlight Fern) for the Admin Abuse event window. Enable Outer Ring 19x, stack with Harvest Drone automation, and use the 7x mutation for the largest single-harvest numbers of the week. This is a <strong>one-week-only leaderboard opportunity</strong>.
+          </InfoCard>
+        </div>
+      </Section>
+
+      <Section title="☀️ Summer Plant Fuse Machine">
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
+          <InfoCard title="Fuse Mechanics">
+            The Summer Plant Fuse Machine takes <strong>4 seeds of the same rarity tier</strong> and fuses them together, producing a single higher-tier seed. The fusion has a chance to produce seeds from the next rarity tier up — for example, 4 Legendary seeds may yield a Secret seed. This is the primary way to bridge into Secret and Transcended tiers without spending Robux.
+          </InfoCard>
+          <InfoCard title="Permanent Farm Earnings Bonus">
+            Each successful fuse permanently increases your farm earnings by <strong>+5%</strong>. These bonuses stack additively, so multiple fusions can compound significantly. The bonus applies across all rings and persists after the Summer event ends — making the Fuse Machine the most impactful long-term investment of Update 7.
+          </InfoCard>
+          <InfoCard title="Jackpot Rolling System">
+            The Jackpot roller has a chance to upgrade any seed used in a fusion to its next-tier variant. The base Jackpot chance is low (~1–2%), but it increases with the number of consecutive failed rolls. After 20–30 failed fuses, the Jackpot probability becomes significant enough to warrant using your rarest seeds.
+          </InfoCard>
+          <InfoCard title="Lucky Clover + Eternal Seeds">
+            Lucky Clover seeds add +10% to all fusion success rates when planted adjacent to the Fuse Machine. Eternal seeds are a special consumable that guarantees one fuse success — save these for your highest-rarity seed attempts. Stack Lucky Clover passive with Eternal fuses for best results on Secret+ tier seeds.
+          </InfoCard>
+        </div>
+      </Section>
+
+      <Section title="🎰 Carnival Rolling Systems">
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
+          <InfoCard title="Carnival Mutation (9.5x)">
+            The Carnival spray applies the <strong>9.5x Carnival mutation</strong> — the highest multiplier mutation in the game. It is obtained exclusively from the Gear Shop during the Carnival event window. The mutation lasts until the next harvest and stacks with all other bonuses. This is the ultimate event target for leaderboard chasers.
+          </InfoCard>
+          <InfoCard title="Carnival Pass Tickets">
+            Use code <strong>CARNIVAL</strong> for 100 Carnival Pass Tickets. These tickets are used in the Carnival event machine for crate pulls and exclusive rewards. The tickets do not expire and carry over between Carnival event rotations.
+          </InfoCard>
+          <InfoCard title="Prize Wheel & Lucky Clover">
+            The Prize Wheel drops Lucky Clover seeds which passively boost fusion and spray success rates. Rotate prize wheel spins daily to accumulate clovers before major fusion sessions.
+          </InfoCard>
+          <InfoCard title="Event Calendar Tip">
+            Admin Abuse Week (June 20–27) overlaps with the final days of the Queen Bee Update 7 event. Players with remaining Honey Tokens should prioritize spending them before the event rotation changes, as the Bee System rewards are expected to shift in Update 8.
+          </InfoCard>
         </div>
       </Section>
 

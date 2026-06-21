@@ -65,7 +65,7 @@ export const site = {
   robloxGameId: "107646426076756",
   developer: "Gamecreates",
   genre: "Simulator / Farming",
-  update: "Update 7",
+  update: "Update 7 + Admin Abuse Week",
 };
 
 export const seeds = seedsData.seeds;
