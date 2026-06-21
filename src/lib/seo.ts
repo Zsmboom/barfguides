@@ -39,7 +39,7 @@ export interface PageMetaTags {
 }
 
 export function buildPageMetadata({ title, description, keywords, path }: PageSeo): PageMetaTags {
-  const canonical = `${site.baseUrl}${path === "/" ? "/" : `${path}/`}`;
+  const canonical = `${site.baseUrl}${path}`;
 
   return {
     title,
