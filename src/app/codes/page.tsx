@@ -1,6 +1,7 @@
 import { CopyButton } from "@/components/CopyButton";
 import { JsonLd } from "@/components/JsonLd";
 import { InfoCard, Section } from "@/components/Section";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { activeCodes, expiredCodes } from "@/lib/data";
 import { pageSeo } from "@/lib/page-seo";
 import { breadcrumbSchema, faqSchema } from "@/lib/seo";
@@ -20,6 +21,7 @@ export function CodesPage() {
   return (
     <>
       <JsonLd data={[breadcrumbSchema(pageSeo.codes.path, "Codes"), faqSchema(faq)]} />
+      <Breadcrumbs segments={[{label: "Home", href: "/"}, {label: "Codes", href: "/codes"}]} />
       <section className="mx-auto max-w-7xl px-4 py-12">
         <p className="text-sm font-bold uppercase tracking-[0.2em] text-emerald-300">Updated June 2026</p>
         <h1 className="mt-3 text-4xl font-black text-white md:text-5xl">Build A Ring Farm Codes</h1>

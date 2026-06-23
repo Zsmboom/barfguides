@@ -7,6 +7,7 @@ export function getRouter() {
     defaultPreload: "intent",
     defaultPreloadStaleTime: 0,
     scrollRestoration: true,
+    trailingSlash: "never",
   });
 
   return router;

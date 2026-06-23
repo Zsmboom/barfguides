@@ -1,5 +1,6 @@
 import { JsonLd } from "@/components/JsonLd";
 import { Section } from "@/components/Section";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { pageSeo } from "@/lib/page-seo";
 import { breadcrumbSchema } from "@/lib/seo";
 
@@ -7,6 +8,7 @@ export function ContactPage() {
   return (
     <>
       <JsonLd data={[breadcrumbSchema("/contact", "Contact")]} />
+      <Breadcrumbs segments={[{label: "Home", href: "/"}, {label: "Contact", href: "/contact"}]} />
       <main className="mx-auto max-w-7xl px-4 py-10">
         <Section eyebrow="CONTACT" level={1} title="Contact Us">
           <div className="max-w-3xl space-y-6 text-slate-300">

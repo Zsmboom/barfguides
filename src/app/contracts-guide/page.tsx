@@ -1,6 +1,7 @@
 import { JsonLd } from "@/components/JsonLd";
 import { Link } from "@tanstack/react-router";
 import { InfoCard, Section } from "@/components/Section";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { pageSeo } from "@/lib/page-seo";
 import { breadcrumbSchema, faqSchema } from "@/lib/seo";
 import { DataDisclaimer } from "@/components/DataDisclaimer";
@@ -32,7 +33,7 @@ export function ContractsGuidePage() {
   return (
     <main className="mx-auto max-w-7xl px-4 py-10">
       <JsonLd data={[breadcrumbSchema(pageSeo.contracts.path, "Plant Contracts Guide"), faqSchema(faq)]} />
-
+      <Breadcrumbs segments={[{label: "Home", href: "/"}, {label: "Plant Contracts Guide", href: "/contracts-guide"}]} />
       <section className="mx-auto max-w-7xl px-4 py-12">
         <p className="text-sm font-bold uppercase tracking-[0.2em] text-emerald-300">Update 4 Feature</p>
         <h1 className="mt-3 text-4xl font-black text-white md:text-5xl">Plant Contracts Guide</h1>

@@ -3,6 +3,7 @@ import { Link } from "@tanstack/react-router";
 import { DataDisclaimer } from "@/components/DataDisclaimer";
 import { JsonLd } from "@/components/JsonLd";
 import { InfoCard, Section } from "@/components/Section";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { activeCodes, rings, seeds } from "@/lib/data";
 import { pageSeo } from "@/lib/page-seo";
 import { breadcrumbSchema, faqSchema } from "@/lib/seo";
@@ -80,6 +81,7 @@ export function BeginnerGuidePage() {
           faqSchema(faq),
         ]}
       />
+      <Breadcrumbs segments={[{label: "Home", href: "/"}, {label: "Beginner Guide", href: "/beginner-guide"}]} />
       {/* Hero banner */}
       <div className="mx-auto max-w-7xl px-4 pt-6">
         <div className="overflow-hidden rounded-xl border border-white/10">

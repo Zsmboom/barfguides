@@ -3,6 +3,7 @@ import { JsonLd } from "@/components/JsonLd";
 import { InfoCard, Section } from "@/components/Section";
 import { MutationTable, PetTable, SeedsTable } from "@/components/Tables";
 import { DataDisclaimer } from "@/components/DataDisclaimer";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { byTier, mutations, pets, seeds } from "@/lib/data";
 import { pageSeo } from "@/lib/page-seo";
 import { breadcrumbSchema, faqSchema } from "@/lib/seo";
@@ -32,6 +33,7 @@ export function TierListPage() {
   return (
     <>
       <JsonLd data={[breadcrumbSchema(pageSeo.tierList.path, "Tier List"), faqSchema(faq)]} />
+      <Breadcrumbs segments={[{label: "Home", href: "/"}, {label: "Tier List", href: "/tier-list"}]} />
       <section className="mx-auto max-w-7xl px-4 py-12">
         <p className="text-sm font-bold uppercase tracking-[0.2em] text-emerald-300">Seeds, pets, and mutations</p>
         <h1 className="mt-3 text-4xl font-black text-white md:text-5xl">Build A Ring Farm Tier List</h1>

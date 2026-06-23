@@ -2,6 +2,7 @@ import { JsonLd } from "@/components/JsonLd";
 import { PetTable } from "@/components/Tables";
 import { InfoCard, Section } from "@/components/Section";
 import { DataDisclaimer } from "@/components/DataDisclaimer";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { byTier, pets } from "@/lib/data";
 import { pageSeo } from "@/lib/page-seo";
 import { breadcrumbSchema } from "@/lib/seo";
@@ -14,6 +15,7 @@ export function PetsTierListPage() {
   return (
     <main className="mx-auto max-w-7xl px-4 py-10">
       <JsonLd data={[breadcrumbSchema("/pets-tier-list", "Pets Tier List")]} />
+      <Breadcrumbs segments={[{label: "Home", href: "/"}, {label: "Pets Tier List", href: "/pets-tier-list"}]} />
       <Section eyebrow="TIER LIST" level={1} title="Build A Ring Farm Pets Tier List">
         <p className="text-slate-400">
           Every pet in Build A Ring Farm ranked from S-Tier (must-have) to D-Tier (skip). Choose the right pet for your playstyle and progression stage.

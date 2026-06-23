@@ -1,5 +1,6 @@
 import { JsonLd } from "@/components/JsonLd";
 import { InfoCard, Section } from "@/components/Section";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { activeCodes, mutations, pets, seeds } from "@/lib/data";
 import { pageSeo } from "@/lib/page-seo";
 import { breadcrumbSchema, faqSchema } from "@/lib/seo";
@@ -25,6 +26,7 @@ export function Update4PatchNotesPage() {
   return (
     <>
       <JsonLd data={[breadcrumbSchema(pageSeo.update4.path, "Update 4 Patch Notes"), faqSchema(faq)]} />
+      <Breadcrumbs segments={[{label: "Home", href: "/"}, {label: "Update 4 Patch Notes", href: "/update-4-patch-notes"}]} />
       <section className="mx-auto max-w-7xl px-4 py-12">
         <p className="text-sm font-bold uppercase tracking-[0.2em] text-emerald-300">Update 4 + later updates</p>
         <h1 className="mt-3 text-4xl font-black text-white md:text-5xl">Build A Ring Farm Update 4 Patch Notes</h1>

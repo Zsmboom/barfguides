@@ -1,5 +1,6 @@
 import { JsonLd } from "@/components/JsonLd";
 import { Section } from "@/components/Section";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { pageSeo } from "@/lib/page-seo";
 import { breadcrumbSchema } from "@/lib/seo";
 
@@ -7,6 +8,7 @@ export function PrivacyPolicyPage() {
   return (
     <main className="mx-auto max-w-7xl px-4 py-10">
       <JsonLd data={[breadcrumbSchema("/privacy-policy", "Privacy Policy")]} />
+      <Breadcrumbs segments={[{label: "Home", href: "/"}, {label: "Privacy Policy", href: "/privacy-policy"}]} />
       <Section eyebrow="PRIVACY" level={1} title="Privacy Policy">
         <div className="max-w-3xl space-y-4 text-sm text-slate-300">
           <h2 className="text-lg font-bold text-white">Information We Collect</h2>

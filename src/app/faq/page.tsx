@@ -1,6 +1,7 @@
 import { JsonLd } from "@/components/JsonLd";
 import { Link } from "@tanstack/react-router";
 import { InfoCard, Section } from "@/components/Section";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { pageSeo } from "@/lib/page-seo";
 import { DataDisclaimer } from "@/components/DataDisclaimer";
 import { breadcrumbSchema, faqSchema } from "@/lib/seo";
@@ -148,6 +149,7 @@ export function FaqPage() {
       <JsonLd
         data={[breadcrumbSchema(pageSeo.faq.path, "FAQ"), faqSchema(allFaq)]}
       />
+      <Breadcrumbs segments={[{label: "Home", href: "/"}, {label: "FAQ", href: "/faq"}]} />
       <section className="mx-auto max-w-7xl px-4 py-12">
         <p className="text-sm font-bold uppercase tracking-[0.2em] text-emerald-300">
           Build A Ring Farm questions answered

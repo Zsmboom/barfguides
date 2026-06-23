@@ -1,5 +1,6 @@
 import { JsonLd } from "@/components/JsonLd";
 import { InfoCard, Section } from "@/components/Section";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { mutations, pets, seeds } from "@/lib/data";
 import { pageSeo } from "@/lib/page-seo";
 import { breadcrumbSchema, faqSchema } from "@/lib/seo";
@@ -47,6 +48,7 @@ export function EventsGuidePage() {
       <JsonLd
         data={[breadcrumbSchema(pageSeo.events.path, "Events Guide"), faqSchema(faq)]}
       />
+      <Breadcrumbs segments={[{label: "Home", href: "/"}, {label: "Events Guide", href: "/events-guide"}]} />
       <section className="mx-auto max-w-7xl px-4 py-12">
         <p className="text-sm font-bold uppercase tracking-[0.2em] text-emerald-300">
           Update 4 + Update 6 + Update 7 events coverage

@@ -1,6 +1,7 @@
 import { JsonLd } from "@/components/JsonLd";
 import { ProfitCalculator } from "@/components/ProfitCalculator";
 import { InfoCard, Section } from "@/components/Section";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { pageSeo } from "@/lib/page-seo";
 import { breadcrumbSchema, faqSchema } from "@/lib/seo";
 import { DataDisclaimer } from "@/components/DataDisclaimer";
@@ -25,6 +26,7 @@ export function ProfitCalculatorPage() {
   return (
     <>
       <JsonLd data={[breadcrumbSchema(pageSeo.calculator.path, "Profit Calculator"), faqSchema(faq)]} />
+      <Breadcrumbs segments={[{label: "Home", href: "/"}, {label: "Profit Calculator", href: "/profit-calculator"}]} />
       <section className="mx-auto max-w-7xl px-4 py-12">
         <p className="text-sm font-bold uppercase tracking-[0.2em] text-emerald-300">Seed earnings and ROI</p>
         <h1 className="mt-3 text-4xl font-black tracking-tight text-white md:text-5xl">

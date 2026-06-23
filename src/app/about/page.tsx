@@ -1,5 +1,6 @@
 import { JsonLd } from "@/components/JsonLd";
 import { Section } from "@/components/Section";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { pageSeo } from "@/lib/page-seo";
 import { breadcrumbSchema, videoGameSchema } from "@/lib/seo";
 
@@ -7,6 +8,7 @@ export function AboutPage() {
   return (
     <>
       <JsonLd data={[breadcrumbSchema("/about", "About"), videoGameSchema()]} />
+      <Breadcrumbs segments={[{label: "Home", href: "/"}, {label: "About", href: "/about"}]} />
       <div className="mx-auto max-w-7xl px-4 pt-10">
         <div className="overflow-hidden rounded-xl border border-white/10">
           <img

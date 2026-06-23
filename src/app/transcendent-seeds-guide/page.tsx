@@ -2,6 +2,7 @@ import { DataDisclaimer } from "@/components/DataDisclaimer";
 import { JsonLd } from "@/components/JsonLd";
 import { InfoCard, Section } from "@/components/Section";
 import { MiniSeedCard } from "@/components/Tables";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { pageSeo } from "@/lib/page-seo";
 import { breadcrumbSchema, faqSchema, jsonLd } from "@/lib/seo";
 import { seeds } from "@/lib/data";
@@ -21,7 +22,7 @@ export function TranscendentSeedsGuidePage() {
   return (
     <main className="mx-auto max-w-7xl px-4 py-10">
       <JsonLd data={[breadcrumbSchema("/transcendent-seeds-guide", "Transcendent Seeds Guide"), faqSchema(faq)]} />
-      
+      <Breadcrumbs segments={[{label: "Home", href: "/"}, {label: "Transcendent Seeds Guide", href: "/transcendent-seeds-guide"}]} />
       <Section eyebrow="GUIDE" level={1} title="How to Get Transcendent Seeds in Build A Ring Farm">
         <p className="text-slate-400">Transcendent seeds are the highest-tier seeds in Build A Ring Farm. This guide covers how to obtain them, seed luck mechanics, and the best strategies for farming them.</p>
       </Section>
