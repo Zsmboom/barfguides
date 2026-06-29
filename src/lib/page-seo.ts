@@ -3,140 +3,127 @@ import type { PageSeo } from "@/lib/seo";
 export const pageSeo = {
   home: {
     path: "/",
-    title: "Build A Ring Farm Guides — Tools, Calculator, Codes &amp; Tier Lists",
+    title: "Bridger: WESTERN Wiki - Stands, Guns & Beginner Guide",
     description:
-      "Complete Build A Ring Farm resource hub. Profit calculator, working codes, seed tier list, pets ranking, Update 4 patch notes, and expert guides.",
-    keywords: ["build a ring farm", "barf", "build a ring farm guide", "build a ring farm calculator", "buildaringfarmguides"],
+      "Complete Bridger Western resource hub for Roblox players. Beginner route, codes, Stands, weapons, horses, cards, progression, events, and Update 1.5 guides.",
+    keywords: ["bridger western", "bridger western wiki", "bridger western guide", "bridger western roblox"],
   },
   calculator: {
     path: "/profit-calculator",
-    title: "Build A Ring Farm Profit Calculator - Seed Earnings & ROI",
+    title: "Bridger Western Progression Guide - Tier 3, Moola & Stands",
     description:
-      "Calculate exact profit per minute for any Build A Ring Farm seed setup. Includes ring multiplier, mutation, saw level, pet bonus, and sprinkler.",
-    keywords: [
-      "build a ring farm profit calculator",
-      "build a ring farm calculator",
-      "build a ring farm earnings calculator",
-      "buildaringfarmguides",
-    ],
+      "Progress from first spawn to Tier 3 in Bridger Western with fishing, Moola, horses, cards, weapons, Corpse Parts, and Stand unlocks.",
+    keywords: ["bridger western progression", "bridger western prestige guide", "bridger western tier 3"],
   },
   codes: {
     path: "/codes",
-    title: "Build A Ring Farm Codes (June 2026) - 11 Working Codes",
+    title: "Bridger Western Codes Guide - Rewards, Moola & Redeeming",
     description:
-      "Active Build A Ring Farm codes: BZZBZZ, CARNIVAL, UPDATE5, 250KUSERS, PLANTRUSH, UPDATE2, THANKYOU, BARF:3, 2KLIKES, UPDATE1, 100KVISITS. Copy and redeem instantly. Updated June 2026.",
-    keywords: ["barf codes", "build a ring farm codes 2026", "build a ring farm redeem codes"],
+      "How Bridger Western codes work, where to redeem them, what rewards to expect, and how to spend starter Moola efficiently.",
+    keywords: ["bridger western codes", "bridger western rewards", "bridger western moola"],
   },
   tierList: {
     path: "/tier-list",
-    title: "Build A Ring Farm Tier List - Best Seeds Ranked (S-Tier to D-Tier)",
+    title: "Bridger Western Stand Tier List - Best Stands Ranked",
     description:
-      "All 115 seeds ranked S to D by profit, growth time, and endgame viability. Includes pets and mutations tier lists for Build A Ring Farm.",
-    keywords: ["build a ring farm tier list", "build a ring farm seeds tier list", "best seeds build a ring farm", "buildaringfarmguides"],
+      "Best Bridger Western Stands ranked for PvP and survival, including D4C, The World, Star Platinum, White Snake, Tusk, and Tuba Bells.",
+    keywords: ["bridger western stand tier list", "bridger western stands", "best stands bridger western"],
   },
   update4: {
     path: "/update-4-patch-notes",
-    title: "Build A Ring Farm Update 4 Patch Notes - What's New (June 2026)",
+    title: "Bridger Western Update 1.5 Guide - New Meta & Progression",
     description:
-      "Full Build A Ring Farm Update 4 patch notes. Compost Machine, Plant Contracts, Farm Skins, Friend O Tron, new seeds and mutations explained.",
-    keywords: ["build a ring farm update 4", "build a ring farm update 4 patch notes", "build a ring farm patch notes"],
+      "Bridger Western Update 1.5 guide covering progression, Stands, Spin, vampires, silver weapons, cards, and meta changes.",
+    keywords: ["bridger western update 1.5", "bridger western update", "bridger western new update"],
   },
   beginner: {
     path: "/beginner-guide",
-    title: "Build A Ring Farm Beginner Guide - How to Play & Make Money",
+    title: "Bridger Western Beginner Guide - Fishing, Horses & Stands",
     description:
-      "New to Build A Ring Farm? Complete beginner guide covering how to play, best early seeds, ring system, first upgrades, and fastest money methods.",
-    keywords: ["build a ring farm beginner guide", "how to play build a ring farm", "build a ring farm guide"],
+      "Start Bridger Western with the right controls, fishing route, horse upgrades, Tarot cards, weapons, age management, and first Stand plan.",
+    keywords: ["bridger western beginner guide", "how to play bridger western", "bridger western controls"],
   },
   pets: {
     path: "/pets-tier-list",
-    title: "Build A Ring Farm Pets Tier List - Best Pets Ranked (S to D)",
+    title: "Bridger Western Cards Guide - Tarot, Witch Rerolls & Builds",
     description:
-      "Complete pets tier list for Build A Ring Farm. We rank Harvest Drone, Rain Cloud, and all 33 pets from S-Tier (best) to D-Tier (skip).",
-    keywords: ["build a ring farm pets tier list", "best pets build a ring farm", "build a ring farm pets"],
+      "Bridger Western card guide for Witch readings, Tarot slots, High Noon, Evil Eye, Desperado, True Cowboy, and combat builds.",
+    keywords: ["bridger western cards", "bridger western tarot", "bridger western witch"],
   },
   mutations: {
     path: "/mutations-tier-list",
-    title: "Build A Ring Farm Mutations Tier List - All 15 Mutations Ranked",
+    title: "Bridger Western All Stands Guide - Stand Unlocks & Rankings",
     description:
-      "Every mutation in Build A Ring Farm ranked by multiplier value. From Wet (1.5x) to Carnival (9.5x) - plus Update 4's Fire, Bubblegum, Admin, and Starfall.",
-    keywords: ["build a ring farm mutations tier list", "build a ring farm mutations"],
+      "Overview of Bridger Western Stands, Corpse Parts, Arrow Shards, reset options, and the current PvP ranking logic.",
+    keywords: ["bridger western all stands", "bridger western stand guide", "bridger western arrow shard"],
   },
   transcendent: {
     path: "/transcendent-seeds-guide",
-    title: "How to Get Transcendent Seeds in Build A Ring Farm - Best Method",
+    title: "Bridger Western Horse Guide - Fastest Horses, Prices & Travel",
     description:
-      "Complete guide to getting Transcendent seeds in Build A Ring Farm. Seed luck mechanics, best pets for rare seeds, and farming strategies.",
-    keywords: ["build a ring farm transcendent seeds", "how to get transcendent seeds build a ring farm"],
+      "Bridger Western horse guide covering starter mule, legendary horses, Ridgeby rerolls, water sprinting, speed, and event travel.",
+    keywords: ["bridger western horse guide", "fastest horse bridger western", "how to get horse bridger western"],
   },
   money: {
     path: "/money-guide",
-    title: "Build A Ring Farm Best Money Method - Make Cash Fast (2026)",
+    title: "Bridger Western Moola Guide - Fishing, XP & Progression",
     description:
-      "Updated for Update 4! Best money-making methods in Build A Ring Farm. Compost Machine strategy, ring optimization, pet combos, and seed profit rankings.",
-    keywords: ["build a ring farm money guide", "build a ring farm make money fast", "build a ring farm best money method"],
+      "Best ways to earn Moola in Bridger Western, including fishing, chests, Arrow Shards, starter spending, horses, cards, and weapons.",
+    keywords: ["bridger western money guide", "bridger western moola", "how to make money in bridger western"],
   },
   compost: {
     path: "/compost-machine-guide",
-    title: "Compost Machine Guide - How to Unlock & Best Compost Strategy",
+    title: "Bridger Western Weapons Guide - Guns, Ammo & Loadouts",
     description:
-      "Complete Compost Machine guide for Build A Ring Farm Update 4. How to unlock, compost tiers, best seeds to compost, and reward breakdown.",
-    keywords: ["build a ring farm compost machine", "build a ring farm compost guide"],
+      "Bridger Western weapons guide covering revolvers, rifles, shotguns, Tommy Gun, Mare's Leg, Malcolm 70, ammo, and PvP loadouts.",
+    keywords: ["bridger western weapons", "bridger western guns", "bridger western best weapons"],
   },
   contracts: {
     path: "/contracts-guide",
-    title: "Plant Contracts Guide - Quests, Rewards & Best Strategy",
+    title: "Bridger Western Trading Guide - Stands, Items & Value Safety",
     description:
-      "Complete Plant Contracts guide for Build A Ring Farm Update 4. How contracts work, best rewards, and optimal completion strategy.",
-    keywords: ["build a ring farm contracts", "build a ring farm plant contracts"],
+      "Bridger Western trading guide for Stands, items, rare drops, code rewards, and safer value checks before accepting trades.",
+    keywords: ["bridger western trading", "how to trade bridger western", "bridger western stand trading"],
   },
   seeds: {
     path: "/seeds-database",
-    title: "Build A Ring Farm Seeds Database - All 115 Seeds, Prices & Profit",
+    title: "Bridger Western Gun Tier List - Best Weapons Ranked",
     description:
-      "Browse all 115 Build A Ring Farm seeds by rarity, price, sell value, growth time, tier, and estimated profit per minute. Updated for Update 4.",
-    keywords: ["build a ring farm seeds", "build a ring farm seed database", "build a ring farm all seeds"],
+      "Best Bridger Western guns ranked, including Whitney Dragoon, Winchester Repeater, Scofield, Colt, Tommy Gun, Mare's Leg, and Malcolm 70.",
+    keywords: ["bridger western gun tier list", "best gun bridger western", "bridger western weapon tier list"],
   },
   about: {
     path: "/about",
-    title: "About BARF Guides - Build A Ring Farm Fan Tools",
-    description: "BARF Guides is an independent fan resource for Build A Ring Farm tools, profit calculator, tier lists, codes, and strategy guides on Roblox.",
-    keywords: ["barf guides", "build a ring farm fan site"],
+    title: "About Bridger Western Wiki - Independent Roblox Fan Guide",
+    description:
+      "About this independent Bridger Western fan resource for Roblox guides, Stands, weapons, progression, horses, cards, and codes.",
+    keywords: ["bridger western wiki", "bridger western fan guide"],
   },
   privacy: {
     path: "/privacy-policy",
-    title: "Privacy Policy - BARF Guides",
-    description: "Privacy policy for BARF Guides, the independent Build A Ring Farm fan tools and guides website hosted on Cloudflare Pages.",
-    keywords: ["barf guides privacy policy"],
+    title: "Privacy Policy - Bridger Western Wiki",
+    description:
+      "Privacy policy for the independent Bridger Western Wiki, covering hosting logs, cookies, third-party links, and Roblox fan guide data practices.",
+    keywords: ["bridger western privacy policy"],
   },
-
   events: {
     path: "/events-guide",
-    title: "Build A Ring Farm Events Guide - Invasions, Bosses & Starfall",
+    title: "Bridger Western Events Guide - Corpse Parts, Golden Beams & PvP",
     description:
-      "Complete Build A Ring Farm events guide. Alien invasions, Plant Rush bosses, void storms, and Starfall cosmic event. Best seeds and pets for events.",
-    keywords: [
-      "build a ring farm events",
-      "build a ring farm alien invasion",
-      "build a ring farm plant rush",
-      "build a ring farm starfall",
-    ],
+      "Bridger Western events guide for Corpse Parts, golden beam spawns, Stand unlock pressure, world events, PvP routes, and preparation.",
+    keywords: ["bridger western events", "it appears once again bridger western", "bridger western corpse part"],
   },
   faq: {
     path: "/faq",
-    title: "Build A Ring Farm FAQ - Codes, Seeds, Rings, Pets, Events & More",
+    title: "Bridger Western FAQ - Codes, Stands, Horses, Cards & Weapons",
     description:
-      "Most common Build A Ring Farm questions. Game basics, codes, profit tips, ring strategy, mutations, pets, Update 4, and Transcendent seeds.",
-    keywords: [
-      "build a ring farm faq",
-      "build a ring farm questions",
-      "build a ring farm help",
-    ],
+      "Common Bridger Western questions about codes, fishing, Moola, Stands, horses, cards, age, weapons, factions, and progression.",
+    keywords: ["bridger western faq", "bridger western questions", "bridger western help"],
   },
   contact: {
     path: "/contact",
-    title: "Contact Us - BARF Guides",
-    description: "Get in touch with BARF Guides. Report issues, suggest features, or ask questions about Build A Ring Farm tools and guides.",
-    keywords: ["barf guides contact", "build a ring farm contact", "barf guides support"],
+    title: "Contact - Bridger Western Wiki",
+    description: "Contact the independent Bridger Western Wiki team with corrections, guide suggestions, and content updates.",
+    keywords: ["bridger western contact", "bridger western wiki contact"],
   },
 } satisfies Record<string, PageSeo>;

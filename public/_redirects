@@ -2,7 +2,10 @@
 # 404 → home
 /cmd_sco      /     301
 
-# Common misspellings / alternate paths
+# Legacy paths kept alive after the Bridger Western migration
 /seeds        /seeds-database/     301
 /mutations    /mutations-tier-list/     301
 /pets         /pets-tier-list/     301
+/stands       /tier-list/     301
+/weapons      /seeds-database/     301
+/progression  /money-guide/     301

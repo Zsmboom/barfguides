@@ -1,58 +1,36 @@
+import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { JsonLd } from "@/components/JsonLd";
 import { Section } from "@/components/Section";
-import { Breadcrumbs } from "@/components/Breadcrumbs";
-import { pageSeo } from "@/lib/page-seo";
 import { breadcrumbSchema } from "@/lib/seo";
 
-export function ContactPage() {
+export default function ContactPage() {
   return (
     <>
       <JsonLd data={[breadcrumbSchema("/contact", "Contact")]} />
-      <Breadcrumbs segments={[{label: "Home", href: "/"}, {label: "Contact", href: "/contact"}]} />
+      <Breadcrumbs segments={[{ label: "Home", href: "/" }, { label: "Contact", href: "/contact" }]} />
       <main className="mx-auto max-w-7xl px-4 py-10">
-        <Section eyebrow="CONTACT" level={1} title="Contact Us">
+        <Section eyebrow="Contact" level={1} title="Contact Bridger Western Wiki">
           <div className="max-w-3xl space-y-6 text-slate-300">
             <p>
-              Have a question, found a bug, or want to suggest a new feature for Build A Ring Farm tools?
-              We'd love to hear from you.
+              Found outdated Bridger Western info, a broken route, or a topic from the source vault that should become
+              a dedicated page? Send a correction through the project issue tracker.
             </p>
-
-            <div className="rounded-lg border border-white/10 bg-slate-900/70 p-6 space-y-5">
-              <div>
-                <h2 className="font-black text-white">🐛 Report Bugs</h2>
-                <p className="mt-1 text-sm leading-6 text-slate-400">
-                  If something isn't working right — wrong calculation, broken link, outdated info —
-                  open an issue on GitHub:
-                </p>
-                <a
-                  href="https://github.com/Zsmboom/barfguides/issues"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="mt-2 inline-block text-sm text-emerald-400 hover:text-emerald-300 hover:underline min-h-[44px]"
-                >
-                  github.com/Zsmboom/barfguides/issues →
-                </a>
-              </div>
-
-              <div>
-                <h2 className="font-black text-white">💡 Feature Requests</h2>
-                <p className="mt-1 text-sm leading-6 text-slate-400">
-                  Got an idea for a new tool, calculator, or guide? Let us know on GitHub or reach out.
-                </p>
-              </div>
-
-              <div>
-                <h2 className="font-black text-white">📧 Email</h2>
-                <p className="mt-1 text-sm leading-6 text-slate-400">
-                  For other inquiries, you can reach us at:
-                </p>
-                <p className="mt-1 text-sm text-emerald-400">support@buildaringfarmguides.com</p>
-              </div>
+            <div className="rounded-lg border border-white/10 bg-slate-900/70 p-6">
+              <h2 className="font-black text-white">Corrections and requests</h2>
+              <p className="mt-2 text-sm leading-6 text-slate-400">
+                Include the page URL, the in-game evidence if available, and which source topic should be updated.
+              </p>
+              <a
+                href="https://github.com/Zsmboom/barfguides/issues"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-3 inline-block text-sm font-bold text-emerald-400 hover:text-emerald-300 hover:underline min-h-[44px]"
+              >
+                Open project issues
+              </a>
             </div>
-
             <p className="text-sm text-slate-500">
-              buildaringfarmguides.com — Independent fan tools for Build A Ring Farm.
-              Not affiliated with Roblox Corporation or Gamecreates.
+              Independent fan guide. Not affiliated with Roblox Corporation or BRIDGER INC.
             </p>
           </div>
         </Section>
@@ -60,5 +38,3 @@ export function ContactPage() {
     </>
   );
 }
-
-export default ContactPage;

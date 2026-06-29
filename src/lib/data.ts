@@ -58,14 +58,14 @@ const gameData = gameDataJson as unknown as {
 const codeData = codesJson as unknown as { codes: Code[]; expiredCodes: Code[] };
 
 export const site = {
-  name: "Build A Ring Farm Guides",
-  gameName: "Build A Ring Farm",
-  abbreviation: "BARF",
+  name: "Bridger Western Wiki",
+  gameName: "Bridger: WESTERN",
+  abbreviation: "Bridger Western",
   baseUrl: "https://buildaringfarmguides.com",
-  robloxGameId: "107646426076756",
-  developer: "Gamecreates",
-  genre: "Simulator / Farming",
-  update: "Update 7 + Admin Abuse Week",
+  robloxGameId: "99449877692519",
+  developer: "BRIDGER INC",
+  genre: "Western Action RPG / Stands / PvP",
+  update: "Update 1.5",
 };
 
 export const seeds = seedsData.seeds;
@@ -107,18 +107,18 @@ export function byTier<T extends { tier: Tier }>(items: T[]): Record<Tier, T[]> 
 
 export const pages = [
   { path: "/", label: "Home", priority: 1 },
-  { path: "/profit-calculator", label: "Profit Calculator", priority: 0.95 },
+  { path: "/profit-calculator", label: "Progression Guide", priority: 0.95 },
   { path: "/codes", label: "Codes", priority: 0.9 },
-  { path: "/tier-list", label: "Tier List", priority: 0.9 },
-  { path: "/update-4-patch-notes", label: "Patch Notes", priority: 0.9 },
+  { path: "/tier-list", label: "Stand Tier List", priority: 0.9 },
+  { path: "/update-4-patch-notes", label: "Update Log", priority: 0.9 },
   { path: "/beginner-guide", label: "Beginner Guide", priority: 0.85 },
-  { path: "/pets-tier-list", label: "Pets Tier List", priority: 0.8 },
-  { path: "/mutations-tier-list", label: "Mutations Tier List", priority: 0.8 },
-  { path: "/transcendent-seeds-guide", label: "Transcendent Seeds", priority: 0.75 },
-  { path: "/money-guide", label: "Money Guide", priority: 0.8 },
-  { path: "/compost-machine-guide", label: "Compost Machine", priority: 0.75 },
-  { path: "/contracts-guide", label: "Plant Contracts", priority: 0.75 },
-  { path: "/seeds-database", label: "Seeds Database", priority: 0.85 },
+  { path: "/pets-tier-list", label: "Cards Guide", priority: 0.8 },
+  { path: "/mutations-tier-list", label: "All Stands", priority: 0.8 },
+  { path: "/transcendent-seeds-guide", label: "Horse Guide", priority: 0.75 },
+  { path: "/money-guide", label: "Moola Guide", priority: 0.8 },
+  { path: "/compost-machine-guide", label: "Weapons Guide", priority: 0.75 },
+  { path: "/contracts-guide", label: "Trading Guide", priority: 0.75 },
+  { path: "/seeds-database", label: "Gun Tier List", priority: 0.85 },
   { path: "/about", label: "About", priority: 0.4 },
   { path: "/privacy-policy", label: "Privacy Policy", priority: 0.2 },
   { path: "/events-guide", label: "Events Guide", priority: 0.78 },

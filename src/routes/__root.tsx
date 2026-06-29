@@ -20,13 +20,14 @@ export const Route = createRootRoute({
       },
       {
         title:
-          "Build A Ring Farm Guides — Tools, Codes, Calculator & Tier List",
+          "Bridger: WESTERN Wiki - Stands, Guns & Beginner Guide",
       },
       {
         name: "description",
         content:
-          "Build A Ring Farm guides — profit calculator, active codes, seed tier list, pets, mutations, and Update 4 info for Roblox BARF.",
+          "Bridger Western guides for Roblox players: beginner route, codes, Stands, guns, horses, cards, progression, events, and Update 1.5.",
       },
+      { name: "theme-color", content: "#020617" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
@@ -54,8 +55,14 @@ function RootDocument({ children }: { children: React.ReactNode }) {
 function RootComponent() {
   return (
     <>
+      <a
+        href="#main-content"
+        className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:rounded-md focus:bg-emerald-400 focus:px-4 focus:py-2 focus:font-black focus:text-slate-950"
+      >
+        Skip to content
+      </a>
       <Header />
-      <main>
+      <main id="main-content">
         <Outlet />
       </main>
       <Footer />

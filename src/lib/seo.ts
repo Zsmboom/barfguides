@@ -116,8 +116,8 @@ export function videoGameSchema() {
     name: site.gameName,
     alternateName: site.abbreviation,
     description:
-      "Build A Ring Farm is a Roblox farming simulator where players plant seeds, sell harvests, use ring multipliers, chase mutations, and upgrade their farm.",
-    url: `https://www.roblox.com/games/${site.robloxGameId}/`,
+      "Bridger: WESTERN is a Roblox western action RPG built around gunfights, horses, Stands, vampire threats, factions, Tarot cards, and open-world PvP survival.",
+    url: `https://www.roblox.com/games/${site.robloxGameId}/bridger-WESTERN`,
     applicationCategory: "Game",
     genre: site.genre,
     gamePlatform: "Roblox",
